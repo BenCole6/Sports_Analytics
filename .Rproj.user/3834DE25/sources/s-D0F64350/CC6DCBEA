@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561337427853.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CC6DCBEA",
+    "lastKnownWriteTime" : 27303364806049904,
+    "last_content_update" : 1561337427853,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "1852988A",
+        "caption" : "NHL_Data_Long",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=NHL_Data_Long&cache_key=1852988A",
+        "displayedObservations" : "2542",
+        "environment" : "",
+        "object" : "NHL_Data_Long",
+        "preview" : "0",
+        "totalObservations" : "2542",
+        "variables" : "17"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,1272 @@
+Game_Index,Date,Visitor,Game No V,Goals V,H_Status_V,Home,Game No H,Goals H,H_Status_H,Win Type,Att.,LoG,Result Visitor,Pts Visitor,Result Home,Pts Home
+1,3/10/2018,Anaheim Ducks,1,5,0,San Jose Sharks,1,2,1,-,"17,562",2:25,1,2,0,0
+2,3/10/2018,Montreal Canadiens,1,2,0,Toronto Maple Leafs,1,3,1,OT,"19,589",2:37,0,1,1,2
+3,3/10/2018,Calgary Flames,1,2,0,Vancouver Canucks,1,5,1,-,"18,870",2:31,0,0,1,2
+4,3/10/2018,Boston Bruins,1,0,0,Washington Capitals,1,7,1,-,"18,506",2:30,0,0,1,2
+5,4/10/2018,Boston Bruins,2,4,0,Buffalo Sabres,1,0,1,-,"19,070",2:35,1,2,0,0
+6,4/10/2018,New York Islanders,1,2,0,Carolina Hurricanes,1,1,1,OT,"18,680",2:34,1,2,0,1
+7,4/10/2018,Minnesota Wild,1,1,0,Colorado Avalanche,1,4,1,-,"18,086",2:37,0,0,1,2
+8,4/10/2018,Arizona Coyotes,1,0,0,Dallas Stars,1,3,1,-,"18,532",2:34,0,0,1,2
+9,4/10/2018,Columbus Blue Jackets,1,3,0,Detroit Red Wings,1,2,1,OT,"19,515",2:43,1,2,0,1
+10,4/10/2018,Nashville Predators,1,3,0,New York Rangers,1,2,1,-,"17,117",2:31,1,2,0,0
+11,4/10/2018,Chicago Blackhawks,1,4,0,Ottawa Senators,1,3,1,OT,"15,858",2:38,1,2,0,1
+12,4/10/2018,Washington Capitals,2,6,0,Pittsburgh Penguins,1,7,1,OT,"18,627",2:39,0,1,1,2
+13,4/10/2018,Winnipeg Jets,1,5,0,St. Louis Blues,1,1,1,-,"18,292",2:35,1,2,0,0
+14,4/10/2018,Philadelphia Flyers,1,5,0,Vegas Golden Knights,1,2,1,-,"18,555",2:24,1,2,0,0
+15,5/10/2018,Carolina Hurricanes,2,3,0,Columbus Blue Jackets,2,1,1,-,"18,306",2:35,1,2,0,0
+16,5/10/2018,San Jose Sharks,2,3,0,Los Angeles Kings,1,2,1,OT,"18,230",2:36,1,2,0,1
+17,6/10/2018,Anaheim Ducks,2,1,0,Arizona Coyotes,2,0,1,-,"17,125",2:24,1,2,0,0
+18,6/10/2018,New York Rangers,2,1,0,Buffalo Sabres,2,3,1,-,"16,824",2:45,0,0,1,2
+19,6/10/2018,Vancouver Canucks,2,4,0,Calgary Flames,2,7,1,-,"18,688",2:39,0,0,1,2
+20,6/10/2018,Philadelphia Flyers,2,2,0,Colorado Avalanche,2,5,1,-,"16,768",2:33,0,0,1,2
+21,6/10/2018,Winnipeg Jets,2,1,0,Dallas Stars,2,5,1,-,"18,131",2:36,0,0,1,2
+22,6/10/2018,Vegas Golden Knights,2,2,0,Minnesota Wild,2,1,1,SO,"19,077",3:18,1,2,0,1
+23,6/10/2018,Edmonton Oilers,1,2,0,New Jersey Devils,1,5,1,-,"12,044",2:31,0,0,1,2
+24,6/10/2018,Nashville Predators,2,4,0,New York Islanders,2,3,1,-,"12,163",2:25,1,2,0,0
+25,6/10/2018,Montreal Canadiens,2,5,0,Pittsburgh Penguins,2,1,1,-,"18,622",2:26,1,2,0,0
+26,6/10/2018,Chicago Blackhawks,2,5,0,St. Louis Blues,2,4,1,OT,"17,429",2:39,1,2,0,1
+27,6/10/2018,Florida Panthers,1,1,0,Tampa Bay Lightning,1,2,1,SO,"19,092",2:39,0,1,1,2
+28,6/10/2018,Ottawa Senators,2,5,0,Toronto Maple Leafs,2,3,1,-,"19,321",2:35,1,2,0,0
+29,7/10/2018,New York Rangers,3,5,0,Carolina Hurricanes,3,8,1,-,"13,526",2:37,0,0,1,2
+30,7/10/2018,Toronto Maple Leafs,3,7,0,Chicago Blackhawks,3,6,1,OT,"21,812",2:31,1,2,0,1
+31,7/10/2018,Detroit Red Wings,2,2,0,Los Angeles Kings,2,4,1,-,"18,230",2:43,0,0,1,2
+32,8/10/2018,Detroit Red Wings,3,2,0,Anaheim Ducks,3,3,1,SO,"17,436",2:44,0,1,1,2
+33,8/10/2018,Ottawa Senators,3,3,0,Boston Bruins,3,6,1,-,"17,565",2:33,0,0,1,2
+34,8/10/2018,Vegas Golden Knights,3,2,0,Buffalo Sabres,3,4,1,-,"16,004",2:20,0,0,1,2
+35,8/10/2018,San Jose Sharks,3,0,0,New York Islanders,3,4,1,-,"8,790",2:26,0,0,1,2
+36,9/10/2018,Vancouver Canucks,3,3,0,Carolina Hurricanes,4,5,1,-,"11,932",2:35,0,0,1,2
+37,9/10/2018,Colorado Avalanche,3,2,0,Columbus Blue Jackets,3,5,1,-,"11,694",2:27,0,0,1,2
+38,9/10/2018,Toronto Maple Leafs,4,7,0,Dallas Stars,3,4,1,-,"17,866",2:30,1,2,0,0
+39,9/10/2018,Calgary Flames,3,3,0,Nashville Predators,3,0,1,-,"17,209",2:32,1,2,0,0
+40,9/10/2018,San Jose Sharks,4,8,0,Philadelphia Flyers,3,2,1,-,"19,133",2:34,1,2,0,0
+41,9/10/2018,Los Angeles Kings,3,1,0,Winnipeg Jets,3,2,1,-,"15,321",2:27,0,0,1,2
+42,10/10/2018,Arizona Coyotes,3,3,0,Anaheim Ducks,4,2,1,SO,"17,015",2:30,1,2,0,1
+43,10/10/2018,Philadelphia Flyers,4,7,0,Ottawa Senators,4,4,1,-,"13,215",2:38,1,2,0,0
+44,10/10/2018,Vegas Golden Knights,4,2,0,Washington Capitals,3,5,1,-,"18,506",2:40,0,0,1,2
+45,11/10/2018,Edmonton Oilers,2,1,0,Boston Bruins,4,4,1,-,"17,565",2:28,0,0,1,2
+46,11/10/2018,Colorado Avalanche,4,6,0,Buffalo Sabres,4,1,1,-,"15,396",2:30,1,2,0,0
+47,11/10/2018,Toronto Maple Leafs,5,5,0,Detroit Red Wings,4,3,1,-,"19,515",2:32,1,2,0,0
+48,11/10/2018,Columbus Blue Jackets,4,5,0,Florida Panthers,2,4,1,-,"14,394",2:34,1,2,0,0
+49,11/10/2018,Chicago Blackhawks,4,3,0,Minnesota Wild,3,4,1,OT,"18,652",2:42,0,1,1,2
+50,11/10/2018,Los Angeles Kings,4,3,0,Montreal Canadiens,3,0,1,-,"21,302",2:33,1,2,0,0
+51,11/10/2018,Washington Capitals,4,0,0,New Jersey Devils,2,6,1,-,"16,514",2:31,0,0,1,2
+52,11/10/2018,Winnipeg Jets,4,0,0,Nashville Predators,4,3,1,-,"17,228",2:30,0,0,1,2
+53,11/10/2018,San Jose Sharks,5,2,0,New York Rangers,4,3,1,OT,"17,004",2:31,0,1,1,2
+54,11/10/2018,Vegas Golden Knights,5,2,0,Pittsburgh Penguins,3,4,1,-,"18,610",2:27,0,0,1,2
+55,11/10/2018,Calgary Flames,4,3,0,St. Louis Blues,3,5,1,-,"16,403",2:37,0,0,1,2
+56,11/10/2018,Vancouver Canucks,4,4,0,Tampa Bay Lightning,2,1,1,-,"19,092",2:23,1,2,0,0
+57,13/10/2018,Buffalo Sabres,5,3,0,Arizona Coyotes,4,0,1,-,"15,304",2:32,1,2,0,0
+58,13/10/2018,Detroit Red Wings,5,2,0,Boston Bruins,5,8,1,-,"17,565",2:40,0,0,1,2
+59,13/10/2018,St. Louis Blues,4,3,0,Chicago Blackhawks,5,4,1,OT,"21,634",2:38,0,1,1,2
+60,13/10/2018,Calgary Flames,5,3,0,Colorado Avalanche,5,2,1,OT,"17,334",2:34,1,2,0,1
+61,13/10/2018,Anaheim Ducks,5,3,0,Dallas Stars,4,5,1,-,"18,532",2:38,0,0,1,2
+62,13/10/2018,Vancouver Canucks,5,3,0,Florida Panthers,3,2,1,-,"11,953",2:32,1,2,0,0
+63,13/10/2018,Carolina Hurricanes,5,5,0,Minnesota Wild,4,4,1,OT,"18,715",2:56,1,2,0,1
+64,13/10/2018,Pittsburgh Penguins,4,3,0,Montreal Canadiens,4,4,1,SO,"21,302",3:23,0,1,1,2
+65,13/10/2018,New York Islanders,4,2,0,Nashville Predators,5,5,1,-,"17,208",2:34,0,0,1,2
+66,13/10/2018,Edmonton Oilers,3,2,0,New York Rangers,5,1,1,-,"17,085",2:24,1,2,0,0
+67,13/10/2018,Los Angeles Kings,5,1,0,Ottawa Senators,5,5,1,-,"15,355",2:29,0,0,1,2
+68,13/10/2018,Vegas Golden Knights,6,1,0,Philadelphia Flyers,5,0,1,-,"19,067",2:19,1,2,0,0
+69,13/10/2018,Columbus Blue Jackets,5,2,0,Tampa Bay Lightning,3,8,1,-,"19,092",2:36,0,0,1,2
+70,13/10/2018,Toronto Maple Leafs,6,4,0,Washington Capitals,5,2,1,-,"18,506",2:21,1,2,0,0
+71,14/10/2018,San Jose Sharks,6,2,0,New Jersey Devils,3,3,1,-,"13,809",2:35,0,0,1,2
+72,14/10/2018,Anaheim Ducks,6,3,0,St. Louis Blues,5,2,1,-,"16,562",2:36,1,2,0,0
+73,14/10/2018,Carolina Hurricanes,6,1,0,Winnipeg Jets,5,3,1,-,"15,321",2:33,0,0,1,2
+74,15/10/2018,Detroit Red Wings,6,3,0,Montreal Canadiens,5,7,1,-,"20,323",2:40,0,0,1,2
+75,15/10/2018,Minnesota Wild,5,2,0,Nashville Predators,6,4,1,-,"17,165",2:32,0,0,1,2
+76,15/10/2018,Dallas Stars,5,1,0,Ottawa Senators,6,4,1,-,"12,358",2:30,0,0,1,2
+77,15/10/2018,Los Angeles Kings,6,1,0,Toronto Maple Leafs,7,4,1,-,"19,429",2:25,0,0,1,2
+78,16/10/2018,Arizona Coyotes,5,1,0,Minnesota Wild,6,2,1,-,"18,795",2:35,0,0,1,2
+79,16/10/2018,Dallas Stars,6,0,0,New Jersey Devils,4,3,1,-,"12,808",2:33,0,0,1,2
+80,16/10/2018,Colorado Avalanche,6,2,0,New York Rangers,6,3,1,SO,"17,251",2:43,0,1,1,2
+81,16/10/2018,Florida Panthers,4,5,0,Philadelphia Flyers,6,6,1,SO,"19,038",2:48,0,1,1,2
+82,16/10/2018,Vancouver Canucks,6,3,0,Pittsburgh Penguins,5,2,1,OT,"18,492",2:24,1,2,0,1
+83,16/10/2018,Carolina Hurricanes,7,2,0,Tampa Bay Lightning,4,4,1,-,"19,092",2:37,0,0,1,2
+84,16/10/2018,Buffalo Sabres,6,1,0,Vegas Golden Knights,7,4,1,-,"18,321",2:38,0,0,1,2
+85,16/10/2018,Edmonton Oilers,4,5,0,Winnipeg Jets,6,4,1,OT,"15,321",2:29,1,2,0,1
+86,17/10/2018,New York Islanders,5,1,0,Anaheim Ducks,7,4,1,-,"16,909",2:30,0,0,1,2
+87,17/10/2018,Boston Bruins,6,2,0,Calgary Flames,6,5,1,-,"17,641",2:25,0,0,1,2
+88,17/10/2018,St. Louis Blues,6,2,0,Montreal Canadiens,6,3,1,-,"20,137",2:22,0,0,1,2
+89,17/10/2018,New York Rangers,7,3,0,Washington Capitals,6,4,1,OT,"18,506",2:34,0,1,1,2
+90,18/10/2018,Philadelphia Flyers,7,3,0,Columbus Blue Jackets,6,6,1,-,"13,492",2:20,0,0,1,2
+91,18/10/2018,Arizona Coyotes,6,4,0,Chicago Blackhawks,6,1,1,-,"21,210",2:31,1,2,0,0
+92,18/10/2018,Boston Bruins,7,2,0,Edmonton Oilers,5,3,1,OT,"18,347",2:26,0,1,1,2
+93,18/10/2018,New York Islanders,6,7,0,Los Angeles Kings,7,2,1,-,"18,230",2:34,1,2,0,0
+94,18/10/2018,Colorado Avalanche,7,5,0,New Jersey Devils,5,3,1,-,"13,374",2:41,1,2,0,0
+95,18/10/2018,Buffalo Sabres,7,1,0,San Jose Sharks,7,5,1,-,"17,389",2:33,0,0,1,2
+96,18/10/2018,Detroit Red Wings,7,1,0,Tampa Bay Lightning,5,3,1,-,"19,092",2:43,0,0,1,2
+97,18/10/2018,Pittsburgh Penguins,6,3,0,Toronto Maple Leafs,8,0,1,-,"19,483",2:28,1,2,0,0
+98,18/10/2018,Vancouver Canucks,7,1,0,Winnipeg Jets,7,4,1,-,"15,321",2:32,0,0,1,2
+99,19/10/2018,Nashville Predators,7,5,0,Calgary Flames,7,3,1,-,"18,725",2:36,1,2,0,0
+100,19/10/2018,Minnesota Wild,7,3,0,Dallas Stars,7,1,1,-,"18,346",2:18,1,2,0,0
+101,19/10/2018,Florida Panthers,5,6,0,Washington Capitals,7,5,1,SO,"18,506",2:56,1,2,0,1
+102,20/10/2018,Colorado Avalanche,8,3,0,Carolina Hurricanes,8,1,1,-,"11,753",2:30,1,2,0,0
+103,20/10/2018,Chicago Blackhawks,7,4,0,Columbus Blue Jackets,7,1,1,-,"17,005",2:29,1,2,0,0
+104,20/10/2018,Nashville Predators,8,3,0,Edmonton Oilers,6,0,1,-,"18,347",2:29,1,2,0,0
+105,20/10/2018,Detroit Red Wings,8,4,0,Florida Panthers,6,3,1,OT,"14,534",2:44,1,2,0,1
+106,20/10/2018,Buffalo Sabres,8,5,0,Los Angeles Kings,8,1,1,-,"18,230",2:38,1,2,0,0
+107,20/10/2018,Tampa Bay Lightning,6,4,0,Minnesota Wild,8,5,1,OT,"19,080",2:42,0,1,1,2
+108,20/10/2018,Montreal Canadiens,7,3,0,Ottawa Senators,7,4,1,OT,"18,442",2:37,0,1,1,2
+109,20/10/2018,New Jersey Devils,6,2,0,Philadelphia Flyers,8,5,1,-,"19,105",2:35,0,0,1,2
+110,20/10/2018,New York Islanders,7,1,0,San Jose Sharks,8,4,1,-,"17,414",2:31,0,0,1,2
+111,20/10/2018,St. Louis Blues,7,4,0,Toronto Maple Leafs,9,1,1,-,"19,268",2:31,1,2,0,0
+112,20/10/2018,Boston Bruins,8,1,0,Vancouver Canucks,8,2,1,OT,"17,871",2:30,0,1,1,2
+113,20/10/2018,Anaheim Ducks,8,1,0,Vegas Golden Knights,8,3,1,-,"18,375",2:33,0,0,1,2
+114,20/10/2018,Arizona Coyotes,7,3,0,Winnipeg Jets,8,5,1,-,"15,321",2:33,0,0,1,2
+115,21/10/2018,Buffalo Sabres,9,4,0,Anaheim Ducks,9,2,1,-,"17,174",2:24,1,2,0,0
+116,21/10/2018,Tampa Bay Lightning,7,6,0,Chicago Blackhawks,8,3,1,-,"21,012",2:29,1,2,0,0
+117,21/10/2018,Calgary Flames,8,4,0,New York Rangers,8,1,1,-,"17,404",2:29,1,2,0,0
+118,22/10/2018,Carolina Hurricanes,9,3,0,Detroit Red Wings,9,1,1,-,"19,515",2:28,1,2,0,0
+119,22/10/2018,Colorado Avalanche,9,4,0,Philadelphia Flyers,9,1,1,-,"19,326",2:30,1,2,0,0
+120,22/10/2018,Washington Capitals,8,5,0,Vancouver Canucks,9,2,1,-,"17,227",2:25,1,2,0,0
+121,22/10/2018,St. Louis Blues,8,4,0,Winnipeg Jets,9,5,1,OT,"15,321",2:37,0,1,1,2
+122,23/10/2018,Arizona Coyotes,8,4,0,Columbus Blue Jackets,8,1,1,-,"11,458",2:28,1,2,0,0
+123,23/10/2018,Anaheim Ducks,10,1,0,Chicago Blackhawks,9,3,1,-,"20,900",2:31,0,0,1,2
+124,23/10/2018,Los Angeles Kings,9,2,0,Dallas Stars,8,4,1,-,"17,354",2:39,0,0,1,2
+125,23/10/2018,Pittsburgh Penguins,7,6,0,Edmonton Oilers,7,5,1,OT,"18,347",2:42,1,2,0,1
+126,23/10/2018,Calgary Flames,9,2,0,Montreal Canadiens,8,3,1,-,"21,028",2:30,0,0,1,2
+127,23/10/2018,San Jose Sharks,9,5,0,Nashville Predators,9,4,1,-,"17,159",2:41,1,2,0,0
+128,23/10/2018,Florida Panthers,7,2,0,New York Rangers,9,5,1,-,"17,016",2:33,0,0,1,2
+129,23/10/2018,Boston Bruins,9,4,0,Ottawa Senators,8,1,1,-,"15,265",2:31,1,2,0,0
+130,24/10/2018,Tampa Bay Lightning,8,1,0,Colorado Avalanche,10,0,1,-,"16,753",2:23,1,2,0,0
+131,24/10/2018,Florida Panthers,8,3,0,New York Islanders,8,2,1,OT,"9,743",2:40,1,2,0,1
+132,24/10/2018,Vancouver Canucks,10,3,0,Vegas Golden Knights,9,2,1,SO,"18,189",2:42,1,2,0,1
+133,24/10/2018,Toronto Maple Leafs,10,4,0,Winnipeg Jets,10,2,1,-,"15,321",2:29,1,2,0,0
+134,25/10/2018,Vancouver Canucks,11,1,0,Arizona Coyotes,9,4,1,-,"12,955",2:20,0,0,1,2
+135,25/10/2018,Philadelphia Flyers,10,0,0,Boston Bruins,10,3,1,-,"17,565",2:32,0,0,1,2
+136,25/10/2018,Montreal Canadiens,9,3,0,Buffalo Sabres,10,4,1,-,"16,112",2:35,0,0,1,2
+137,25/10/2018,Pittsburgh Penguins,8,9,0,Calgary Flames,10,1,1,-,"17,834",2:31,1,2,0,0
+138,25/10/2018,New York Rangers,10,1,0,Chicago Blackhawks,10,4,1,-,"21,280",2:36,0,0,1,2
+139,25/10/2018,Anaheim Ducks,11,2,0,Dallas Stars,9,5,1,-,"17,134",2:34,0,0,1,2
+140,25/10/2018,Washington Capitals,9,1,0,Edmonton Oilers,8,4,1,-,"18,347",2:29,0,0,1,2
+141,25/10/2018,Los Angeles Kings,10,1,0,Minnesota Wild,9,4,1,-,"18,778",2:36,0,0,1,2
+142,25/10/2018,Nashville Predators,10,4,0,New Jersey Devils,7,3,1,OT,"15,164",2:44,1,2,0,1
+143,25/10/2018,Columbus Blue Jackets,9,7,0,St. Louis Blues,9,4,1,-,"17,068",2:37,1,2,0,0
+144,26/10/2018,San Jose Sharks,10,3,0,Carolina Hurricanes,10,4,1,SO,"12,311",2:43,0,1,1,2
+145,26/10/2018,Ottawa Senators,9,3,0,Colorado Avalanche,11,6,1,-,"16,851",2:32,0,0,1,2
+146,26/10/2018,Winnipeg Jets,11,2,0,Detroit Red Wings,10,1,1,-,"19,515",2:27,1,2,0,0
+147,26/10/2018,Tampa Bay Lightning,9,3,0,Vegas Golden Knights,10,2,1,-,"18,207",2:38,1,2,0,0
+148,27/10/2018,Tampa Bay Lightning,10,1,0,Arizona Coyotes,10,7,1,-,"13,623",2:31,0,0,1,2
+149,27/10/2018,Montreal Canadiens,10,3,0,Boston Bruins,11,0,1,-,"17,565",2:37,1,2,0,0
+150,27/10/2018,Buffalo Sabres,11,4,0,Columbus Blue Jackets,10,5,1,OT,"15,642",2:39,0,1,1,2
+151,27/10/2018,Washington Capitals,10,4,0,Calgary Flames,11,3,1,SO,"17,832",2:45,1,2,0,1
+152,27/10/2018,Colorado Avalanche,12,2,0,Minnesota Wild,10,3,1,-,"19,093",2:35,0,0,1,2
+153,27/10/2018,Florida Panthers,9,2,0,New Jersey Devils,8,3,1,-,"15,927",2:50,0,0,1,2
+154,27/10/2018,Edmonton Oilers,9,5,0,Nashville Predators,11,3,1,-,"17,248",2:31,1,2,0,0
+155,27/10/2018,New York Islanders,9,6,0,Philadelphia Flyers,11,1,1,-,"19,247",2:28,1,2,0,0
+156,27/10/2018,Chicago Blackhawks,11,3,0,St. Louis Blues,10,7,1,-,"17,201",2:32,0,0,1,2
+157,27/10/2018,Winnipeg Jets,12,2,0,Toronto Maple Leafs,11,3,1,-,"19,545",2:31,0,0,1,2
+158,27/10/2018,Pittsburgh Penguins,9,5,0,Vancouver Canucks,12,0,1,-,"17,537",2:29,1,2,0,0
+159,28/10/2018,San Jose Sharks,11,4,0,Anaheim Ducks,12,3,1,OT,"17,099",2:36,1,2,0,1
+160,28/10/2018,New York Islanders,10,2,0,Carolina Hurricanes,11,1,1,-,"10,367",2:30,1,2,0,0
+161,28/10/2018,Edmonton Oilers,10,2,0,Chicago Blackhawks,12,1,1,OT,"20,987",2:24,1,2,0,1
+162,28/10/2018,Dallas Stars,10,2,0,Detroit Red Wings,11,4,1,-,"19,515",2:26,0,0,1,2
+163,28/10/2018,New York Rangers,11,3,0,Los Angeles Kings,11,4,1,-,"18,230",2:41,0,0,1,2
+164,28/10/2018,Ottawa Senators,10,3,0,Vegas Golden Knights,11,4,1,OT,"18,089",2:40,0,1,1,2
+165,29/10/2018,Calgary Flames,12,3,0,Toronto Maple Leafs,12,1,1,-,"18,989",2:31,1,2,0,0
+166,29/10/2018,Minnesota Wild,11,2,0,Vancouver Canucks,13,5,1,-,"16,546",2:36,0,0,1,2
+167,30/10/2018,Philadelphia Flyers,12,3,0,Anaheim Ducks,13,2,1,-,"16,450",2:28,1,2,0,0
+168,30/10/2018,Ottawa Senators,11,1,0,Arizona Coyotes,11,5,1,-,"13,988",2:32,0,0,1,2
+169,30/10/2018,Calgary Flames,13,2,0,Buffalo Sabres,12,1,1,OT,"15,196",2:38,1,2,0,1
+170,30/10/2018,Boston Bruins,12,3,0,Carolina Hurricanes,12,2,1,-,"11,357",2:37,1,2,0,0
+171,30/10/2018,Detroit Red Wings,12,5,0,Columbus Blue Jackets,11,3,1,-,"14,288",2:30,1,2,0,0
+172,30/10/2018,Minnesota Wild,12,4,0,Edmonton Oilers,11,3,1,-,"18,347",2:32,1,2,0,0
+173,30/10/2018,Dallas Stars,11,4,0,Montreal Canadiens,11,1,1,-,"20,506",2:39,1,2,0,0
+174,30/10/2018,Vegas Golden Knights,12,1,0,Nashville Predators,12,4,1,-,"17,367",2:30,0,0,1,2
+175,30/10/2018,New York Islanders,11,6,0,Pittsburgh Penguins,10,3,1,-,"18,509",2:32,1,2,0,0
+176,30/10/2018,New York Rangers,12,4,0,San Jose Sharks,12,3,1,SO,"17,562",2:38,1,2,0,1
+177,30/10/2018,New Jersey Devils,9,3,0,Tampa Bay Lightning,11,8,1,-,"19,092",2:37,0,0,1,2
+178,31/10/2018,Chicago Blackhawks,13,2,0,Vancouver Canucks,14,4,1,-,"16,955",2:32,0,0,1,2
+179,1/11/2018,New York Rangers,13,3,0,Anaheim Ducks,14,2,1,SO,"16,101",3:14,1,2,0,1
+180,1/11/2018,Colorado Avalanche,13,5,0,Calgary Flames,14,6,1,-,"17,317",2:39,0,0,1,2
+181,1/11/2018,New Jersey Devils,10,3,0,Detroit Red Wings,13,4,1,-,"18,273",2:48,0,0,1,2
+182,1/11/2018,Chicago Blackhawks,14,0,0,Edmonton Oilers,12,4,1,-,"18,347",2:26,0,0,1,2
+183,1/11/2018,Winnipeg Jets,13,4,0,Florida Panthers,10,2,1,-,"13,490",2:37,1,2,0,0
+184,1/11/2018,Philadelphia Flyers,13,5,0,Los Angeles Kings,12,2,1,-,"18,230",2:35,1,2,0,0
+185,1/11/2018,Washington Capitals,11,4,0,Montreal Canadiens,12,6,1,-,"20,279",2:25,0,0,1,2
+186,1/11/2018,Pittsburgh Penguins,11,2,0,New York Islanders,12,3,1,SO,"10,910",2:42,0,1,1,2
+187,1/11/2018,Buffalo Sabres,13,2,0,Ottawa Senators,12,4,1,-,"12,587",2:20,0,0,1,2
+188,1/11/2018,Columbus Blue Jackets,12,4,0,San Jose Sharks,13,1,1,-,"15,879",2:32,1,2,0,0
+189,1/11/2018,Vegas Golden Knights,13,3,0,St. Louis Blues,11,5,1,-,"16,813",2:32,0,0,1,2
+190,1/11/2018,Nashville Predators,13,4,0,Tampa Bay Lightning,12,1,1,-,"19,092",2:30,1,2,0,0
+191,1/11/2018,Dallas Stars,12,2,0,Toronto Maple Leafs,13,1,1,-,"18,878",2:27,1,2,0,0
+192,2/11/2018,Carolina Hurricanes,13,3,0,Arizona Coyotes,12,4,1,OT,"10,562",2:30,0,1,1,2
+193,2/11/2018,Colorado Avalanche,14,6,0,Vancouver Canucks,15,7,1,OT,"18,334",2:44,0,1,1,2
+194,2/11/2018,Florida Panthers,11,4,0,Winnipeg Jets,14,2,1,-,"13,490",2:34,1,2,0,0
+195,3/11/2018,Ottawa Senators,13,2,0,Buffalo Sabres,14,9,1,-,"17,881",2:27,0,0,1,2
+196,3/11/2018,Chicago Blackhawks,15,3,0,Calgary Flames,15,5,1,-,"18,143",2:26,0,0,1,2
+197,3/11/2018,Edmonton Oilers,13,4,0,Detroit Red Wings,14,3,1,-,"19,515",2:31,1,2,0,0
+198,3/11/2018,Columbus Blue Jackets,13,1,0,Los Angeles Kings,13,4,1,-,"18,230",2:32,0,0,1,2
+199,3/11/2018,Tampa Bay Lightning,13,4,0,Montreal Canadiens,13,1,1,-,"21,302",2:31,1,2,0,0
+200,3/11/2018,Boston Bruins,13,0,0,Nashville Predators,14,1,1,-,"17,535",2:38,0,0,1,2
+201,3/11/2018,New Jersey Devils,11,0,0,New York Islanders,13,3,1,-,"11,901",2:26,0,0,1,2
+202,3/11/2018,Toronto Maple Leafs,14,5,0,Pittsburgh Penguins,12,0,1,-,"18,638",2:38,1,2,0,0
+203,3/11/2018,Philadelphia Flyers,14,3,0,San Jose Sharks,14,4,1,OT,"17,562",2:29,0,1,1,2
+204,3/11/2018,Minnesota Wild,13,5,0,St. Louis Blues,12,1,1,-,"17,767",2:27,1,2,0,0
+205,3/11/2018,Carolina Hurricanes,14,0,0,Vegas Golden Knights,14,3,1,-,"18,328",2:29,0,0,1,2
+206,3/11/2018,Dallas Stars,13,4,0,Washington Capitals,12,3,1,OT,"18,506",2:40,1,2,0,1
+207,4/11/2018,Columbus Blue Jackets,14,2,0,Anaheim Ducks,15,3,1,OT,"16,727",2:31,0,1,1,2
+208,4/11/2018,Buffalo Sabres,15,1,0,New York Rangers,14,3,1,-,"16,904",2:26,0,0,1,2
+209,4/11/2018,Tampa Bay Lightning,14,4,0,Ottawa Senators,14,3,1,OT,"11,364",2:29,1,2,0,1
+210,5/11/2018,Philadelphia Flyers,15,5,0,Arizona Coyotes,13,2,1,-,"13,719",2:28,1,2,0,0
+211,5/11/2018,Dallas Stars,14,1,0,Boston Bruins,14,2,1,OT,"17,565",2:34,0,1,1,2
+212,5/11/2018,Montreal Canadiens,14,4,0,New York Islanders,14,3,1,SO,"9,402",2:40,1,2,0,1
+213,5/11/2018,New Jersey Devils,12,5,0,Pittsburgh Penguins,13,1,1,-,"18,420",2:38,1,2,0,0
+214,5/11/2018,Edmonton Oilers,14,2,0,Washington Capitals,13,4,1,-,"18,506",2:30,0,0,1,2
+215,6/11/2018,Dallas Stars,15,1,0,Columbus Blue Jackets,15,4,1,-,"14,159",2:24,0,0,1,2
+216,6/11/2018,Vancouver Canucks,16,2,0,Detroit Red Wings,15,3,1,SO,"18,640",2:47,0,1,1,2
+217,6/11/2018,Anaheim Ducks,16,1,0,Los Angeles Kings,14,4,1,-,"18,230",2:41,0,0,1,2
+218,6/11/2018,Montreal Canadiens,15,3,0,New York Rangers,15,5,1,-,"17,428",2:40,0,0,1,2
+219,6/11/2018,New Jersey Devils,13,3,0,Ottawa Senators,15,7,1,-,"12,491",2:37,0,0,1,2
+220,6/11/2018,Minnesota Wild,14,3,0,San Jose Sharks,15,4,1,-,"15,853",2:23,0,0,1,2
+221,6/11/2018,Carolina Hurricanes,15,1,0,St. Louis Blues,13,4,1,-,"16,210",2:31,0,0,1,2
+222,6/11/2018,Edmonton Oilers,15,2,0,Tampa Bay Lightning,15,5,1,-,"19,092",2:33,0,0,1,2
+223,6/11/2018,Vegas Golden Knights,15,1,0,Toronto Maple Leafs,15,3,1,-,"19,045",2:34,0,0,1,2
+224,7/11/2018,Calgary Flames,16,2,0,Anaheim Ducks,17,3,1,-,"16,461",2:23,0,0,1,2
+225,7/11/2018,Nashville Predators,15,4,0,Colorado Avalanche,15,1,1,-,"16,923",2:44,1,2,0,0
+226,7/11/2018,Pittsburgh Penguins,14,1,0,Washington Capitals,14,2,1,-,"18,506",2:33,0,0,1,2
+227,8/11/2018,Vancouver Canucks,17,8,0,Boston Bruins,15,5,1,-,"17,565",2:38,1,2,0,0
+228,8/11/2018,Carolina Hurricanes,16,4,0,Chicago Blackhawks,16,3,1,-,"21,331",2:20,1,2,0,0
+229,8/11/2018,San Jose Sharks,16,3,0,Dallas Stars,16,4,1,-,"18,137",2:33,0,0,1,2
+230,8/11/2018,Edmonton Oilers,16,1,0,Florida Panthers,12,4,1,-,"11,484",2:33,0,0,1,2
+231,8/11/2018,Minnesota Wild,15,3,0,Los Angeles Kings,15,1,1,-,"17,621",2:29,1,2,0,0
+232,8/11/2018,Buffalo Sabres,16,6,0,Montreal Canadiens,16,5,1,OT,"20,488",2:40,1,2,0,1
+233,8/11/2018,Vegas Golden Knights,16,5,0,Ottawa Senators,16,3,1,-,"15,213",2:37,1,2,0,0
+234,8/11/2018,Arizona Coyotes,14,4,0,Philadelphia Flyers,16,5,1,OT,"18,884",2:28,0,1,1,2
+235,8/11/2018,New York Islanders,15,2,0,Tampa Bay Lightning,16,4,1,-,"19,092",2:30,0,0,1,2
+236,9/11/2018,Minnesota Wild,16,5,0,Anaheim Ducks,18,1,1,-,"16,464",2:30,1,2,0,0
+237,9/11/2018,New York Rangers,16,2,0,Detroit Red Wings,16,3,1,OT,"19,515",2:38,0,1,1,2
+238,9/11/2018,San Jose Sharks,17,0,0,St. Louis Blues,14,4,1,-,"17,032",2:21,0,0,1,2
+239,9/11/2018,New Jersey Devils,14,1,0,Toronto Maple Leafs,16,6,1,-,"19,211",2:32,0,0,1,2
+240,9/11/2018,Colorado Avalanche,16,2,0,Winnipeg Jets,15,5,1,-,"15,321",2:23,0,0,1,2
+241,9/11/2018,Columbus Blue Jackets,16,2,0,Washington Capitals,15,1,1,-,"18,506",2:31,1,2,0,0
+242,10/11/2018,Toronto Maple Leafs,17,1,0,Boston Bruins,16,5,1,-,"17,565",2:34,0,0,1,2
+243,10/11/2018,Vancouver Canucks,18,3,0,Buffalo Sabres,17,4,1,SO,"17,541",2:42,0,1,1,2
+244,10/11/2018,Detroit Red Wings,17,4,0,Carolina Hurricanes,17,3,1,SO,"13,029",2:42,1,2,0,1
+245,10/11/2018,New York Rangers,17,5,0,Columbus Blue Jackets,17,4,1,SO,"18,384",2:47,1,2,0,1
+246,10/11/2018,Nashville Predators,16,5,0,Dallas Stars,17,4,1,OT,"18,532",2:42,1,2,0,1
+247,10/11/2018,New York Islanders,16,2,0,Florida Panthers,13,4,1,-,"11,947",2:28,0,0,1,2
+248,10/11/2018,Calgary Flames,17,1,0,Los Angeles Kings,16,0,1,-,"18,230",2:32,1,2,0,0
+249,10/11/2018,Vegas Golden Knights,17,4,0,Montreal Canadiens,17,5,1,-,"21,302",2:30,0,0,1,2
+250,10/11/2018,Chicago Blackhawks,17,0,0,Philadelphia Flyers,17,4,1,-,"19,355",2:25,0,0,1,2
+251,10/11/2018,Arizona Coyotes,15,0,0,Pittsburgh Penguins,15,4,1,-,"18,596",2:31,0,0,1,2
+252,10/11/2018,Ottawa Senators,17,6,0,Tampa Bay Lightning,17,4,1,-,"19,092",2:35,1,2,0,0
+253,11/11/2018,Vegas Golden Knights,18,1,0,Boston Bruins,17,4,1,-,"17,565",2:30,0,0,1,2
+254,11/11/2018,Colorado Avalanche,17,4,0,Edmonton Oilers,17,1,1,-,"18,347",2:14,1,2,0,0
+255,11/11/2018,Ottawa Senators,18,1,0,Florida Panthers,14,5,1,-,"11,192",2:35,0,0,1,2
+256,11/11/2018,Calgary Flames,18,1,0,San Jose Sharks,18,3,1,-,"17,562",2:22,0,0,1,2
+257,11/11/2018,Minnesota Wild,17,3,0,St. Louis Blues,15,2,1,-,"16,735",2:33,1,2,0,0
+258,11/11/2018,New Jersey Devils,15,2,0,Winnipeg Jets,16,5,1,-,"15,321",2:30,0,0,1,2
+259,11/11/2018,Arizona Coyotes,16,4,0,Washington Capitals,16,1,1,-,"18,506",2:27,1,2,0,0
+260,12/11/2018,Nashville Predators,17,1,0,Anaheim Ducks,19,2,1,SO,"16,629",3:04,0,1,1,2
+261,12/11/2018,Chicago Blackhawks,18,2,0,Carolina Hurricanes,18,3,1,OT,"11,221",2:28,0,1,1,2
+262,12/11/2018,Columbus Blue Jackets,18,2,0,Dallas Stars,18,1,1,-,"17,543",2:32,1,2,0,0
+263,12/11/2018,Vancouver Canucks,19,1,0,New York Rangers,18,2,1,-,"17,100",2:28,0,0,1,2
+264,13/11/2018,Tampa Bay Lightning,18,1,0,Buffalo Sabres,18,2,1,-,"15,833",2:31,0,0,1,2
+265,13/11/2018,Arizona Coyotes,17,1,0,Detroit Red Wings,18,6,1,-,"18,257",2:39,0,0,1,2
+266,13/11/2018,Montreal Canadiens,18,2,0,Edmonton Oilers,18,6,1,-,"18,347",2:28,0,0,1,2
+267,13/11/2018,Toronto Maple Leafs,18,5,0,Los Angeles Kings,17,1,1,-,"17,859",2:21,1,2,0,0
+268,13/11/2018,Washington Capitals,17,5,0,Minnesota Wild,18,2,1,-,"19,101",2:33,1,2,0,0
+269,13/11/2018,Pittsburgh Penguins,16,2,0,New Jersey Devils,16,4,1,-,"15,108",2:41,0,0,1,2
+270,13/11/2018,Vancouver Canucks,20,2,0,New York Islanders,17,5,1,-,"8,806",2:26,0,0,1,2
+271,13/11/2018,Florida Panthers,15,2,0,Philadelphia Flyers,18,1,1,-,"19,147",2:30,1,2,0,0
+272,13/11/2018,Nashville Predators,18,4,0,San Jose Sharks,19,5,1,-,"16,654",2:33,0,0,1,2
+273,14/11/2018,St. Louis Blues,16,0,0,Chicago Blackhawks,19,1,1,-,"21,401",2:19,0,0,1,2
+274,14/11/2018,Boston Bruins,18,3,0,Colorado Avalanche,18,6,1,-,"16,124",2:20,0,0,1,2
+275,14/11/2018,Anaheim Ducks,20,0,0,Vegas Golden Knights,19,5,1,-,"18,111",2:25,0,0,1,2
+276,14/11/2018,Washington Capitals,18,1,0,Winnipeg Jets,17,3,1,-,"15,321",2:22,0,0,1,2
+277,15/11/2018,Nashville Predators,19,1,0,Arizona Coyotes,18,2,1,-,"13,315",2:29,0,0,1,2
+278,15/11/2018,Florida Panthers,16,3,0,Columbus Blue Jackets,19,7,1,-,"14,872",2:31,0,0,1,2
+279,15/11/2018,Montreal Canadiens,19,3,0,Calgary Flames,19,2,1,-,"18,443",2:32,1,2,0,0
+280,15/11/2018,Vancouver Canucks,21,2,0,Minnesota Wild,19,6,1,-,"19,014",2:35,0,0,1,2
+281,15/11/2018,New York Rangers,19,5,0,New York Islanders,18,7,1,-,"13,472",2:40,0,0,1,2
+282,15/11/2018,Detroit Red Wings,19,1,0,Ottawa Senators,19,2,1,-,"13,402",2:39,0,0,1,2
+283,15/11/2018,New Jersey Devils,17,3,0,Philadelphia Flyers,19,0,1,-,"18,806",2:34,1,2,0,0
+284,15/11/2018,Tampa Bay Lightning,19,4,0,Pittsburgh Penguins,17,3,1,-,"18,422",2:31,1,2,0,0
+285,15/11/2018,Toronto Maple Leafs,19,5,0,San Jose Sharks,20,3,1,-,"17,011",2:27,1,2,0,0
+286,16/11/2018,Toronto Maple Leafs,20,2,0,Anaheim Ducks,21,1,1,OT,"16,666",2:34,1,2,0,1
+287,16/11/2018,Los Angeles Kings,18,2,0,Chicago Blackhawks,20,1,1,SO,"21,227",2:36,1,2,0,1
+288,16/11/2018,Washington Capitals,19,3,0,Colorado Avalanche,19,2,1,OT,"18,050",2:35,1,2,0,1
+289,16/11/2018,Boston Bruins,19,0,0,Dallas Stars,19,1,1,OT,"18,532",2:37,0,1,1,2
+290,16/11/2018,St. Louis Blues,17,4,0,Vegas Golden Knights,20,1,1,-,"18,488",2:25,1,2,0,0
+291,16/11/2018,Buffalo Sabres,19,2,0,Winnipeg Jets,18,1,1,SO,"15,321",2:37,1,2,0,1
+292,17/11/2018,Boston Bruins,20,2,0,Arizona Coyotes,19,1,1,-,"16,386",2:23,1,2,0,0
+293,17/11/2018,Columbus Blue Jackets,20,4,0,Carolina Hurricanes,19,1,1,-,"13,040",2:25,1,2,0,0
+294,17/11/2018,Edmonton Oilers,19,2,0,Calgary Flames,20,4,1,-,"19,289",2:45,0,0,1,2
+295,17/11/2018,Buffalo Sabres,20,3,0,Minnesota Wild,20,2,1,-,"18,947",2:22,1,2,0,0
+296,17/11/2018,Detroit Red Wings,20,3,0,New Jersey Devils,18,2,1,OT,"16,514",2:37,1,2,0,1
+297,17/11/2018,Los Angeles Kings,19,3,0,Nashville Predators,20,5,1,-,"17,627",2:34,0,0,1,2
+298,17/11/2018,Florida Panthers,17,2,0,New York Rangers,20,4,1,-,"18,006",2:30,0,0,1,2
+299,17/11/2018,Pittsburgh Penguins,18,4,0,Ottawa Senators,20,6,1,-,"17,692",2:28,0,0,1,2
+300,17/11/2018,Tampa Bay Lightning,20,6,0,Philadelphia Flyers,20,5,1,OT,"19,060",2:40,1,2,0,1
+301,17/11/2018,St. Louis Blues,18,0,0,San Jose Sharks,21,4,1,-,"17,417",2:24,0,0,1,2
+302,17/11/2018,Montreal Canadiens,20,3,0,Vancouver Canucks,22,2,1,-,"17,880",2:35,1,2,0,0
+303,18/11/2018,Colorado Avalanche,20,4,0,Anaheim Ducks,22,3,1,OT,"16,502",2:40,1,2,0,1
+304,18/11/2018,New Jersey Devils,19,1,0,Carolina Hurricanes,20,2,1,-,"11,211",2:30,0,0,1,2
+305,18/11/2018,Minnesota Wild,21,1,0,Chicago Blackhawks,21,3,1,-,"21,373",2:33,0,0,1,2
+306,18/11/2018,Vegas Golden Knights,21,6,0,Edmonton Oilers,20,3,1,-,"18,347",2:31,1,2,0,0
+307,18/11/2018,Dallas Stars,20,6,0,New York Islanders,19,2,1,-,"10,650",2:24,1,2,0,0
+308,19/11/2018,Vegas Golden Knights,22,2,0,Calgary Flames,21,7,1,-,"17,635",2:23,0,0,1,2
+309,19/11/2018,Washington Capitals,20,5,0,Montreal Canadiens,21,4,1,OT,"21,911",2:52,1,2,0,1
+310,19/11/2018,Tampa Bay Lightning,21,2,0,Nashville Predators,21,3,1,-,"17,419",2:29,0,0,1,2
+311,19/11/2018,Dallas Stars,21,1,0,New York Rangers,21,2,1,-,"17,071",2:22,0,0,1,2
+312,19/11/2018,Florida Panthers,18,7,0,Ottawa Senators,21,5,1,-,"11,570",2:41,1,2,0,0
+313,19/11/2018,Buffalo Sabres,21,5,0,Pittsburgh Penguins,19,4,1,OT,"18,618",2:37,1,2,0,1
+314,19/11/2018,Los Angeles Kings,20,2,0,St. Louis Blues,19,0,1,-,"16,860",2:21,1,2,0,0
+315,19/11/2018,Columbus Blue Jackets,21,2,0,Toronto Maple Leafs,21,4,1,-,"19,134",2:32,0,0,1,2
+316,19/11/2018,Winnipeg Jets,19,6,0,Vancouver Canucks,23,3,1,-,"17,917",2:32,1,2,0,0
+317,20/11/2018,Edmonton Oilers,21,4,0,San Jose Sharks,22,3,1,OT,"17,562",2:30,1,2,0,1
+318,21/11/2018,Vancouver Canucks,24,3,0,Anaheim Ducks,23,4,1,-,"16,091",2:32,0,0,1,2
+319,21/11/2018,Vegas Golden Knights,23,3,0,Arizona Coyotes,20,2,1,OT,"14,151",2:39,1,2,0,1
+320,21/11/2018,Philadelphia Flyers,21,2,0,Buffalo Sabres,22,5,1,-,"19,070",2:26,0,0,1,2
+321,21/11/2018,Toronto Maple Leafs,22,2,0,Carolina Hurricanes,21,5,1,-,"12,562",2:31,0,0,1,2
+322,21/11/2018,Winnipeg Jets,20,3,0,Calgary Flames,22,6,1,-,"17,661",2:35,0,0,1,2
+323,21/11/2018,Boston Bruins,21,2,0,Detroit Red Wings,21,3,1,OT,"19,515",2:29,0,1,1,2
+324,21/11/2018,Colorado Avalanche,21,7,0,Los Angeles Kings,21,3,1,-,"17,840",2:40,1,2,0,0
+325,21/11/2018,Ottawa Senators,22,4,0,Minnesota Wild,22,6,1,-,"19,035",2:36,0,0,1,2
+326,21/11/2018,Montreal Canadiens,22,2,0,New Jersey Devils,20,5,1,-,"16,514",2:24,0,0,1,2
+327,21/11/2018,St. Louis Blues,20,1,0,Nashville Predators,22,4,1,-,"17,558",2:39,0,0,1,2
+328,21/11/2018,New York Islanders,20,0,0,New York Rangers,22,5,1,-,"17,297",2:25,0,0,1,2
+329,21/11/2018,Dallas Stars,22,1,0,Pittsburgh Penguins,20,5,1,-,"18,430",2:18,0,0,1,2
+330,21/11/2018,Florida Panthers,19,3,0,Tampa Bay Lightning,22,7,1,-,"19,092",2:28,0,0,1,2
+331,21/11/2018,Chicago Blackhawks,22,2,0,Washington Capitals,21,4,1,-,"18,506",2:30,0,0,1,2
+332,23/11/2018,Edmonton Oilers,22,1,0,Anaheim Ducks,24,2,1,OT,"16,497",2:23,0,1,1,2
+333,23/11/2018,Colorado Avalanche,22,5,0,Arizona Coyotes,21,1,1,-,"12,029",2:30,1,2,0,0
+334,23/11/2018,Pittsburgh Penguins,21,1,0,Boston Bruins,22,2,1,OT,"17,565",2:41,0,1,1,2
+335,23/11/2018,Montreal Canadiens,23,2,0,Buffalo Sabres,23,3,1,OT,"19,070",2:37,0,1,1,2
+336,23/11/2018,Florida Panthers,20,1,0,Carolina Hurricanes,22,4,1,-,"13,226",2:28,0,0,1,2
+337,23/11/2018,Toronto Maple Leafs,23,2,0,Columbus Blue Jackets,22,4,1,-,"18,656",2:21,0,0,1,2
+338,23/11/2018,Ottawa Senators,23,4,0,Dallas Stars,23,6,1,-,"18,532",2:40,0,0,1,2
+339,23/11/2018,Winnipeg Jets,21,2,0,Minnesota Wild,23,4,1,-,"19,116",2:42,0,0,1,2
+340,23/11/2018,New York Islanders,21,4,0,New Jersey Devils,21,3,1,OT,"16,514",2:38,1,2,0,1
+341,23/11/2018,New York Rangers,23,0,0,Philadelphia Flyers,22,4,1,-,"19,523",2:31,0,0,1,2
+342,23/11/2018,Vancouver Canucks,25,0,0,San Jose Sharks,23,4,1,-,"17,056",2:21,0,0,1,2
+343,23/11/2018,Nashville Predators,23,2,0,St. Louis Blues,21,6,1,-,"16,192",2:30,0,0,1,2
+344,23/11/2018,Chicago Blackhawks,23,2,0,Tampa Bay Lightning,23,4,1,-,"19,092",2:20,0,0,1,2
+345,23/11/2018,Calgary Flames,23,0,0,Vegas Golden Knights,24,2,1,-,"18,206",2:25,0,0,1,2
+346,23/11/2018,Detroit Red Wings,22,1,0,Washington Capitals,22,3,1,-,"18,506",2:32,0,0,1,2
+347,24/11/2018,Dallas Stars,24,2,0,Colorado Avalanche,23,3,1,-,"18,010",2:31,0,0,1,2
+348,24/11/2018,Buffalo Sabres,24,3,0,Detroit Red Wings,23,2,1,SO,"19,515",2:51,1,2,0,1
+349,24/11/2018,Chicago Blackhawks,24,5,0,Florida Panthers,21,4,1,OT,"14,283",2:37,1,2,0,1
+350,24/11/2018,Vancouver Canucks,26,4,0,Los Angeles Kings,22,2,1,-,"17,725",2:23,1,2,0,0
+351,24/11/2018,Boston Bruins,23,3,0,Montreal Canadiens,24,2,1,-,"21,302",2:37,1,2,0,0
+352,24/11/2018,Carolina Hurricanes,23,1,0,New York Islanders,22,4,1,-,"10,015",2:23,0,0,1,2
+353,24/11/2018,Washington Capitals,23,5,0,New York Rangers,24,3,1,-,"16,884",2:17,1,2,0,0
+354,24/11/2018,Columbus Blue Jackets,23,2,0,Pittsburgh Penguins,22,4,1,-,"18,602",2:37,0,0,1,2
+355,24/11/2018,Winnipeg Jets,22,8,0,St. Louis Blues,22,4,1,-,"17,028",2:35,1,2,0,0
+356,24/11/2018,Philadelphia Flyers,23,0,0,Toronto Maple Leafs,24,6,1,-,"19,373",2:25,0,0,1,2
+357,24/11/2018,San Jose Sharks,24,0,0,Vegas Golden Knights,25,6,1,-,"18,252",2:34,0,0,1,2
+358,25/11/2018,Calgary Flames,24,6,0,Arizona Coyotes,22,1,1,-,"12,821",2:29,1,2,0,0
+359,25/11/2018,Edmonton Oilers,23,2,0,Los Angeles Kings,23,5,1,-,"17,581",2:39,0,0,1,2
+360,25/11/2018,Anaheim Ducks,25,2,0,Nashville Predators,24,5,1,-,"17,167",2:43,0,0,1,2
+361,25/11/2018,New Jersey Devils,22,2,0,Tampa Bay Lightning,24,5,1,-,"19,092",2:33,0,0,1,2
+362,26/11/2018,Columbus Blue Jackets,24,7,0,Detroit Red Wings,24,5,1,-,"17,510",2:31,1,2,0,0
+363,26/11/2018,New Jersey Devils,23,3,0,Florida Panthers,22,4,1,OT,"9,456",2:43,0,1,1,2
+364,26/11/2018,Washington Capitals,24,4,0,New York Islanders,23,1,1,-,"9,072",2:20,1,2,0,0
+365,26/11/2018,Ottawa Senators,24,2,0,New York Rangers,25,4,1,-,"16,709",2:37,0,0,1,2
+366,26/11/2018,Boston Bruins,24,2,0,Toronto Maple Leafs,25,4,1,-,"19,286",2:27,0,0,1,2
+367,27/11/2018,San Jose Sharks,25,2,0,Buffalo Sabres,25,3,1,OT,"19,070",2:39,0,1,1,2
+368,27/11/2018,Vegas Golden Knights,26,8,0,Chicago Blackhawks,25,3,1,-,"21,460",2:26,1,2,0,0
+369,27/11/2018,Dallas Stars,25,0,0,Edmonton Oilers,24,1,1,OT,"18,347",2:32,0,1,1,2
+370,27/11/2018,Arizona Coyotes,23,4,0,Minnesota Wild,24,3,1,-,"18,706",2:27,1,2,0,0
+371,27/11/2018,Carolina Hurricanes,24,2,0,Montreal Canadiens,25,1,1,-,"20,835",2:27,1,2,0,0
+372,27/11/2018,Colorado Avalanche,24,3,0,Nashville Predators,25,2,1,-,"17,163",2:29,1,2,0,0
+373,27/11/2018,Ottawa Senators,25,4,0,Philadelphia Flyers,24,3,1,-,"19,083",2:28,1,2,0,0
+374,27/11/2018,Anaheim Ducks,26,3,0,Tampa Bay Lightning,25,1,1,-,"19,092",2:25,1,2,0,0
+375,27/11/2018,Los Angeles Kings,24,2,0,Vancouver Canucks,27,1,1,OT,"17,790",2:26,1,2,0,1
+376,27/11/2018,Pittsburgh Penguins,23,4,0,Winnipeg Jets,23,3,1,-,"15,321",2:23,1,2,0,0
+377,28/11/2018,Dallas Stars,26,4,0,Calgary Flames,25,3,1,OT,"17,676",2:32,1,2,0,1
+378,28/11/2018,Pittsburgh Penguins,24,3,0,Colorado Avalanche,25,6,1,-,"17,348",2:31,0,0,1,2
+379,28/11/2018,St. Louis Blues,23,3,0,Detroit Red Wings,25,4,1,-,"18,165",2:36,0,0,1,2
+380,28/11/2018,Anaheim Ducks,27,3,0,Florida Panthers,23,2,1,-,"9,078",2:31,1,2,0,0
+381,28/11/2018,San Jose Sharks,26,3,0,Toronto Maple Leafs,26,5,1,-,"19,362",2:36,0,0,1,2
+382,29/11/2018,New York Islanders,24,1,0,Boston Bruins,25,2,1,SO,"17,565",2:42,0,1,1,2
+383,29/11/2018,Minnesota Wild,25,2,0,Columbus Blue Jackets,25,4,1,-,"15,210",2:28,0,0,1,2
+384,29/11/2018,Los Angeles Kings,25,2,0,Edmonton Oilers,25,3,1,-,"18,347",2:35,0,0,1,2
+385,29/11/2018,Arizona Coyotes,24,3,0,Nashville Predators,26,0,1,-,"17,165",2:33,1,2,0,0
+386,29/11/2018,New York Rangers,26,0,0,Ottawa Senators,26,3,1,-,"10,921",2:13,0,0,1,2
+387,29/11/2018,Buffalo Sabres,26,4,0,Tampa Bay Lightning,26,5,1,-,"19,092",2:33,0,0,1,2
+388,29/11/2018,Vegas Golden Knights,27,4,0,Vancouver Canucks,28,3,1,-,"16,880",2:25,1,2,0,0
+389,29/11/2018,Chicago Blackhawks,26,5,0,Winnipeg Jets,24,6,1,-,"15,321",2:21,0,0,1,2
+390,30/11/2018,Anaheim Ducks,28,2,0,Carolina Hurricanes,25,1,1,OT,"13,987",2:34,1,2,0,1
+391,30/11/2018,Los Angeles Kings,26,1,0,Calgary Flames,26,4,1,-,"17,989",2:18,0,0,1,2
+392,30/11/2018,St. Louis Blues,24,3,0,Colorado Avalanche,26,2,1,OT,"18,021",2:38,1,2,0,1
+393,30/11/2018,Buffalo Sabres,27,2,0,Florida Panthers,24,3,1,OT,"12,179",2:36,0,1,1,2
+394,30/11/2018,New Jersey Devils,24,3,0,Washington Capitals,25,6,1,-,"18,506",2:33,0,0,1,2
+395,1/12/2018,St. Louis Blues,25,1,0,Arizona Coyotes,25,6,1,-,"13,451",2:30,0,0,1,2
+396,1/12/2018,Detroit Red Wings,26,4,0,Boston Bruins,26,2,1,-,"17,565",2:40,1,2,0,0
+397,1/12/2018,Vegas Golden Knights,28,1,0,Edmonton Oilers,26,2,1,-,"18,347",2:19,0,0,1,2
+398,1/12/2018,Tampa Bay Lightning,27,5,0,Florida Panthers,25,4,1,OT,"12,361",2:47,1,2,0,1
+399,1/12/2018,Toronto Maple Leafs,27,5,0,Minnesota Wild,26,3,1,-,"19,107",2:31,1,2,0,0
+400,1/12/2018,New York Rangers,27,2,0,Montreal Canadiens,26,5,1,-,"21,302",2:26,0,0,1,2
+401,1/12/2018,Winnipeg Jets,25,4,0,New Jersey Devils,25,3,1,OT,"16,514",2:46,1,2,0,1
+402,1/12/2018,Chicago Blackhawks,27,2,0,Nashville Predators,27,5,1,-,"17,548",2:26,0,0,1,2
+403,1/12/2018,Columbus Blue Jackets,26,2,0,New York Islanders,25,3,1,-,"13,917",2:30,0,0,1,2
+404,1/12/2018,San Jose Sharks,27,2,0,Ottawa Senators,27,6,1,-,"17,531",2:37,0,0,1,2
+405,1/12/2018,Philadelphia Flyers,25,4,0,Pittsburgh Penguins,25,2,1,-,"18,653",2:23,1,2,0,0
+406,1/12/2018,Dallas Stars,27,2,0,Vancouver Canucks,29,1,1,-,"17,387",2:30,1,2,0,0
+407,2/12/2018,Calgary Flames,27,3,0,Chicago Blackhawks,28,2,1,-,"21,074",2:30,1,2,0,0
+408,2/12/2018,Colorado Avalanche,27,2,0,Detroit Red Wings,27,0,1,-,"18,248",2:32,1,2,0,0
+409,2/12/2018,Carolina Hurricanes,26,0,0,Los Angeles Kings,27,2,1,-,"17,546",2:38,0,0,1,2
+410,2/12/2018,San Jose Sharks,28,3,0,Montreal Canadiens,27,1,1,-,"20,301",2:24,1,2,0,0
+411,2/12/2018,Winnipeg Jets,26,4,0,New York Rangers,28,3,1,SO,"17,464",2:42,1,2,0,1
+412,2/12/2018,Anaheim Ducks,29,6,0,Washington Capitals,26,5,1,-,"18,506",2:35,1,2,0,0
+413,3/12/2018,Edmonton Oilers,27,1,0,Dallas Stars,28,4,1,-,"18,125",2:34,0,0,1,2
+414,3/12/2018,Tampa Bay Lightning,28,5,0,New Jersey Devils,26,1,1,-,"13,394",2:32,1,2,0,0
+415,3/12/2018,Buffalo Sabres,28,1,0,Nashville Predators,28,2,1,-,"17,311",2:31,0,0,1,2
+416,4/12/2018,Toronto Maple Leafs,28,4,0,Buffalo Sabres,29,3,1,OT,"19,070",2:38,1,2,0,1
+417,4/12/2018,Calgary Flames,28,9,0,Columbus Blue Jackets,27,6,1,-,"14,885",2:30,1,2,0,0
+418,4/12/2018,Tampa Bay Lightning,29,6,0,Detroit Red Wings,28,5,1,SO,"18,477",2:42,1,2,0,1
+419,4/12/2018,Boston Bruins,27,0,0,Florida Panthers,26,5,1,-,"12,058",2:40,0,0,1,2
+420,4/12/2018,Arizona Coyotes,26,2,0,Los Angeles Kings,28,1,1,-,"17,203",2:32,1,2,0,0
+421,4/12/2018,Ottawa Senators,28,2,0,Montreal Canadiens,28,5,1,-,"20,705",2:25,0,0,1,2
+422,4/12/2018,Winnipeg Jets,27,3,0,New York Islanders,26,1,1,-,"9,125",2:22,1,2,0,0
+423,4/12/2018,Colorado Avalanche,28,3,0,Pittsburgh Penguins,26,6,1,-,"18,415",2:34,0,0,1,2
+424,4/12/2018,Minnesota Wild,27,3,0,Vancouver Canucks,30,2,1,-,"17,122",2:25,1,2,0,0
+425,4/12/2018,Washington Capitals,27,3,0,Vegas Golden Knights,29,5,1,-,"18,275",2:36,0,0,1,2
+426,5/12/2018,Chicago Blackhawks,29,2,0,Anaheim Ducks,30,4,1,-,"15,696",2:24,0,0,1,2
+427,5/12/2018,Carolina Hurricanes,27,1,0,San Jose Sharks,29,5,1,-,"17,119",2:24,0,0,1,2
+428,5/12/2018,Edmonton Oilers,28,3,0,St. Louis Blues,26,2,1,SO,"16,551",2:37,1,2,0,1
+429,6/12/2018,Washington Capitals,28,4,0,Arizona Coyotes,27,2,1,-,"11,910",2:21,1,2,0,0
+430,6/12/2018,Minnesota Wild,28,0,0,Calgary Flames,29,2,1,-,"17,690",2:33,0,0,1,2
+431,6/12/2018,Colorado Avalanche,29,5,0,Florida Panthers,27,2,1,-,"10,077",2:29,1,2,0,0
+432,6/12/2018,New Jersey Devils,27,6,0,Los Angeles Kings,29,3,1,-,"17,568",2:47,1,2,0,0
+433,6/12/2018,Montreal Canadiens,29,5,0,Ottawa Senators,29,2,1,-,"15,820",2:24,1,2,0,0
+434,6/12/2018,Columbus Blue Jackets,28,4,0,Philadelphia Flyers,26,3,1,OT,"19,428",2:30,1,2,0,1
+435,6/12/2018,New York Islanders,27,2,0,Pittsburgh Penguins,27,6,1,-,"18,440",2:25,0,0,1,2
+436,6/12/2018,Boston Bruins,28,2,0,Tampa Bay Lightning,30,3,1,-,"19,092",2:24,0,0,1,2
+437,6/12/2018,Detroit Red Wings,29,5,0,Toronto Maple Leafs,29,4,1,OT,"19,392",2:37,1,2,0,1
+438,6/12/2018,Nashville Predators,29,3,0,Vancouver Canucks,31,5,1,-,"16,894",2:25,0,0,1,2
+439,6/12/2018,Chicago Blackhawks,30,3,0,Vegas Golden Knights,30,4,1,-,"18,494",2:32,0,0,1,2
+440,7/12/2018,Carolina Hurricanes,28,4,0,Anaheim Ducks,31,1,1,-,"15,573",2:35,1,2,0,0
+441,7/12/2018,San Jose Sharks,30,2,0,Dallas Stars,29,3,1,-,"18,342",2:26,0,0,1,2
+442,7/12/2018,Minnesota Wild,29,2,0,Edmonton Oilers,29,7,1,-,"18,347",2:28,0,0,1,2
+443,7/12/2018,St. Louis Blues,27,1,0,Winnipeg Jets,28,0,1,-,"15,321",2:27,1,2,0,0
+444,8/12/2018,San Jose Sharks,31,5,0,Arizona Coyotes,28,3,1,-,"13,780",2:29,1,2,0,0
+445,8/12/2018,Toronto Maple Leafs,30,3,0,Boston Bruins,29,6,1,-,"17,565",2:39,0,0,1,2
+446,8/12/2018,Philadelphia Flyers,27,6,0,Buffalo Sabres,30,2,1,-,"18,283",2:29,1,2,0,0
+447,8/12/2018,Washington Capitals,29,4,0,Columbus Blue Jackets,29,0,1,-,"18,501",2:29,1,2,0,0
+448,8/12/2018,Nashville Predators,30,2,0,Calgary Flames,30,5,1,-,"17,717",2:17,0,0,1,2
+449,8/12/2018,New York Islanders,28,3,0,Detroit Red Wings,30,2,1,-,"19,515",2:39,1,2,0,0
+450,8/12/2018,New York Rangers,29,5,0,Florida Panthers,28,4,1,SO,"15,295",2:43,1,2,0,1
+451,8/12/2018,Vegas Golden Knights,31,1,0,Los Angeles Kings,30,5,1,-,"17,631",2:25,0,0,1,2
+452,8/12/2018,Pittsburgh Penguins,28,1,0,Ottawa Senators,30,2,1,OT,"15,795",2:28,0,1,1,2
+453,8/12/2018,Colorado Avalanche,30,1,0,Tampa Bay Lightning,31,7,1,-,"19,092",2:32,0,0,1,2
+454,9/12/2018,New Jersey Devils,28,5,0,Anaheim Ducks,32,6,1,SO,"16,470",2:45,0,1,1,2
+455,9/12/2018,Montreal Canadiens,30,3,0,Chicago Blackhawks,31,2,1,-,"21,057",2:32,1,2,0,0
+456,9/12/2018,Calgary Flames,31,0,0,Edmonton Oilers,30,1,1,-,"18,347",2:25,0,0,1,2
+457,9/12/2018,Boston Bruins,30,2,0,Ottawa Senators,31,1,1,OT,"13,148",2:33,1,2,0,1
+458,9/12/2018,Vancouver Canucks,32,6,0,St. Louis Blues,28,1,1,-,"16,841",2:22,1,2,0,0
+459,9/12/2018,Dallas Stars,30,2,0,Vegas Golden Knights,32,4,1,-,"18,240",2:31,0,0,1,2
+460,9/12/2018,Philadelphia Flyers,28,1,0,Winnipeg Jets,29,7,1,-,"15,321",2:38,0,0,1,2
+461,10/12/2018,Los Angeles Kings,31,1,0,Detroit Red Wings,31,3,1,-,"18,322",2:24,0,0,1,2
+462,10/12/2018,Pittsburgh Penguins,29,2,0,New York Islanders,29,1,1,SO,"13,917",2:43,1,2,0,1
+463,10/12/2018,New Jersey Devils,29,2,0,San Jose Sharks,32,5,1,-,"17,097",2:28,0,0,1,2
+464,10/12/2018,New York Rangers,30,3,0,Tampa Bay Lightning,32,6,1,-,"19,092",2:33,0,0,1,2
+465,11/12/2018,Arizona Coyotes,29,3,0,Boston Bruins,31,4,1,-,"17,565",2:35,0,0,1,2
+466,11/12/2018,Los Angeles Kings,32,3,0,Buffalo Sabres,31,4,1,OT,"17,897",2:50,0,1,1,2
+467,11/12/2018,Toronto Maple Leafs,31,4,0,Carolina Hurricanes,29,1,1,-,"11,907",2:21,1,2,0,0
+468,11/12/2018,Vancouver Canucks,33,3,0,Columbus Blue Jackets,30,2,1,-,"14,689",2:28,1,2,0,0
+469,11/12/2018,Edmonton Oilers,31,6,0,Colorado Avalanche,31,4,1,-,"15,809",2:36,1,2,0,0
+470,11/12/2018,Montreal Canadiens,31,1,0,Minnesota Wild,30,7,1,-,"18,681",2:24,0,0,1,2
+471,11/12/2018,Ottawa Senators,32,1,0,Nashville Predators,31,3,1,-,"17,162",2:24,0,0,1,2
+472,11/12/2018,Florida Panthers,29,3,0,St. Louis Blues,29,4,1,-,"16,255",2:38,0,0,1,2
+473,11/12/2018,Chicago Blackhawks,32,3,0,Winnipeg Jets,30,6,1,-,"15,321",2:23,0,0,1,2
+474,11/12/2018,Detroit Red Wings,32,2,0,Washington Capitals,30,6,1,-,"18,506",2:35,0,0,1,2
+475,12/12/2018,Dallas Stars,31,3,0,Anaheim Ducks,33,6,1,-,"16,810",2:32,0,0,1,2
+476,12/12/2018,Philadelphia Flyers,29,5,0,Calgary Flames,32,6,1,OT,"17,763",2:31,0,1,1,2
+477,12/12/2018,Pittsburgh Penguins,30,3,0,Chicago Blackhawks,33,6,1,-,"21,232",2:28,0,0,1,2
+478,12/12/2018,Vegas Golden Knights,33,3,0,New York Islanders,30,2,1,-,"9,182",2:39,1,2,0,0
+479,13/12/2018,Arizona Coyotes,30,1,0,Buffalo Sabres,32,3,1,-,"16,872",2:33,0,0,1,2
+480,13/12/2018,Los Angeles Kings,33,1,0,Columbus Blue Jackets,31,4,1,-,"15,087",2:30,0,0,1,2
+481,13/12/2018,Florida Panthers,30,1,0,Minnesota Wild,31,5,1,-,"18,714",2:32,0,0,1,2
+482,13/12/2018,Carolina Hurricanes,30,4,0,Montreal Canadiens,32,6,1,-,"20,407",2:33,0,0,1,2
+483,13/12/2018,Vancouver Canucks,34,3,0,Nashville Predators,32,4,1,OT,"17,206",2:41,0,1,1,2
+484,13/12/2018,Dallas Stars,32,2,0,San Jose Sharks,33,3,1,-,"17,185",2:30,0,0,1,2
+485,13/12/2018,Toronto Maple Leafs,32,1,0,Tampa Bay Lightning,33,4,1,-,"19,092",2:39,0,0,1,2
+486,13/12/2018,Edmonton Oilers,32,4,0,Winnipeg Jets,31,5,1,OT,"15,321",2:35,0,1,1,2
+487,14/12/2018,Washington Capitals,31,6,0,Carolina Hurricanes,31,5,1,SO,"14,446",2:45,1,2,0,1
+488,14/12/2018,Winnipeg Jets,32,4,0,Chicago Blackhawks,34,3,1,OT,"21,235",2:33,1,2,0,1
+489,14/12/2018,Ottawa Senators,33,4,0,Detroit Red Wings,33,2,1,-,"18,330",2:32,1,2,0,0
+490,14/12/2018,Philadelphia Flyers,30,1,0,Edmonton Oilers,33,4,1,-,"18,347",2:24,0,0,1,2
+491,14/12/2018,Vegas Golden Knights,34,4,0,New Jersey Devils,30,5,1,OT,"14,076",2:31,0,1,1,2
+492,14/12/2018,Arizona Coyotes,31,4,0,New York Rangers,31,3,1,OT,"17,441",2:33,1,2,0,1
+493,14/12/2018,Boston Bruins,32,3,0,Pittsburgh Penguins,31,5,1,-,"18,549",2:32,0,0,1,2
+494,14/12/2018,Colorado Avalanche,32,3,0,St. Louis Blues,30,4,1,OT,"16,366",2:39,0,1,1,2
+495,15/12/2018,Anaheim Ducks,34,2,0,Columbus Blue Jackets,32,1,1,OT,"16,171",2:33,1,2,0,1
+496,15/12/2018,Dallas Stars,33,4,0,Colorado Avalanche,33,6,1,-,"17,626",2:54,0,0,1,2
+497,15/12/2018,Toronto Maple Leafs,33,3,0,Florida Panthers,31,4,1,OT,"14,177",2:48,0,1,1,2
+498,15/12/2018,Calgary Flames,33,2,0,Minnesota Wild,32,1,1,-,"18,882",2:25,1,2,0,0
+499,15/12/2018,Ottawa Senators,34,2,0,Montreal Canadiens,33,5,1,-,"21,302",2:33,0,0,1,2
+500,15/12/2018,New Jersey Devils,31,1,0,Nashville Predators,33,2,1,SO,"17,446",2:57,0,1,1,2
+501,15/12/2018,Detroit Red Wings,34,3,0,New York Islanders,31,4,1,SO,"13,917",2:47,0,1,1,2
+502,15/12/2018,Los Angeles Kings,34,3,0,Pittsburgh Penguins,32,4,1,OT,"18,627",2:32,0,1,1,2
+503,15/12/2018,Philadelphia Flyers,31,1,0,Vancouver Canucks,35,5,1,-,"17,238",2:23,0,0,1,2
+504,15/12/2018,Buffalo Sabres,33,3,0,Washington Capitals,32,4,1,SO,"18,506",2:43,0,1,1,2
+505,16/12/2018,Buffalo Sabres,34,4,0,Boston Bruins,33,2,1,-,"17,565",2:34,1,2,0,0
+506,16/12/2018,Arizona Coyotes,32,0,0,Carolina Hurricanes,32,3,1,-,"13,051",2:25,0,0,1,2
+507,16/12/2018,San Jose Sharks,34,7,0,Chicago Blackhawks,35,3,1,-,"21,237",2:26,1,2,0,0
+508,16/12/2018,Vegas Golden Knights,35,4,0,New York Rangers,32,3,1,OT,"17,660",2:38,1,2,0,1
+509,16/12/2018,Calgary Flames,34,7,0,St. Louis Blues,31,2,1,-,"17,064",2:26,1,2,0,0
+510,16/12/2018,Edmonton Oilers,34,2,0,Vancouver Canucks,36,4,1,-,"18,036",2:23,0,0,1,2
+511,16/12/2018,Tampa Bay Lightning,34,4,0,Winnipeg Jets,33,5,1,OT,"15,321",2:38,0,1,1,2
+512,17/12/2018,Vegas Golden Knights,36,0,0,Columbus Blue Jackets,33,1,1,-,"15,008",2:21,0,0,1,2
+513,17/12/2018,New York Islanders,32,4,0,Colorado Avalanche,34,1,1,-,"15,066",2:29,1,2,0,0
+514,17/12/2018,Boston Bruins,34,4,0,Montreal Canadiens,34,0,1,-,"21,302",2:22,1,2,0,0
+515,17/12/2018,Nashville Predators,34,3,0,Ottawa Senators,35,4,1,OT,"14,492",2:37,0,1,1,2
+516,17/12/2018,Anaheim Ducks,35,4,0,Pittsburgh Penguins,33,2,1,-,"18,575",2:23,1,2,0,0
+517,18/12/2018,New York Islanders,33,3,0,Arizona Coyotes,33,1,1,-,"11,640",2:25,1,2,0,0
+518,18/12/2018,Florida Panthers,32,5,0,Buffalo Sabres,35,2,1,-,"17,602",2:27,1,2,0,0
+519,18/12/2018,Nashville Predators,35,1,0,Chicago Blackhawks,36,2,1,-,"21,223",2:29,0,0,1,2
+520,18/12/2018,Calgary Flames,35,0,0,Dallas Stars,34,2,1,-,"18,127",2:32,0,0,1,2
+521,18/12/2018,St. Louis Blues,32,4,0,Edmonton Oilers,35,1,1,-,"18,347",2:33,1,2,0,0
+522,18/12/2018,Winnipeg Jets,34,1,0,Los Angeles Kings,35,4,1,-,"17,405",2:30,0,0,1,2
+523,18/12/2018,San Jose Sharks,35,4,0,Minnesota Wild,33,0,1,-,"18,870",2:23,1,2,0,0
+524,18/12/2018,Toronto Maple Leafs,34,7,0,New Jersey Devils,32,2,1,-,"14,586",2:30,1,2,0,0
+525,18/12/2018,Anaheim Ducks,36,1,0,New York Rangers,33,3,1,-,"17,590",2:27,0,0,1,2
+526,18/12/2018,Detroit Red Wings,35,2,0,Philadelphia Flyers,32,3,1,-,"19,255",2:30,0,0,1,2
+527,18/12/2018,Tampa Bay Lightning,35,5,0,Vancouver Canucks,37,2,1,-,"17,193",2:42,1,2,0,0
+528,19/12/2018,Montreal Canadiens,35,1,0,Colorado Avalanche,35,2,1,-,"15,469",2:32,0,0,1,2
+529,19/12/2018,Pittsburgh Penguins,34,2,0,Washington Capitals,33,1,1,-,"18,506",2:34,1,2,0,0
+530,20/12/2018,Montreal Canadiens,36,2,0,Arizona Coyotes,34,1,1,-,"11,149",2:29,1,2,0,0
+531,20/12/2018,Anaheim Ducks,37,1,0,Boston Bruins,35,3,1,-,"17,565",2:30,0,0,1,2
+532,20/12/2018,Detroit Red Wings,36,4,0,Carolina Hurricanes,33,1,1,-,"13,548",2:36,1,2,0,0
+533,20/12/2018,New Jersey Devils,33,1,0,Columbus Blue Jackets,34,2,1,-,"15,595",2:30,0,0,1,2
+534,20/12/2018,Tampa Bay Lightning,36,5,0,Calgary Flames,36,4,1,SO,"19,289",2:50,1,2,0,1
+535,20/12/2018,Chicago Blackhawks,37,5,0,Dallas Stars,35,2,1,-,"18,532",2:31,1,2,0,0
+536,20/12/2018,Nashville Predators,36,1,0,Philadelphia Flyers,33,2,1,-,"19,142",2:23,0,0,1,2
+537,20/12/2018,Minnesota Wild,34,1,0,Pittsburgh Penguins,35,2,1,-,"18,435",2:29,0,0,1,2
+538,20/12/2018,Winnipeg Jets,35,5,0,San Jose Sharks,36,3,1,-,"17,213",2:29,1,2,0,0
+539,20/12/2018,Florida Panthers,33,1,0,Toronto Maple Leafs,35,6,1,-,"19,329",2:31,0,0,1,2
+540,20/12/2018,St. Louis Blues,33,1,0,Vancouver Canucks,38,5,1,-,"18,261",2:31,0,0,1,2
+541,20/12/2018,New York Islanders,34,2,0,Vegas Golden Knights,37,4,1,-,"18,226",2:35,0,0,1,2
+542,21/12/2018,Chicago Blackhawks,38,2,0,Colorado Avalanche,36,1,1,-,"17,850",2:26,1,2,0,0
+543,21/12/2018,Ottawa Senators,36,2,0,New Jersey Devils,34,5,1,-,"14,614",2:38,0,0,1,2
+544,21/12/2018,Buffalo Sabres,36,1,0,Washington Capitals,34,2,1,-,"18,506",2:27,0,0,1,2
+545,22/12/2018,Colorado Avalanche,37,4,0,Arizona Coyotes,35,6,1,-,"13,896",2:35,0,0,1,2
+546,22/12/2018,Nashville Predators,37,2,0,Boston Bruins,36,5,1,-,"17,565",2:33,0,0,1,2
+547,22/12/2018,Anaheim Ducks,38,0,0,Buffalo Sabres,37,3,1,-,"19,070",2:33,0,0,1,2
+548,22/12/2018,Pittsburgh Penguins,36,3,0,Carolina Hurricanes,34,0,1,-,"16,264",2:24,1,2,0,0
+549,22/12/2018,St. Louis Blues,34,3,0,Calgary Flames,37,1,1,-,"18,683",2:23,1,2,0,0
+550,22/12/2018,Florida Panthers,34,2,0,Detroit Red Wings,37,1,1,-,"19,515",2:28,1,2,0,0
+551,22/12/2018,Tampa Bay Lightning,37,6,0,Edmonton Oilers,36,3,1,-,"18,347",2:39,1,2,0,0
+552,22/12/2018,Dallas Stars,36,2,0,Minnesota Wild,35,1,1,OT,"19,074",2:40,1,2,0,1
+553,22/12/2018,Washington Capitals,35,4,0,Ottawa Senators,37,0,1,-,"15,605",2:19,1,2,0,0
+554,22/12/2018,Columbus Blue Jackets,35,4,0,Philadelphia Flyers,34,3,1,-,"19,311",2:26,1,2,0,0
+555,22/12/2018,Los Angeles Kings,36,3,0,San Jose Sharks,37,2,1,OT,"17,562",2:35,1,2,0,1
+556,22/12/2018,New York Rangers,34,3,0,Toronto Maple Leafs,36,5,1,-,"19,466",2:21,0,0,1,2
+557,22/12/2018,Winnipeg Jets,36,1,0,Vancouver Canucks,39,0,1,-,"18,028",2:23,1,2,0,0
+558,22/12/2018,Montreal Canadiens,37,4,0,Vegas Golden Knights,38,3,1,OT,"18,173",2:33,1,2,0,1
+559,23/12/2018,Boston Bruins,37,3,0,Carolina Hurricanes,35,5,1,-,"17,491",2:37,0,0,1,2
+560,23/12/2018,Florida Panthers,35,6,0,Chicago Blackhawks,39,3,1,-,"21,789",2:16,1,2,0,0
+561,23/12/2018,New York Islanders,35,3,0,Dallas Stars,37,1,1,-,"18,031",2:26,1,2,0,0
+562,23/12/2018,Columbus Blue Jackets,36,3,0,New Jersey Devils,35,0,1,-,"12,872",2:26,1,2,0,0
+563,23/12/2018,Philadelphia Flyers,35,3,0,New York Rangers,35,2,1,SO,"17,515",2:43,1,2,0,1
+564,23/12/2018,Arizona Coyotes,36,4,0,San Jose Sharks,38,3,1,SO,"17,325",2:38,1,2,0,1
+565,23/12/2018,Detroit Red Wings,38,4,0,Toronto Maple Leafs,37,5,1,OT,"19,196",2:31,0,1,1,2
+566,23/12/2018,Los Angeles Kings,37,4,0,Vegas Golden Knights,39,3,1,OT,"18,225",2:25,1,2,0,1
+567,27/12/2018,New Jersey Devils,36,5,0,Boston Bruins,38,2,1,-,"17,565",2:31,1,2,0,0
+568,27/12/2018,Minnesota Wild,36,2,0,Chicago Blackhawks,40,5,1,-,"21,735",2:36,0,0,1,2
+569,27/12/2018,Vancouver Canucks,40,4,0,Edmonton Oilers,37,2,1,-,"18,347",2:27,1,2,0,0
+570,27/12/2018,Arizona Coyotes,37,1,0,Los Angeles Kings,38,2,1,-,"18,230",2:30,0,0,1,2
+571,27/12/2018,Dallas Stars,38,2,0,Nashville Predators,38,0,1,-,"17,697",2:37,1,2,0,0
+572,27/12/2018,Columbus Blue Jackets,37,4,0,New York Rangers,36,3,1,OT,"18,006",2:29,1,2,0,1
+573,27/12/2018,Detroit Red Wings,39,2,0,Pittsburgh Penguins,37,5,1,-,"18,639",2:28,0,0,1,2
+574,27/12/2018,Anaheim Ducks,39,2,0,San Jose Sharks,39,4,1,-,"17,562",2:24,0,0,1,2
+575,27/12/2018,Buffalo Sabres,38,1,0,St. Louis Blues,35,4,1,-,"17,867",2:21,0,0,1,2
+576,27/12/2018,Philadelphia Flyers,36,5,0,Tampa Bay Lightning,38,6,1,OT,"19,092",2:41,0,1,1,2
+577,27/12/2018,Colorado Avalanche,38,1,0,Vegas Golden Knights,40,2,1,-,"18,505",2:27,0,0,1,2
+578,27/12/2018,Calgary Flames,38,4,0,Winnipeg Jets,37,1,1,-,"15,321",2:29,1,2,0,0
+579,27/12/2018,Carolina Hurricanes,36,1,0,Washington Capitals,36,3,1,-,"18,506",2:29,0,0,1,2
+580,28/12/2018,Toronto Maple Leafs,38,4,0,Columbus Blue Jackets,38,2,1,-,"18,963",2:24,1,2,0,0
+581,28/12/2018,Montreal Canadiens,38,5,0,Florida Panthers,36,3,1,-,"19,512",2:24,1,2,0,0
+582,28/12/2018,Ottawa Senators,38,3,0,New York Islanders,36,6,1,-,"13,434",2:35,0,0,1,2
+583,29/12/2018,Arizona Coyotes,38,5,0,Anaheim Ducks,40,4,1,OT,"17,174",2:33,1,2,0,1
+584,29/12/2018,Boston Bruins,39,3,0,Buffalo Sabres,39,2,1,OT,"19,070",2:29,1,2,0,1
+585,29/12/2018,Vancouver Canucks,41,3,0,Calgary Flames,39,2,1,OT,"19,289",2:35,1,2,0,1
+586,29/12/2018,Chicago Blackhawks,41,3,0,Colorado Avalanche,39,2,1,OT,"18,028",2:33,1,2,0,1
+587,29/12/2018,Detroit Red Wings,40,1,0,Dallas Stars,39,5,1,-,"18,532",2:36,0,0,1,2
+588,29/12/2018,San Jose Sharks,40,7,0,Edmonton Oilers,38,4,1,-,"18,347",2:29,1,2,0,0
+589,29/12/2018,Philadelphia Flyers,37,1,0,Florida Panthers,37,2,1,-,"15,737",2:30,0,0,1,2
+590,29/12/2018,Vegas Golden Knights,41,4,0,Los Angeles Kings,39,1,1,-,"18,230",2:28,1,2,0,0
+591,29/12/2018,Carolina Hurricanes,37,0,0,New Jersey Devils,37,2,1,-,"16,514",2:36,0,0,1,2
+592,29/12/2018,New York Rangers,37,4,0,Nashville Predators,39,3,1,-,"17,673",2:37,1,2,0,0
+593,29/12/2018,Washington Capitals,37,3,0,Ottawa Senators,39,2,1,-,"16,808",2:30,1,2,0,0
+594,29/12/2018,Pittsburgh Penguins,38,6,0,St. Louis Blues,36,1,1,-,"17,475",2:33,1,2,0,0
+595,29/12/2018,Montreal Canadiens,39,5,0,Tampa Bay Lightning,39,6,1,-,"19,092",2:37,0,0,1,2
+596,29/12/2018,New York Islanders,37,4,0,Toronto Maple Leafs,39,0,1,-,"19,514",2:29,1,2,0,0
+597,29/12/2018,Minnesota Wild,37,3,0,Winnipeg Jets,38,1,1,-,"15,321",2:25,1,2,0,0
+598,30/12/2018,Vegas Golden Knights,42,5,0,Arizona Coyotes,39,1,1,-,"17,125",2:31,1,2,0,0
+599,31/12/2018,Tampa Bay Lightning,40,2,0,Anaheim Ducks,41,1,1,OT,"17,340",2:25,1,2,0,1
+600,31/12/2018,New York Islanders,38,3,0,Buffalo Sabres,40,1,1,-,"19,070",2:26,1,2,0,0
+601,31/12/2018,Philadelphia Flyers,38,1,0,Carolina Hurricanes,38,3,1,-,"16,644",2:27,0,0,1,2
+602,31/12/2018,Ottawa Senators,40,3,0,Columbus Blue Jackets,39,6,1,-,"18,549",2:41,0,0,1,2
+603,31/12/2018,San Jose Sharks,41,5,0,Calgary Flames,40,8,1,-,"19,289",2:43,0,0,1,2
+604,31/12/2018,Los Angeles Kings,40,3,0,Colorado Avalanche,40,2,1,OT,"18,017",2:27,1,2,0,1
+605,31/12/2018,Montreal Canadiens,40,3,0,Dallas Stars,40,2,1,OT,"18,532",2:29,1,2,0,1
+606,31/12/2018,Florida Panthers,38,4,0,Detroit Red Wings,41,3,1,SO,"19,515",2:52,1,2,0,1
+607,31/12/2018,Winnipeg Jets,39,4,0,Edmonton Oilers,39,3,1,-,"18,347",2:27,1,2,0,0
+608,31/12/2018,Pittsburgh Penguins,39,3,0,Minnesota Wild,38,2,1,-,"19,163",2:29,1,2,0,0
+609,31/12/2018,Vancouver Canucks,42,0,0,New Jersey Devils,38,4,1,-,"15,772",2:21,0,0,1,2
+610,31/12/2018,New York Rangers,38,2,0,St. Louis Blues,37,1,1,-,"16,849",2:29,1,2,0,0
+611,31/12/2018,Nashville Predators,40,6,0,Washington Capitals,38,3,1,-,"18,506",2:33,1,2,0,0
+612,1/01/2019,Boston Bruins,40,4,0,Chicago Blackhawks,42,2,1,-,"76,126",2:37,1,2,0,0
+613,1/01/2019,Philadelphia Flyers,39,0,0,Nashville Predators,41,4,1,-,"17,481",2:26,0,0,1,2
+614,1/01/2019,Los Angeles Kings,41,0,0,Vegas Golden Knights,43,2,1,-,"18,319",2:23,0,0,1,2
+615,2/01/2019,Edmonton Oilers,40,3,0,Arizona Coyotes,40,1,1,-,"12,583",2:24,1,2,0,0
+616,2/01/2019,San Jose Sharks,42,5,0,Colorado Avalanche,41,4,1,-,"17,891",2:31,1,2,0,0
+617,2/01/2019,New Jersey Devils,39,4,0,Dallas Stars,41,5,1,-,"18,133",2:29,0,0,1,2
+618,2/01/2019,Calgary Flames,41,5,0,Detroit Red Wings,42,3,1,-,"19,515",2:36,1,2,0,0
+619,2/01/2019,Pittsburgh Penguins,40,7,0,New York Rangers,39,2,1,-,"18,006",2:31,1,2,0,0
+620,2/01/2019,Vancouver Canucks,43,4,0,Ottawa Senators,41,3,1,OT,"16,358",2:41,1,2,0,1
+621,3/01/2019,Calgary Flames,42,4,0,Boston Bruins,41,6,1,-,"17,565",2:23,0,0,1,2
+622,3/01/2019,Florida Panthers,39,3,0,Buffalo Sabres,41,4,1,-,"18,551",2:36,0,0,1,2
+623,3/01/2019,Tampa Bay Lightning,41,6,0,Los Angeles Kings,42,2,1,-,"17,551",2:30,1,2,0,0
+624,3/01/2019,Vancouver Canucks,44,0,0,Montreal Canadiens,41,2,1,-,"21,302",2:35,0,0,1,2
+625,3/01/2019,Chicago Blackhawks,43,2,0,New York Islanders,39,3,1,OT,"13,454",2:33,0,1,1,2
+626,3/01/2019,Carolina Hurricanes,39,5,0,Philadelphia Flyers,40,3,1,-,"18,718",2:41,1,2,0,0
+627,3/01/2019,Washington Capitals,39,2,0,St. Louis Blues,38,5,1,-,"17,200",2:25,0,0,1,2
+628,3/01/2019,Minnesota Wild,39,4,0,Toronto Maple Leafs,40,3,1,-,"19,244",2:35,1,2,0,0
+629,4/01/2019,Vegas Golden Knights,44,3,0,Anaheim Ducks,42,2,1,-,"17,222",2:24,1,2,0,0
+630,4/01/2019,New Jersey Devils,40,3,0,Arizona Coyotes,41,2,1,SO,"12,636",2:46,1,2,0,1
+631,4/01/2019,Columbus Blue Jackets,40,2,0,Carolina Hurricanes,40,4,1,-,"15,346",2:21,0,0,1,2
+632,4/01/2019,New York Rangers,40,1,0,Colorado Avalanche,42,6,1,-,"17,287",2:26,0,0,1,2
+633,4/01/2019,Washington Capitals,40,1,0,Dallas Stars,42,2,1,OT,"18,532",2:32,0,1,1,2
+634,4/01/2019,Nashville Predators,42,3,0,Detroit Red Wings,43,4,1,OT,"19,515",2:37,0,1,1,2
+635,4/01/2019,Winnipeg Jets,40,0,0,Pittsburgh Penguins,41,4,1,-,"18,642",2:29,0,0,1,2
+636,5/01/2019,Buffalo Sabres,42,1,0,Boston Bruins,42,2,1,-,"17,565",2:31,0,0,1,2
+637,5/01/2019,Columbus Blue Jackets,41,4,0,Florida Panthers,40,3,1,OT,"15,213",2:27,1,2,0,1
+638,5/01/2019,Edmonton Oilers,41,0,0,Los Angeles Kings,43,4,1,-,"18,230",2:29,0,0,1,2
+639,5/01/2019,Nashville Predators,43,4,0,Montreal Canadiens,42,1,1,-,"21,302",2:29,1,2,0,0
+640,5/01/2019,Minnesota Wild,40,4,0,Ottawa Senators,42,3,1,-,"14,124",2:29,1,2,0,0
+641,5/01/2019,Calgary Flames,43,3,0,Philadelphia Flyers,41,2,1,OT,"19,236",2:31,1,2,0,1
+642,5/01/2019,Tampa Bay Lightning,42,2,0,San Jose Sharks,43,5,1,-,"17,562",2:27,0,0,1,2
+643,5/01/2019,New York Islanders,40,4,0,St. Louis Blues,39,3,1,-,"16,801",2:30,1,2,0,0
+644,5/01/2019,Vancouver Canucks,45,0,0,Toronto Maple Leafs,41,5,1,-,"19,388",2:23,0,0,1,2
+645,6/01/2019,Edmonton Oilers,42,4,0,Anaheim Ducks,43,0,1,-,"17,317",2:30,1,2,0,0
+646,6/01/2019,New York Rangers,41,0,0,Arizona Coyotes,42,5,1,-,"12,396",2:18,0,0,1,2
+647,6/01/2019,Washington Capitals,41,3,0,Detroit Red Wings,44,2,1,-,"19,515",2:30,1,2,0,0
+648,6/01/2019,Carolina Hurricanes,41,5,0,Ottawa Senators,43,4,1,-,"12,924",2:22,1,2,0,0
+649,6/01/2019,Chicago Blackhawks,44,5,0,Pittsburgh Penguins,42,3,1,-,"18,623",2:24,1,2,0,0
+650,6/01/2019,New Jersey Devils,41,2,0,Vegas Golden Knights,45,3,1,-,"18,103",2:36,0,0,1,2
+651,6/01/2019,Dallas Stars,43,1,0,Winnipeg Jets,41,5,1,-,"15,321",2:24,0,0,1,2
+652,7/01/2019,Calgary Flames,44,4,0,Chicago Blackhawks,45,3,1,-,"21,036",2:26,1,2,0,0
+653,7/01/2019,Minnesota Wild,41,1,0,Montreal Canadiens,43,0,1,-,"20,601",2:26,1,2,0,0
+654,7/01/2019,St. Louis Blues,40,3,0,Philadelphia Flyers,42,0,1,-,"19,021",2:25,1,2,0,0
+655,7/01/2019,Los Angeles Kings,44,1,0,San Jose Sharks,44,3,1,-,"15,447",2:20,0,0,1,2
+656,7/01/2019,Nashville Predators,44,4,0,Toronto Maple Leafs,42,0,1,-,"19,059",2:22,1,2,0,0
+657,8/01/2019,Minnesota Wild,42,0,0,Boston Bruins,43,4,1,-,"17,565",2:28,0,0,1,2
+658,8/01/2019,New Jersey Devils,42,1,0,Buffalo Sabres,43,5,1,-,"18,212",2:30,0,0,1,2
+659,8/01/2019,Montreal Canadiens,44,3,0,Detroit Red Wings,45,2,1,-,"18,898",2:30,1,2,0,0
+660,8/01/2019,Carolina Hurricanes,42,4,0,New York Islanders,41,3,1,-,"13,769",2:26,1,2,0,0
+661,8/01/2019,Florida Panthers,41,1,0,Pittsburgh Penguins,43,5,1,-,"18,526",2:29,0,0,1,2
+662,8/01/2019,Edmonton Oilers,43,2,0,San Jose Sharks,45,7,1,-,"17,320",2:25,0,0,1,2
+663,8/01/2019,Dallas Stars,44,3,0,St. Louis Blues,41,1,1,-,"17,037",2:23,1,2,0,0
+664,8/01/2019,Columbus Blue Jackets,42,0,0,Tampa Bay Lightning,43,4,1,-,"19,092",2:21,0,0,1,2
+665,8/01/2019,New York Rangers,42,2,0,Vegas Golden Knights,46,4,1,-,"18,249",2:43,0,0,1,2
+666,8/01/2019,Colorado Avalanche,43,4,0,Winnipeg Jets,42,7,1,-,"15,321",2:22,0,0,1,2
+667,8/01/2019,Philadelphia Flyers,43,3,0,Washington Capitals,42,5,1,-,"18,506",2:37,0,0,1,2
+668,9/01/2019,Ottawa Senators,44,2,0,Anaheim Ducks,44,1,1,OT,"17,174",2:32,1,2,0,1
+669,9/01/2019,Colorado Avalanche,44,3,0,Calgary Flames,45,5,1,-,"18,220",2:26,0,0,1,2
+670,9/01/2019,Nashville Predators,45,4,0,Chicago Blackhawks,46,3,1,OT,"21,255",2:27,1,2,0,1
+671,10/01/2019,Washington Capitals,43,4,0,Boston Bruins,44,2,1,-,"17,565",2:35,1,2,0,0
+672,10/01/2019,Nashville Predators,46,3,0,Columbus Blue Jackets,43,4,1,OT,"17,065",2:35,0,1,1,2
+673,10/01/2019,Florida Panthers,42,3,0,Edmonton Oilers,44,4,1,SO,"18,347",2:38,0,1,1,2
+674,10/01/2019,Ottawa Senators,45,4,0,Los Angeles Kings,45,1,1,-,"17,713",2:31,1,2,0,0
+675,10/01/2019,Winnipeg Jets,43,2,0,Minnesota Wild,43,3,1,-,"19,072",2:25,0,0,1,2
+676,10/01/2019,Toronto Maple Leafs,43,4,0,New Jersey Devils,43,2,1,-,"15,280",2:34,1,2,0,0
+677,10/01/2019,New York Islanders,42,4,0,New York Rangers,43,3,1,-,"17,938",2:32,1,2,0,0
+678,10/01/2019,Dallas Stars,45,1,0,Philadelphia Flyers,44,2,1,-,"19,448",2:28,0,0,1,2
+679,10/01/2019,Montreal Canadiens,45,1,0,St. Louis Blues,42,4,1,-,"17,839",2:28,0,0,1,2
+680,10/01/2019,Carolina Hurricanes,43,1,0,Tampa Bay Lightning,44,3,1,-,"19,092",2:34,0,0,1,2
+681,10/01/2019,Arizona Coyotes,43,4,0,Vancouver Canucks,46,3,1,OT,"18,527",2:33,1,2,0,1
+682,10/01/2019,San Jose Sharks,46,3,0,Vegas Golden Knights,47,2,1,-,"18,367",2:28,1,2,0,0
+683,11/01/2019,Pittsburgh Penguins,44,7,0,Anaheim Ducks,45,4,1,-,"17,473",2:25,1,2,0,0
+684,11/01/2019,Buffalo Sabres,44,3,0,Carolina Hurricanes,44,4,1,-,"17,199",2:30,0,0,1,2
+685,11/01/2019,Florida Panthers,43,3,0,Calgary Flames,46,4,1,-,"18,579",2:28,0,0,1,2
+686,11/01/2019,Detroit Red Wings,46,2,0,Winnipeg Jets,44,4,1,-,"15,321",2:23,0,0,1,2
+687,12/01/2019,Tampa Bay Lightning,45,5,0,Buffalo Sabres,45,3,1,-,"19,070",2:33,1,2,0,0
+688,12/01/2019,Vegas Golden Knights,48,4,0,Chicago Blackhawks,47,3,1,OT,"21,760",2:31,1,2,0,1
+689,12/01/2019,St. Louis Blues,43,3,0,Dallas Stars,46,1,1,-,"18,124",2:27,1,2,0,0
+690,12/01/2019,Arizona Coyotes,44,3,0,Edmonton Oilers,45,2,1,-,"18,347",2:27,1,2,0,0
+691,12/01/2019,Pittsburgh Penguins,45,2,0,Los Angeles Kings,46,5,1,-,"18,414",2:36,0,0,1,2
+692,12/01/2019,Detroit Red Wings,47,5,0,Minnesota Wild,44,2,1,-,"19,087",2:28,1,2,0,0
+693,12/01/2019,Colorado Avalanche,45,0,0,Montreal Canadiens,46,3,1,-,"21,302",2:20,0,0,1,2
+694,12/01/2019,Philadelphia Flyers,45,2,0,New Jersey Devils,44,3,1,-,"16,514",2:32,0,0,1,2
+695,12/01/2019,New York Rangers,44,2,0,New York Islanders,43,1,1,-,"15,497",2:27,1,2,0,0
+696,12/01/2019,Ottawa Senators,46,1,0,San Jose Sharks,47,4,1,-,"17,562",2:21,0,0,1,2
+697,12/01/2019,Boston Bruins,45,3,0,Toronto Maple Leafs,44,2,1,-,"19,305",2:24,1,2,0,0
+698,12/01/2019,Columbus Blue Jackets,44,2,0,Washington Capitals,44,1,1,OT,"18,506",2:40,1,2,0,1
+699,13/01/2019,Nashville Predators,47,3,0,Carolina Hurricanes,45,6,1,-,"16,347",2:31,0,0,1,2
+700,13/01/2019,New York Rangers,45,5,0,Columbus Blue Jackets,45,7,1,-,"17,417",2:33,0,0,1,2
+701,13/01/2019,Arizona Coyotes,45,1,0,Calgary Flames,47,7,1,-,"17,849",2:25,0,0,1,2
+702,13/01/2019,Tampa Bay Lightning,46,1,0,New York Islanders,44,5,1,-,"11,193",2:28,0,0,1,2
+703,13/01/2019,Florida Panthers,44,1,0,Vancouver Canucks,47,5,1,-,"18,610",2:42,0,0,1,2
+704,13/01/2019,Anaheim Ducks,46,3,0,Winnipeg Jets,45,4,1,OT,"15,321",2:33,0,1,1,2
+705,14/01/2019,Montreal Canadiens,47,3,0,Boston Bruins,46,2,1,OT,"17,565",2:37,1,2,0,1
+706,14/01/2019,Buffalo Sabres,46,2,0,Edmonton Oilers,46,7,1,-,"18,347",2:29,0,0,1,2
+707,14/01/2019,Chicago Blackhawks,48,5,0,New Jersey Devils,45,8,1,-,"15,204",2:29,0,0,1,2
+708,14/01/2019,Minnesota Wild,45,4,0,Philadelphia Flyers,46,7,1,-,"19,123",2:42,0,0,1,2
+709,14/01/2019,Colorado Avalanche,46,6,0,Toronto Maple Leafs,45,3,1,-,"19,248",2:26,1,2,0,0
+710,14/01/2019,St. Louis Blues,44,4,0,Washington Capitals,45,1,1,-,"18,506",2:26,1,2,0,0
+711,15/01/2019,New Jersey Devils,46,1,0,Columbus Blue Jackets,46,4,1,-,"16,377",2:25,0,0,1,2
+712,15/01/2019,Tampa Bay Lightning,47,2,0,Dallas Stars,47,0,1,-,"18,021",2:27,1,2,0,0
+713,15/01/2019,Anaheim Ducks,47,1,0,Detroit Red Wings,48,3,1,-,"19,515",2:25,0,0,1,2
+714,15/01/2019,Los Angeles Kings,47,2,0,Minnesota Wild,46,3,1,SO,"19,017",2:45,0,1,1,2
+715,15/01/2019,Florida Panthers,45,1,0,Montreal Canadiens,48,5,1,-,"20,576",2:35,0,0,1,2
+716,15/01/2019,Washington Capitals,46,2,0,Nashville Predators,48,7,1,-,"17,336",2:33,0,0,1,2
+717,15/01/2019,St. Louis Blues,45,1,0,New York Islanders,45,2,1,OT,"10,042",2:29,0,1,1,2
+718,15/01/2019,Carolina Hurricanes,46,2,0,New York Rangers,46,6,1,-,"17,636",2:26,0,0,1,2
+719,15/01/2019,Pittsburgh Penguins,46,2,0,San Jose Sharks,48,5,1,-,"17,292",2:22,0,0,1,2
+720,15/01/2019,Vegas Golden Knights,49,1,0,Winnipeg Jets,46,4,1,-,"15,321",2:27,0,0,1,2
+721,16/01/2019,San Jose Sharks,49,3,0,Arizona Coyotes,46,6,1,-,"13,342",2:29,0,0,1,2
+722,16/01/2019,Buffalo Sabres,47,4,0,Calgary Flames,48,3,1,OT,"18,286",2:34,1,2,0,1
+723,16/01/2019,Colorado Avalanche,47,2,0,Ottawa Senators,47,5,1,-,"14,468",2:29,0,0,1,2
+724,16/01/2019,Boston Bruins,47,3,0,Philadelphia Flyers,47,4,1,-,"19,297",2:55,0,0,1,2
+725,16/01/2019,Edmonton Oilers,47,3,0,Vancouver Canucks,48,2,1,SO,"18,166",2:50,1,2,0,1
+726,17/01/2019,St. Louis Blues,46,2,0,Boston Bruins,48,5,1,-,"17,565",2:24,0,0,1,2
+727,17/01/2019,Los Angeles Kings,48,2,0,Dallas Stars,48,1,1,-,"18,045",2:32,1,2,0,0
+728,17/01/2019,Anaheim Ducks,48,3,0,Minnesota Wild,47,0,1,-,"18,907",2:24,1,2,0,0
+729,17/01/2019,Winnipeg Jets,47,5,0,Nashville Predators,49,1,1,-,"17,507",2:33,1,2,0,0
+730,17/01/2019,New Jersey Devils,47,1,0,New York Islanders,46,4,1,-,"12,088",2:21,0,0,1,2
+731,17/01/2019,Chicago Blackhawks,49,3,0,New York Rangers,47,4,1,-,"17,434",2:32,0,0,1,2
+732,17/01/2019,Toronto Maple Leafs,46,4,0,Tampa Bay Lightning,48,2,1,-,"19,092",2:34,1,2,0,0
+733,18/01/2019,Pittsburgh Penguins,47,3,0,Arizona Coyotes,47,2,1,OT,"14,757",2:38,1,2,0,1
+734,18/01/2019,Ottawa Senators,48,4,0,Carolina Hurricanes,47,1,1,-,"15,598",2:22,1,2,0,0
+735,18/01/2019,Montreal Canadiens,49,4,0,Columbus Blue Jackets,47,1,1,-,"18,892",2:25,1,2,0,0
+736,18/01/2019,Detroit Red Wings,49,4,0,Calgary Flames,49,6,1,-,"19,289",2:38,0,0,1,2
+737,18/01/2019,Toronto Maple Leafs,47,1,0,Florida Panthers,46,3,1,-,"16,741",2:23,0,0,1,2
+738,18/01/2019,Buffalo Sabres,48,3,0,Vancouver Canucks,49,4,1,-,"18,176",2:26,0,0,1,2
+739,18/01/2019,New York Islanders,47,2,0,Washington Capitals,47,0,1,-,"18,605",2:17,1,2,0,0
+740,19/01/2019,New York Rangers,48,3,0,Boston Bruins,49,2,1,-,"17,565",2:39,1,2,0,0
+741,19/01/2019,Los Angeles Kings,49,1,0,Colorado Avalanche,48,7,1,-,"18,043",2:34,0,0,1,2
+742,19/01/2019,Winnipeg Jets,48,2,0,Dallas Stars,49,4,1,-,"18,532",2:38,0,0,1,2
+743,19/01/2019,Calgary Flames,50,5,0,Edmonton Oilers,48,2,1,-,"18,347",2:35,1,2,0,0
+744,19/01/2019,Columbus Blue Jackets,48,1,0,Minnesota Wild,48,2,1,-,"19,054",2:27,0,0,1,2
+745,19/01/2019,Philadelphia Flyers,48,5,0,Montreal Canadiens,50,2,1,-,"21,302",2:19,1,2,0,0
+746,19/01/2019,Anaheim Ducks,49,3,0,New Jersey Devils,48,2,1,-,"15,231",2:23,1,2,0,0
+747,19/01/2019,Florida Panthers,47,4,0,Nashville Predators,50,2,1,-,"17,716",2:33,1,2,0,0
+748,19/01/2019,Ottawa Senators,49,2,0,St. Louis Blues,47,3,1,-,"17,690",2:34,0,0,1,2
+749,19/01/2019,San Jose Sharks,50,3,0,Tampa Bay Lightning,49,6,1,-,"19,092",2:29,0,0,1,2
+750,19/01/2019,Pittsburgh Penguins,48,3,0,Vegas Golden Knights,50,7,1,-,"18,511",2:36,0,0,1,2
+751,20/01/2019,Washington Capitals,48,5,0,Chicago Blackhawks,50,8,1,-,"21,316",2:36,0,0,1,2
+752,20/01/2019,Carolina Hurricanes,48,7,0,Edmonton Oilers,49,4,1,-,"18,347",2:28,1,2,0,0
+753,20/01/2019,Anaheim Ducks,50,0,0,New York Islanders,48,3,1,-,"13,917",2:21,0,0,1,2
+754,20/01/2019,Arizona Coyotes,48,4,0,Toronto Maple Leafs,48,2,1,-,"19,165",2:23,1,2,0,0
+755,20/01/2019,Detroit Red Wings,50,2,0,Vancouver Canucks,50,3,1,-,"18,865",2:32,0,0,1,2
+756,21/01/2019,Nashville Predators,51,4,0,Colorado Avalanche,49,1,1,-,"18,018",2:28,1,2,0,0
+757,21/01/2019,San Jose Sharks,51,2,0,Florida Panthers,48,6,1,-,"14,014",2:33,0,0,1,2
+758,21/01/2019,St. Louis Blues,48,3,0,Los Angeles Kings,50,4,1,-,"18,230",2:33,0,0,1,2
+759,21/01/2019,Minnesota Wild,49,4,0,Vegas Golden Knights,51,2,1,-,"18,328",2:40,1,2,0,0
+760,22/01/2019,Carolina Hurricanes,49,2,0,Calgary Flames,51,3,1,OT,"18,508",2:36,0,1,1,2
+761,22/01/2019,New York Islanders,49,2,0,Chicago Blackhawks,51,3,1,SO,"21,330",2:36,0,1,1,2
+762,22/01/2019,Detroit Red Wings,51,3,0,Edmonton Oilers,50,2,1,-,"18,347",2:27,1,2,0,0
+763,22/01/2019,Arizona Coyotes,49,3,0,Ottawa Senators,50,2,1,-,"12,236",2:27,1,2,0,0
+764,22/01/2019,San Jose Sharks,52,7,0,Washington Capitals,49,6,1,OT,"18,506",2:39,1,2,0,1
+765,23/01/2019,St. Louis Blues,49,5,0,Anaheim Ducks,51,1,1,-,"16,795",2:21,1,2,0,0
+766,23/01/2019,Minnesota Wild,50,5,0,Colorado Avalanche,50,2,1,-,"17,310",2:34,1,2,0,0
+767,23/01/2019,Arizona Coyotes,50,1,0,Montreal Canadiens,51,2,1,-,"21,002",2:23,0,0,1,2
+768,23/01/2019,Washington Capitals,50,3,0,Toronto Maple Leafs,49,6,1,-,"19,148",2:28,0,0,1,2
+769,23/01/2019,Carolina Hurricanes,50,5,0,Vancouver Canucks,51,2,1,-,"18,373",2:32,1,2,0,0
+770,23/01/2019,Nashville Predators,52,2,0,Vegas Golden Knights,52,1,1,-,"18,477",2:37,1,2,0,0
+771,28/01/2019,Winnipeg Jets,49,1,0,Philadelphia Flyers,49,3,1,-,"19,087",2:30,0,0,1,2
+772,28/01/2019,New Jersey Devils,49,6,0,Pittsburgh Penguins,49,3,1,-,"18,609",2:32,1,2,0,0
+773,29/01/2019,Winnipeg Jets,50,4,0,Boston Bruins,50,3,1,SO,"17,565",2:52,1,2,0,1
+774,29/01/2019,Buffalo Sabres,49,5,0,Columbus Blue Jackets,49,4,1,-,"15,615",2:27,1,2,0,0
+775,29/01/2019,Philadelphia Flyers,50,1,0,New York Rangers,49,0,1,-,"17,163",2:28,1,2,0,0
+776,30/01/2019,Buffalo Sabres,50,0,0,Dallas Stars,50,1,1,-,"17,986",2:28,0,0,1,2
+777,30/01/2019,Tampa Bay Lightning,50,2,0,Pittsburgh Penguins,50,4,1,-,"18,514",2:29,0,0,1,2
+778,31/01/2019,Philadelphia Flyers,51,3,0,Boston Bruins,51,2,1,OT,"17,565",2:34,1,2,0,1
+779,31/01/2019,New York Rangers,50,4,0,New Jersey Devils,50,3,1,-,"16,514",2:30,1,2,0,0
+780,31/01/2019,Columbus Blue Jackets,50,3,0,Winnipeg Jets,51,4,1,-,"15,321",2:24,0,0,1,2
+781,1/02/2019,Chicago Blackhawks,52,7,0,Buffalo Sabres,51,3,1,-,"18,205",2:26,1,2,0,0
+782,1/02/2019,Vegas Golden Knights,53,2,0,Carolina Hurricanes,51,5,1,-,"17,104",2:26,0,0,1,2
+783,1/02/2019,Minnesota Wild,51,1,0,Dallas Stars,51,3,1,-,"18,124",2:28,0,0,1,2
+784,1/02/2019,Toronto Maple Leafs,50,2,0,Detroit Red Wings,52,3,1,OT,"19,515",2:25,0,1,1,2
+785,1/02/2019,Nashville Predators,53,4,0,Florida Panthers,49,1,1,-,"13,158",2:29,1,2,0,0
+786,1/02/2019,Tampa Bay Lightning,51,1,0,New York Islanders,50,0,1,SO,"13,971",2:42,1,2,0,1
+787,1/02/2019,Ottawa Senators,51,3,0,Pittsburgh Penguins,51,5,1,-,"18,618",2:29,0,0,1,2
+788,1/02/2019,Calgary Flames,52,3,0,Washington Capitals,51,4,1,-,"18,506",2:37,0,0,1,2
+789,2/02/2019,St. Louis Blues,50,4,0,Columbus Blue Jackets,51,2,1,-,"18,681",2:24,1,2,0,0
+790,2/02/2019,Vancouver Canucks,52,5,0,Colorado Avalanche,51,1,1,-,"18,027",2:26,1,2,0,0
+791,2/02/2019,Vegas Golden Knights,54,1,0,Florida Panthers,50,3,1,-,"15,202",2:27,0,0,1,2
+792,2/02/2019,Chicago Blackhawks,53,4,0,Minnesota Wild,52,3,1,OT,"19,114",2:39,1,2,0,1
+793,2/02/2019,New Jersey Devils,51,3,0,Montreal Canadiens,52,2,1,OT,"21,302",2:28,1,2,0,1
+794,2/02/2019,Dallas Stars,52,3,0,Nashville Predators,54,1,1,-,"17,722",2:35,1,2,0,0
+795,2/02/2019,Los Angeles Kings,51,2,0,New York Islanders,51,4,1,-,"13,917",2:30,0,0,1,2
+796,2/02/2019,Tampa Bay Lightning,52,3,0,New York Rangers,51,2,1,-,"17,468",2:30,1,2,0,0
+797,2/02/2019,Detroit Red Wings,53,2,0,Ottawa Senators,52,0,1,-,"15,714",2:24,1,2,0,0
+798,2/02/2019,Edmonton Oilers,51,4,0,Philadelphia Flyers,52,5,1,OT,"19,526",2:32,0,1,1,2
+799,2/02/2019,Arizona Coyotes,51,2,0,San Jose Sharks,53,3,1,OT,"17,227",2:27,0,1,1,2
+800,2/02/2019,Pittsburgh Penguins,52,2,0,Toronto Maple Leafs,51,3,1,-,"19,477",2:30,0,0,1,2
+801,2/02/2019,Anaheim Ducks,52,3,0,Winnipeg Jets,52,9,1,-,"15,321",2:30,0,0,1,2
+802,3/02/2019,Calgary Flames,53,4,0,Carolina Hurricanes,52,3,1,-,"12,621",2:31,1,2,0,0
+803,3/02/2019,Edmonton Oilers,52,3,0,Montreal Canadiens,53,4,1,OT,"21,302",2:34,0,1,1,2
+804,3/02/2019,Boston Bruins,52,1,0,Washington Capitals,52,0,1,-,"18,506",2:22,1,2,0,0
+805,4/02/2019,Arizona Coyotes,52,4,0,Dallas Stars,53,5,1,-,"17,996",2:42,0,0,1,2
+806,4/02/2019,Los Angeles Kings,52,4,0,New York Rangers,52,3,1,OT,"16,233",2:24,1,2,0,1
+807,4/02/2019,Vancouver Canucks,53,1,0,Philadelphia Flyers,53,2,1,-,"18,671",2:32,0,0,1,2
+808,4/02/2019,Anaheim Ducks,53,1,0,Toronto Maple Leafs,52,6,1,-,"18,858",2:33,0,0,1,2
+809,5/02/2019,New York Islanders,52,1,0,Boston Bruins,53,3,1,-,"17,565",2:33,0,0,1,2
+810,5/02/2019,Minnesota Wild,53,4,0,Buffalo Sabres,52,5,1,SO,"16,847",2:43,0,1,1,2
+811,5/02/2019,Columbus Blue Jackets,52,6,0,Colorado Avalanche,52,3,1,-,"15,398",2:31,1,2,0,0
+812,5/02/2019,Chicago Blackhawks,54,6,0,Edmonton Oilers,53,2,1,-,"18,347",2:32,1,2,0,0
+813,5/02/2019,St. Louis Blues,51,3,0,Florida Panthers,51,2,1,-,"10,243",2:30,1,2,0,0
+814,5/02/2019,Anaheim Ducks,54,1,0,Montreal Canadiens,54,4,1,-,"20,680",2:24,0,0,1,2
+815,5/02/2019,Los Angeles Kings,53,5,0,New Jersey Devils,52,1,1,-,"14,508",2:31,1,2,0,0
+816,5/02/2019,Arizona Coyotes,53,2,0,Nashville Predators,55,5,1,-,"17,295",2:34,0,0,1,2
+817,5/02/2019,Carolina Hurricanes,53,4,0,Pittsburgh Penguins,53,0,1,-,"18,435",2:17,1,2,0,0
+818,5/02/2019,Vegas Golden Knights,55,3,0,Tampa Bay Lightning,53,2,1,SO,"19,092",2:52,1,2,0,1
+819,5/02/2019,San Jose Sharks,54,3,0,Winnipeg Jets,53,2,1,OT,"15,321",2:32,1,2,0,1
+820,5/02/2019,Vancouver Canucks,54,2,0,Washington Capitals,53,3,1,-,"18,506",2:31,0,0,1,2
+821,6/02/2019,Boston Bruins,54,3,0,New York Rangers,53,4,1,SO,"16,848",2:49,0,1,1,2
+822,6/02/2019,Ottawa Senators,53,4,0,Toronto Maple Leafs,53,5,1,-,"19,264",2:24,0,0,1,2
+823,7/02/2019,Columbus Blue Jackets,53,4,0,Arizona Coyotes,54,2,1,-,"15,319",2:28,1,2,0,0
+824,7/02/2019,Carolina Hurricanes,54,6,0,Buffalo Sabres,53,5,1,OT,"17,588",2:42,1,2,0,1
+825,7/02/2019,San Jose Sharks,55,5,0,Calgary Flames,54,2,1,-,"18,748",2:27,1,2,0,0
+826,7/02/2019,Vancouver Canucks,55,3,0,Chicago Blackhawks,55,4,1,OT,"21,540",2:34,0,1,1,2
+827,7/02/2019,Vegas Golden Knights,56,4,0,Detroit Red Wings,54,3,1,-,"18,889",2:37,1,2,0,0
+828,7/02/2019,Pittsburgh Penguins,54,2,0,Florida Panthers,52,3,1,OT,"14,712",2:36,0,1,1,2
+829,7/02/2019,Edmonton Oilers,54,4,0,Minnesota Wild,54,1,1,-,"18,904",2:31,1,2,0,0
+830,7/02/2019,Winnipeg Jets,54,2,0,Montreal Canadiens,55,5,1,-,"21,302",2:34,0,0,1,2
+831,7/02/2019,New York Islanders,53,2,0,New Jersey Devils,53,1,1,SO,"13,265",2:37,1,2,0,1
+832,7/02/2019,Dallas Stars,54,2,0,Nashville Predators,56,3,1,OT,"17,174",2:28,0,1,1,2
+833,7/02/2019,Anaheim Ducks,55,0,0,Ottawa Senators,54,4,1,-,"12,617",2:19,0,0,1,2
+834,7/02/2019,Los Angeles Kings,54,3,0,Philadelphia Flyers,54,2,1,SO,"18,982",2:42,1,2,0,1
+835,7/02/2019,St. Louis Blues,52,1,0,Tampa Bay Lightning,54,0,1,OT,"19,092",2:32,1,2,0,1
+836,7/02/2019,Colorado Avalanche,53,3,0,Washington Capitals,54,4,1,OT,"18,506",2:39,0,1,1,2
+837,8/02/2019,Carolina Hurricanes,55,3,0,New York Rangers,54,0,1,-,"18,006",2:19,1,2,0,0
+838,9/02/2019,Dallas Stars,55,2,0,Arizona Coyotes,55,3,1,-,"13,418",2:33,0,0,1,2
+839,9/02/2019,Los Angeles Kings,55,4,0,Boston Bruins,55,5,1,OT,"17,565",2:32,0,1,1,2
+840,9/02/2019,Detroit Red Wings,55,1,0,Buffalo Sabres,54,3,1,-,"19,070",2:25,0,0,1,2
+841,9/02/2019,San Jose Sharks,56,5,0,Edmonton Oilers,55,2,1,-,"18,347",2:27,1,2,0,0
+842,9/02/2019,Toronto Maple Leafs,54,4,0,Montreal Canadiens,56,3,1,OT,"21,302",2:31,1,2,0,1
+843,9/02/2019,Minnesota Wild,55,4,0,New Jersey Devils,54,2,1,-,"15,783",2:30,1,2,0,0
+844,9/02/2019,Colorado Avalanche,54,3,0,New York Islanders,54,4,1,OT,"14,216",2:35,0,1,1,2
+845,9/02/2019,Winnipeg Jets,55,2,0,Ottawa Senators,55,5,1,-,"16,263",2:30,0,0,1,2
+846,9/02/2019,Anaheim Ducks,56,2,0,Philadelphia Flyers,55,6,1,-,"19,072",2:32,0,0,1,2
+847,9/02/2019,Nashville Predators,57,2,0,St. Louis Blues,53,3,1,-,"18,166",2:30,0,0,1,2
+848,9/02/2019,Pittsburgh Penguins,55,4,0,Tampa Bay Lightning,55,5,1,-,"19,092",2:53,0,0,1,2
+849,9/02/2019,Calgary Flames,55,3,0,Vancouver Canucks,56,4,1,SO,"18,410",2:45,0,1,1,2
+850,9/02/2019,Columbus Blue Jackets,54,4,0,Vegas Golden Knights,57,3,1,-,"18,301",2:28,1,2,0,0
+851,9/02/2019,Florida Panthers,53,5,0,Washington Capitals,55,4,1,OT,"18,506",2:36,1,2,0,1
+852,10/02/2019,Colorado Avalanche,55,1,0,Boston Bruins,56,2,1,OT,"17,565",2:38,0,1,1,2
+853,10/02/2019,Winnipeg Jets,56,3,0,Buffalo Sabres,55,1,1,-,"17,966",2:19,1,2,0,0
+854,10/02/2019,Detroit Red Wings,56,2,0,Chicago Blackhawks,56,5,1,-,"21,941",2:31,0,0,1,2
+855,10/02/2019,Tampa Bay Lightning,56,5,0,Florida Panthers,54,2,1,-,"13,566",2:31,1,2,0,0
+856,10/02/2019,Carolina Hurricanes,56,2,0,New Jersey Devils,55,3,1,-,"16,514",2:36,0,0,1,2
+857,10/02/2019,St. Louis Blues,54,5,0,Nashville Predators,58,4,1,OT,"17,622",2:50,1,2,0,1
+858,10/02/2019,Minnesota Wild,56,1,0,New York Islanders,55,2,1,-,"13,825",2:23,0,0,1,2
+859,10/02/2019,Toronto Maple Leafs,55,1,0,New York Rangers,55,4,1,-,"17,445",2:25,0,0,1,2
+860,11/02/2019,Pittsburgh Penguins,56,4,0,Philadelphia Flyers,56,1,1,-,"19,103",2:32,1,2,0,0
+861,11/02/2019,San Jose Sharks,57,7,0,Vancouver Canucks,57,2,1,-,"18,576",2:22,1,2,0,0
+862,11/02/2019,Los Angeles Kings,56,4,0,Washington Capitals,56,6,1,-,"18,506",2:25,0,0,1,2
+863,12/02/2019,Chicago Blackhawks,57,3,0,Boston Bruins,57,6,1,-,"17,565",2:32,0,0,1,2
+864,12/02/2019,New York Islanders,56,1,0,Buffalo Sabres,56,3,1,-,"16,894",2:21,0,0,1,2
+865,12/02/2019,Washington Capitals,57,0,0,Columbus Blue Jackets,55,3,1,-,"15,701",2:26,0,0,1,2
+866,12/02/2019,Toronto Maple Leafs,56,5,0,Colorado Avalanche,56,2,1,-,"16,426",2:25,1,2,0,0
+867,12/02/2019,Dallas Stars,56,3,0,Florida Panthers,55,0,1,-,"9,472",2:26,1,2,0,0
+868,12/02/2019,Philadelphia Flyers,57,5,0,Minnesota Wild,57,4,1,-,"18,607",2:33,1,2,0,0
+869,12/02/2019,Detroit Red Wings,57,3,0,Nashville Predators,59,2,1,-,"17,260",2:29,1,2,0,0
+870,12/02/2019,Carolina Hurricanes,57,4,0,Ottawa Senators,56,1,1,-,"10,648",2:22,1,2,0,0
+871,12/02/2019,New Jersey Devils,56,3,0,St. Louis Blues,55,8,1,-,"17,509",2:28,0,0,1,2
+872,12/02/2019,Calgary Flames,56,3,0,Tampa Bay Lightning,57,6,1,-,"19,092",2:30,0,0,1,2
+873,12/02/2019,Arizona Coyotes,56,5,0,Vegas Golden Knights,58,2,1,-,"18,212",2:31,1,2,0,0
+874,12/02/2019,New York Rangers,56,3,0,Winnipeg Jets,57,4,1,-,"15,321",2:22,0,0,1,2
+875,13/02/2019,Vancouver Canucks,58,0,0,Anaheim Ducks,57,1,1,-,"17,174",2:33,0,0,1,2
+876,13/02/2019,Edmonton Oilers,56,1,0,Pittsburgh Penguins,57,3,1,-,"18,570",2:30,0,0,1,2
+877,14/02/2019,St. Louis Blues,56,4,0,Arizona Coyotes,57,0,1,-,"12,553",2:23,1,2,0,0
+878,14/02/2019,New York Islanders,57,3,0,Columbus Blue Jackets,56,0,1,-,"16,531",2:21,1,2,0,0
+879,14/02/2019,New Jersey Devils,57,2,0,Chicago Blackhawks,58,5,1,-,"21,038",2:28,0,0,1,2
+880,14/02/2019,Ottawa Senators,57,2,0,Detroit Red Wings,58,3,1,-,"18,575",2:27,0,0,1,2
+881,14/02/2019,Calgary Flames,57,2,0,Florida Panthers,56,3,1,SO,"10,198",2:49,0,1,1,2
+882,14/02/2019,Vancouver Canucks,59,4,0,Los Angeles Kings,57,3,1,SO,"18,230",2:48,1,2,0,1
+883,14/02/2019,Montreal Canadiens,57,1,0,Nashville Predators,60,3,1,-,"17,417",2:37,0,0,1,2
+884,14/02/2019,Washington Capitals,58,5,0,San Jose Sharks,58,1,1,-,"17,562",2:16,1,2,0,0
+885,14/02/2019,Dallas Stars,57,0,0,Tampa Bay Lightning,58,6,1,-,"19,092",2:28,0,0,1,2
+886,14/02/2019,Toronto Maple Leafs,57,6,0,Vegas Golden Knights,59,3,1,-,"18,214",2:32,1,2,0,0
+887,14/02/2019,Colorado Avalanche,57,4,0,Winnipeg Jets,58,1,1,-,"15,321",2:26,1,2,0,0
+888,15/02/2019,Boston Bruins,58,3,0,Anaheim Ducks,58,0,1,-,"17,174",2:23,1,2,0,0
+889,15/02/2019,New York Rangers,57,6,0,Buffalo Sabres,57,2,1,-,"19,070",2:29,1,2,0,0
+890,15/02/2019,Edmonton Oilers,57,1,0,Carolina Hurricanes,58,3,1,-,"14,430",2:35,0,0,1,2
+891,15/02/2019,New Jersey Devils,58,5,0,Minnesota Wild,58,4,1,OT,"19,041",2:40,1,2,0,1
+892,16/02/2019,Toronto Maple Leafs,58,0,0,Arizona Coyotes,58,2,1,-,"17,125",2:23,0,0,1,2
+893,16/02/2019,Dallas Stars,58,0,0,Carolina Hurricanes,59,3,1,-,"14,369",2:23,0,0,1,2
+894,16/02/2019,Columbus Blue Jackets,57,5,0,Chicago Blackhawks,59,2,1,-,"22,196",2:22,1,2,0,0
+895,16/02/2019,St. Louis Blues,57,3,0,Colorado Avalanche,58,0,1,-,"18,076",2:26,1,2,0,0
+896,16/02/2019,Boston Bruins,59,4,0,Los Angeles Kings,58,2,1,-,"18,230",2:22,1,2,0,0
+897,16/02/2019,Edmonton Oilers,58,2,0,New York Islanders,58,5,1,-,"14,812",2:29,0,0,1,2
+898,16/02/2019,Detroit Red Wings,59,5,0,Philadelphia Flyers,58,6,1,OT,"19,342",2:37,0,1,1,2
+899,16/02/2019,Calgary Flames,58,5,0,Pittsburgh Penguins,58,4,1,-,"18,667",2:31,1,2,0,0
+900,16/02/2019,Vancouver Canucks,60,2,0,San Jose Sharks,59,3,1,-,"17,562",2:30,0,0,1,2
+901,16/02/2019,Montreal Canadiens,58,0,0,Tampa Bay Lightning,59,3,1,-,"19,092",2:42,0,0,1,2
+902,16/02/2019,Nashville Predators,61,1,0,Vegas Golden Knights,60,5,1,-,"18,430",2:39,0,0,1,2
+903,16/02/2019,Ottawa Senators,58,4,0,Winnipeg Jets,59,3,1,OT,"15,321",2:33,1,2,0,1
+904,17/02/2019,Washington Capitals,59,2,0,Anaheim Ducks,59,5,1,-,"17,495",2:30,0,0,1,2
+905,17/02/2019,Philadelphia Flyers,59,3,0,Detroit Red Wings,60,1,1,-,"19,515",2:34,1,2,0,0
+906,17/02/2019,Montreal Canadiens,59,3,0,Florida Panthers,57,6,1,-,"16,212",2:37,0,0,1,2
+907,17/02/2019,St. Louis Blues,58,4,0,Minnesota Wild,59,0,1,-,"19,102",2:22,1,2,0,0
+908,17/02/2019,Buffalo Sabres,58,1,0,New Jersey Devils,59,4,1,-,"16,514",2:24,0,0,1,2
+909,17/02/2019,New York Rangers,58,5,0,Pittsburgh Penguins,59,6,1,-,"18,646",2:32,0,0,1,2
+910,18/02/2019,Tampa Bay Lightning,60,5,0,Columbus Blue Jackets,58,1,1,-,"16,411",2:31,1,2,0,0
+911,18/02/2019,Arizona Coyotes,59,2,0,Calgary Flames,59,5,1,-,"18,985",2:25,0,0,1,2
+912,18/02/2019,Ottawa Senators,59,7,0,Chicago Blackhawks,60,8,1,-,"21,338",2:33,0,0,1,2
+913,18/02/2019,Vegas Golden Knights,61,0,0,Colorado Avalanche,59,3,1,-,"17,808",2:22,0,0,1,2
+914,18/02/2019,Washington Capitals,60,3,0,Los Angeles Kings,59,2,1,-,"18,230",2:18,1,2,0,0
+915,18/02/2019,Boston Bruins,60,6,0,San Jose Sharks,60,5,1,OT,"17,562",2:43,1,2,0,1
+916,19/02/2019,New York Rangers,59,2,0,Carolina Hurricanes,60,1,1,-,"13,343",2:29,1,2,0,0
+917,19/02/2019,Nashville Predators,62,5,0,Dallas Stars,59,3,1,-,"17,985",2:38,1,2,0,0
+918,19/02/2019,Arizona Coyotes,60,3,0,Edmonton Oilers,59,2,1,SO,"18,347",2:39,1,2,0,1
+919,19/02/2019,Buffalo Sabres,59,2,0,Florida Panthers,58,4,1,-,"10,340",2:40,0,0,1,2
+920,19/02/2019,Anaheim Ducks,60,4,0,Minnesota Wild,60,0,1,-,"18,533",2:32,1,2,0,0
+921,19/02/2019,Columbus Blue Jackets,59,2,0,Montreal Canadiens,60,3,1,-,"20,858",2:26,0,0,1,2
+922,19/02/2019,Pittsburgh Penguins,60,4,0,New Jersey Devils,60,3,1,-,"15,824",2:24,1,2,0,0
+923,19/02/2019,Tampa Bay Lightning,61,5,0,Philadelphia Flyers,60,2,1,-,"18,932",2:32,1,2,0,0
+924,19/02/2019,Toronto Maple Leafs,59,2,0,St. Louis Blues,59,3,1,OT,"18,598",2:37,0,1,1,2
+925,20/02/2019,New York Islanders,59,2,0,Calgary Flames,60,4,1,-,"18,632",2:24,0,0,1,2
+926,20/02/2019,Winnipeg Jets,60,1,0,Colorado Avalanche,60,7,1,-,"15,021",2:36,0,0,1,2
+927,20/02/2019,Chicago Blackhawks,61,5,0,Detroit Red Wings,61,4,1,OT,"18,806",2:38,1,2,0,1
+928,20/02/2019,Boston Bruins,61,3,0,Vegas Golden Knights,62,2,1,SO,"18,222",2:38,1,2,0,1
+929,21/02/2019,St. Louis Blues,60,2,0,Dallas Stars,60,5,1,-,"17,945",2:33,0,0,1,2
+930,21/02/2019,New York Islanders,60,3,0,Edmonton Oilers,60,4,1,OT,"18,347",2:31,0,1,1,2
+931,21/02/2019,Carolina Hurricanes,61,4,0,Florida Panthers,59,3,1,-,"10,750",2:38,1,2,0,0
+932,21/02/2019,Philadelphia Flyers,61,1,0,Montreal Canadiens,61,5,1,-,"21,302",2:32,0,0,1,2
+933,21/02/2019,Ottawa Senators,60,0,0,New Jersey Devils,61,4,1,-,"12,964",2:13,0,0,1,2
+934,21/02/2019,Los Angeles Kings,60,1,0,Nashville Predators,63,2,1,-,"17,510",2:23,0,0,1,2
+935,21/02/2019,Minnesota Wild,61,4,0,New York Rangers,60,1,1,-,"17,271",2:29,1,2,0,0
+936,21/02/2019,San Jose Sharks,61,4,0,Pittsburgh Penguins,61,0,1,-,"18,362",2:36,1,2,0,0
+937,21/02/2019,Buffalo Sabres,60,1,0,Tampa Bay Lightning,62,2,1,SO,"19,092",2:48,0,1,1,2
+938,21/02/2019,Washington Capitals,61,3,0,Toronto Maple Leafs,60,2,1,-,"19,378",2:25,1,2,0,0
+939,21/02/2019,Arizona Coyotes,61,3,0,Vancouver Canucks,61,2,1,OT,"18,568",2:32,1,2,0,1
+940,22/02/2019,Anaheim Ducks,61,1,0,Calgary Flames,61,2,1,-,"18,960",2:19,0,0,1,2
+941,22/02/2019,Colorado Avalanche,61,5,0,Chicago Blackhawks,62,3,1,-,"21,653",2:27,1,2,0,0
+942,22/02/2019,Minnesota Wild,62,3,0,Detroit Red Wings,62,2,1,-,"19,515",2:30,1,2,0,0
+943,22/02/2019,Columbus Blue Jackets,60,3,0,Ottawa Senators,61,0,1,-,"13,918",2:20,1,2,0,0
+944,22/02/2019,Winnipeg Jets,61,6,0,Vegas Golden Knights,63,3,1,-,"18,280",2:35,1,2,0,0
+945,23/02/2019,Washington Capitals,62,2,0,Buffalo Sabres,61,5,1,-,"19,070",2:30,0,0,1,2
+946,23/02/2019,San Jose Sharks,62,0,0,Columbus Blue Jackets,61,4,1,-,"19,025",2:21,0,0,1,2
+947,23/02/2019,Carolina Hurricanes,62,3,0,Dallas Stars,61,0,1,-,"18,532",2:29,1,2,0,0
+948,23/02/2019,Anaheim Ducks,62,1,0,Edmonton Oilers,61,2,1,-,"18,347",2:31,0,0,1,2
+949,23/02/2019,Los Angeles Kings,61,1,0,Florida Panthers,60,6,1,-,"14,290",2:22,0,0,1,2
+950,23/02/2019,Colorado Avalanche,62,5,0,Nashville Predators,64,0,1,-,"17,760",2:33,1,2,0,0
+951,23/02/2019,New Jersey Devils,62,2,0,New York Rangers,61,5,1,-,"17,371",2:31,0,0,1,2
+952,23/02/2019,Pittsburgh Penguins,62,3,0,Philadelphia Flyers,62,4,1,OT,"69,620",2:54,0,1,1,2
+953,23/02/2019,Boston Bruins,62,1,0,St. Louis Blues,61,2,1,SO,"18,425",2:39,0,1,1,2
+954,23/02/2019,Montreal Canadiens,62,3,0,Toronto Maple Leafs,61,6,1,-,"19,506",2:39,0,0,1,2
+955,23/02/2019,New York Islanders,61,4,0,Vancouver Canucks,62,0,1,-,"18,871",2:22,1,2,0,0
+956,24/02/2019,Winnipeg Jets,62,1,0,Arizona Coyotes,62,4,1,-,"17,125",2:28,0,0,1,2
+957,24/02/2019,Dallas Stars,62,4,0,Chicago Blackhawks,63,3,1,-,"21,474",2:32,1,2,0,0
+958,24/02/2019,San Jose Sharks,63,5,0,Detroit Red Wings,63,3,1,-,"19,515",2:32,1,2,0,0
+959,24/02/2019,St. Louis Blues,62,1,0,Minnesota Wild,63,2,1,OT,"18,645",2:31,0,1,1,2
+960,24/02/2019,Calgary Flames,62,2,0,Ottawa Senators,62,1,1,-,"13,160",2:24,1,2,0,0
+961,24/02/2019,New York Rangers,62,5,0,Washington Capitals,63,6,1,OT,"18,506",2:40,0,1,1,2
+962,25/02/2019,Florida Panthers,61,4,0,Colorado Avalanche,63,3,1,OT,"14,338",2:41,1,2,0,1
+963,25/02/2019,Montreal Canadiens,63,1,0,New Jersey Devils,63,2,1,-,"12,791",2:41,0,0,1,2
+964,25/02/2019,Edmonton Oilers,62,2,0,Nashville Predators,65,3,1,SO,"17,481",2:46,0,1,1,2
+965,25/02/2019,Los Angeles Kings,62,3,0,Tampa Bay Lightning,63,4,1,SO,"19,092",3:23,0,1,1,2
+966,25/02/2019,Buffalo Sabres,62,3,0,Toronto Maple Leafs,62,5,1,-,"19,026",2:29,0,0,1,2
+967,25/02/2019,Anaheim Ducks,63,0,0,Vancouver Canucks,63,4,1,-,"18,542",2:23,0,0,1,2
+968,26/02/2019,Florida Panthers,62,3,0,Arizona Coyotes,63,4,1,SO,"11,912",2:48,0,1,1,2
+969,26/02/2019,San Jose Sharks,64,1,0,Boston Bruins,63,4,1,-,"17,565",2:26,0,0,1,2
+970,26/02/2019,Los Angeles Kings,63,1,0,Carolina Hurricanes,63,6,1,-,"13,042",2:25,0,0,1,2
+971,26/02/2019,Pittsburgh Penguins,63,5,0,Columbus Blue Jackets,62,2,1,-,"18,776",2:25,1,2,0,0
+972,26/02/2019,Montreal Canadiens,64,8,0,Detroit Red Wings,64,1,1,-,"18,845",2:29,1,2,0,0
+973,26/02/2019,Calgary Flames,63,3,0,New York Islanders,62,1,1,-,"13,097",2:26,1,2,0,0
+974,26/02/2019,Buffalo Sabres,63,2,0,Philadelphia Flyers,63,5,1,-,"18,466",2:30,0,0,1,2
+975,26/02/2019,Nashville Predators,66,0,0,St. Louis Blues,63,2,1,-,"16,645",2:20,0,0,1,2
+976,26/02/2019,Dallas Stars,63,1,0,Vegas Golden Knights,64,4,1,-,"18,261",2:39,0,0,1,2
+977,26/02/2019,Minnesota Wild,64,3,0,Winnipeg Jets,63,2,1,-,"15,321",2:21,1,2,0,0
+978,26/02/2019,Ottawa Senators,63,2,0,Washington Capitals,64,7,1,-,"18,506",2:27,0,0,1,2
+979,27/02/2019,Chicago Blackhawks,64,4,0,Anaheim Ducks,64,3,1,-,"16,689",2:28,1,2,0,0
+980,27/02/2019,Vancouver Canucks,64,2,0,Colorado Avalanche,64,3,1,SO,"14,867",2:48,0,1,1,2
+981,27/02/2019,Calgary Flames,64,2,0,New Jersey Devils,64,1,1,-,"12,019",2:29,1,2,0,0
+982,27/02/2019,Tampa Bay Lightning,64,4,0,New York Rangers,63,3,1,OT,"17,012",2:39,1,2,0,1
+983,27/02/2019,Edmonton Oilers,63,2,0,Toronto Maple Leafs,63,6,1,-,"19,356",2:28,0,0,1,2
+984,28/02/2019,Vancouver Canucks,65,2,0,Arizona Coyotes,64,5,1,-,"12,767",2:26,0,0,1,2
+985,28/02/2019,Tampa Bay Lightning,65,1,0,Boston Bruins,64,4,1,-,"17,565",2:25,0,0,1,2
+986,28/02/2019,Philadelphia Flyers,64,3,0,Columbus Blue Jackets,63,4,1,OT,"17,169",2:46,0,1,1,2
+987,28/02/2019,Dallas Stars,64,4,0,Los Angeles Kings,64,3,1,OT,"18,230",2:39,1,2,0,1
+988,28/02/2019,Toronto Maple Leafs,64,1,0,New York Islanders,63,6,1,-,"13,917",2:40,0,0,1,2
+989,28/02/2019,Edmonton Oilers,64,4,0,Ottawa Senators,64,2,1,-,"18,358",2:24,1,2,0,0
+990,28/02/2019,Florida Panthers,63,5,0,Vegas Golden Knights,65,6,1,SO,"18,281",2:50,0,1,1,2
+991,1/03/2019,Vegas Golden Knights,66,3,0,Anaheim Ducks,65,0,1,-,"16,456",2:22,1,2,0,0
+992,1/03/2019,Pittsburgh Penguins,64,3,0,Buffalo Sabres,64,4,1,OT,"19,070",2:41,0,1,1,2
+993,1/03/2019,St. Louis Blues,64,2,0,Carolina Hurricanes,64,5,1,-,"15,363",2:30,0,0,1,2
+994,1/03/2019,Philadelphia Flyers,65,6,0,New Jersey Devils,65,3,1,-,"15,247",2:33,1,2,0,0
+995,1/03/2019,Washington Capitals,65,3,0,New York Islanders,64,1,1,-,"13,971",2:31,1,2,0,0
+996,1/03/2019,Montreal Canadiens,65,4,0,New York Rangers,64,2,1,-,"17,334",2:23,1,2,0,0
+997,1/03/2019,Colorado Avalanche,65,3,0,San Jose Sharks,65,4,1,-,"17,351",2:27,0,0,1,2
+998,1/03/2019,Nashville Predators,67,3,0,Winnipeg Jets,64,5,1,-,"15,321",2:34,0,0,1,2
+999,2/03/2019,Detroit Red Wings,65,1,0,Arizona Coyotes,65,3,1,-,"15,552",2:33,0,0,1,2
+1000,2/03/2019,New Jersey Devils,66,0,0,Boston Bruins,65,1,1,-,"17,565",2:21,0,0,1,2
+1001,2/03/2019,Edmonton Oilers,65,4,0,Columbus Blue Jackets,64,0,1,-,"18,628",2:22,1,2,0,0
+1002,2/03/2019,Minnesota Wild,65,4,0,Calgary Flames,65,2,1,-,"19,289",2:38,1,2,0,0
+1003,2/03/2019,Carolina Hurricanes,65,4,0,Florida Panthers,64,3,1,OT,"13,923",2:29,1,2,0,1
+1004,2/03/2019,Chicago Blackhawks,65,3,0,Los Angeles Kings,65,6,1,-,"18,230",2:24,0,0,1,2
+1005,2/03/2019,Pittsburgh Penguins,65,5,0,Montreal Canadiens,66,1,1,-,"21,302",2:28,1,2,0,0
+1006,2/03/2019,Dallas Stars,65,4,0,St. Louis Blues,65,1,1,-,"18,166",2:32,1,2,0,0
+1007,2/03/2019,Ottawa Senators,65,1,0,Tampa Bay Lightning,66,5,1,-,"19,092",2:34,0,0,1,2
+1008,2/03/2019,Buffalo Sabres,65,2,0,Toronto Maple Leafs,65,5,1,-,"19,088",2:27,0,0,1,2
+1009,3/03/2019,Colorado Avalanche,66,1,0,Anaheim Ducks,66,2,1,-,"16,690",2:30,0,0,1,2
+1010,3/03/2019,Winnipeg Jets,65,5,0,Columbus Blue Jackets,65,2,1,-,"16,091",2:24,1,2,0,0
+1011,3/03/2019,Ottawa Senators,66,3,0,Florida Panthers,65,2,1,-,"11,752",2:28,1,2,0,0
+1012,3/03/2019,Nashville Predators,68,3,0,Minnesota Wild,66,2,1,SO,"18,885",2:34,1,2,0,1
+1013,3/03/2019,Philadelphia Flyers,66,4,0,New York Islanders,65,1,1,-,"13,917",2:31,1,2,0,0
+1014,3/03/2019,Washington Capitals,66,3,0,New York Rangers,65,2,1,SO,"17,517",2:42,1,2,0,1
+1015,3/03/2019,Chicago Blackhawks,66,2,0,San Jose Sharks,66,5,1,-,"17,252",2:17,0,0,1,2
+1016,3/03/2019,Vancouver Canucks,66,0,0,Vegas Golden Knights,67,3,1,-,"18,303",2:26,0,0,1,2
+1017,4/03/2019,Edmonton Oilers,66,4,0,Buffalo Sabres,66,3,1,-,"17,775",2:32,1,2,0,0
+1018,4/03/2019,Toronto Maple Leafs,66,6,0,Calgary Flames,66,2,1,-,"19,289",2:31,1,2,0,0
+1019,5/03/2019,Anaheim Ducks,67,3,0,Arizona Coyotes,66,1,1,-,"11,305",2:31,1,2,0,0
+1020,5/03/2019,Carolina Hurricanes,66,3,0,Boston Bruins,66,4,1,OT,"17,565",2:38,0,1,1,2
+1021,5/03/2019,Detroit Red Wings,66,3,0,Colorado Avalanche,67,4,1,OT,"18,011",2:36,0,1,1,2
+1022,5/03/2019,New York Rangers,66,0,0,Dallas Stars,66,1,1,-,"17,974",2:29,0,0,1,2
+1023,5/03/2019,Montreal Canadiens,67,3,0,Los Angeles Kings,66,1,1,-,"17,764",2:22,1,2,0,0
+1024,5/03/2019,Columbus Blue Jackets,66,2,0,New Jersey Devils,67,1,1,SO,"12,085",2:37,1,2,0,1
+1025,5/03/2019,Minnesota Wild,67,4,0,Nashville Predators,69,5,1,SO,"17,668",2:43,0,1,1,2
+1026,5/03/2019,Ottawa Senators,67,4,0,New York Islanders,66,5,1,SO,"11,445",2:33,0,1,1,2
+1027,5/03/2019,Florida Panthers,66,2,0,Pittsburgh Penguins,66,3,1,OT,"18,484",2:34,0,1,1,2
+1028,5/03/2019,Winnipeg Jets,66,2,0,Tampa Bay Lightning,67,5,1,-,"19,092",2:37,0,0,1,2
+1029,6/03/2019,St. Louis Blues,66,5,0,Anaheim Ducks,68,4,1,-,"16,854",2:34,1,2,0,0
+1030,6/03/2019,Washington Capitals,67,5,0,Philadelphia Flyers,67,3,1,-,"19,232",2:23,1,2,0,0
+1031,6/03/2019,Toronto Maple Leafs,67,2,0,Vancouver Canucks,67,3,1,OT,"18,871",2:31,0,1,1,2
+1032,6/03/2019,Calgary Flames,67,1,0,Vegas Golden Knights,68,2,1,-,"18,422",2:43,0,0,1,2
+1033,7/03/2019,Calgary Flames,68,0,0,Arizona Coyotes,67,2,1,-,"13,341",2:21,0,0,1,2
+1034,7/03/2019,Florida Panthers,67,3,0,Boston Bruins,67,4,1,-,"17,565",2:29,0,0,1,2
+1035,7/03/2019,Buffalo Sabres,67,4,0,Chicago Blackhawks,67,5,1,SO,"21,500",2:38,0,1,1,2
+1036,7/03/2019,Colorado Avalanche,68,0,0,Dallas Stars,67,4,1,-,"18,011",2:22,0,0,1,2
+1037,7/03/2019,New York Rangers,67,2,0,Detroit Red Wings,67,3,1,SO,"18,333",2:44,0,1,1,2
+1038,7/03/2019,Vancouver Canucks,68,2,0,Edmonton Oilers,67,3,1,-,"18,347",2:26,0,0,1,2
+1039,7/03/2019,St. Louis Blues,67,4,0,Los Angeles Kings,67,0,1,-,"17,837",2:26,1,2,0,0
+1040,7/03/2019,New York Islanders,67,4,0,Ottawa Senators,68,2,1,-,"11,967",2:30,1,2,0,0
+1041,7/03/2019,Columbus Blue Jackets,67,0,0,Pittsburgh Penguins,67,3,1,-,"18,611",2:31,0,0,1,2
+1042,7/03/2019,Montreal Canadiens,68,2,0,San Jose Sharks,67,5,1,-,"17,471",2:21,0,0,1,2
+1043,7/03/2019,Minnesota Wild,68,3,0,Tampa Bay Lightning,68,0,1,-,"19,092",2:26,1,2,0,0
+1044,8/03/2019,Montreal Canadiens,69,2,0,Anaheim Ducks,69,8,1,-,"16,580",2:36,0,0,1,2
+1045,8/03/2019,Winnipeg Jets,67,8,0,Carolina Hurricanes,67,1,1,-,"15,928",2:27,1,2,0,0
+1046,8/03/2019,Minnesota Wild,69,2,0,Florida Panthers,68,6,1,-,"12,388",2:25,0,0,1,2
+1047,8/03/2019,New Jersey Devils,68,0,0,Washington Capitals,68,3,1,-,"18,506",2:23,0,0,1,2
+1048,9/03/2019,Los Angeles Kings,68,2,0,Arizona Coyotes,68,4,1,-,"14,976",2:30,0,0,1,2
+1049,9/03/2019,Ottawa Senators,69,2,0,Boston Bruins,68,3,1,-,"17,565",2:20,0,0,1,2
+1050,9/03/2019,Pittsburgh Penguins,68,1,0,Columbus Blue Jackets,68,4,1,-,"19,146",2:28,0,0,1,2
+1051,9/03/2019,Buffalo Sabres,68,0,0,Colorado Avalanche,69,3,1,-,"18,052",2:34,0,0,1,2
+1052,9/03/2019,Chicago Blackhawks,68,2,0,Dallas Stars,68,1,1,-,"18,532",2:25,1,2,0,0
+1053,9/03/2019,Toronto Maple Leafs,68,3,0,Edmonton Oilers,68,2,1,-,"18,347",2:23,1,2,0,0
+1054,9/03/2019,Carolina Hurricanes,68,5,0,Nashville Predators,70,3,1,-,"17,724",2:28,1,2,0,0
+1055,9/03/2019,Philadelphia Flyers,68,5,0,New York Islanders,68,2,1,-,"13,917",2:34,1,2,0,0
+1056,9/03/2019,New Jersey Devils,69,2,0,New York Rangers,68,4,1,-,"17,386",2:32,0,0,1,2
+1057,9/03/2019,St. Louis Blues,68,2,0,San Jose Sharks,68,3,1,OT,"17,562",2:19,0,1,1,2
+1058,9/03/2019,Detroit Red Wings,68,2,0,Tampa Bay Lightning,69,3,1,-,"19,092",2:40,0,0,1,2
+1059,9/03/2019,Vegas Golden Knights,69,6,0,Vancouver Canucks,69,2,1,-,"18,286",2:22,1,2,0,0
+1060,10/03/2019,Los Angeles Kings,69,3,0,Anaheim Ducks,70,2,1,-,"17,174",2:26,1,2,0,0
+1061,10/03/2019,Vegas Golden Knights,70,3,0,Calgary Flames,69,6,1,-,"19,086",2:33,0,0,1,2
+1062,10/03/2019,Detroit Red Wings,69,1,0,Florida Panthers,69,6,1,-,"15,238",2:27,0,0,1,2
+1063,10/03/2019,Boston Bruins,69,2,0,Pittsburgh Penguins,69,4,1,-,"18,578",2:29,0,0,1,2
+1064,10/03/2019,Winnipeg Jets,68,1,0,Washington Capitals,69,3,1,-,"18,506",2:29,0,0,1,2
+1065,11/03/2019,Arizona Coyotes,69,1,0,Chicago Blackhawks,69,7,1,-,"21,574",2:27,0,0,1,2
+1066,11/03/2019,Carolina Hurricanes,69,3,0,Colorado Avalanche,70,0,1,-,"16,711",2:19,1,2,0,0
+1067,11/03/2019,New York Rangers,69,2,0,Edmonton Oilers,69,3,1,OT,"18,347",2:37,0,1,1,2
+1068,11/03/2019,San Jose Sharks,69,3,0,Minnesota Wild,70,0,1,-,"18,907",2:20,1,2,0,0
+1069,11/03/2019,Columbus Blue Jackets,69,0,0,New York Islanders,69,2,1,-,"11,827",2:15,0,0,1,2
+1070,11/03/2019,Ottawa Senators,70,2,0,Philadelphia Flyers,69,3,1,-,"18,193",2:22,0,0,1,2
+1071,11/03/2019,Tampa Bay Lightning,70,6,0,Toronto Maple Leafs,69,2,1,-,"19,491",2:28,1,2,0,0
+1072,12/03/2019,Nashville Predators,71,2,0,Anaheim Ducks,71,3,1,-,"16,811",2:29,0,0,1,2
+1073,12/03/2019,Dallas Stars,69,2,0,Buffalo Sabres,69,0,1,-,"17,830",2:22,1,2,0,0
+1074,12/03/2019,Boston Bruins,70,4,0,Columbus Blue Jackets,70,7,1,-,"16,554",2:30,0,0,1,2
+1075,12/03/2019,New Jersey Devils,70,4,0,Calgary Flames,70,9,1,-,"18,529",2:32,0,0,1,2
+1076,12/03/2019,Detroit Red Wings,70,1,0,Montreal Canadiens,70,3,1,-,"21,302",2:23,0,0,1,2
+1077,12/03/2019,Washington Capitals,70,3,0,Pittsburgh Penguins,70,5,1,-,"18,640",2:32,0,0,1,2
+1078,12/03/2019,Arizona Coyotes,70,3,0,St. Louis Blues,69,1,1,-,"18,428",2:20,1,2,0,0
+1079,12/03/2019,San Jose Sharks,70,5,0,Winnipeg Jets,69,4,1,-,"15,321",2:29,1,2,0,0
+1080,13/03/2019,New Jersey Devils,71,6,0,Edmonton Oilers,70,3,1,-,"18,347",2:37,1,2,0,0
+1081,13/03/2019,Chicago Blackhawks,70,5,0,Toronto Maple Leafs,70,4,1,-,"19,342",2:28,1,2,0,0
+1082,13/03/2019,New York Rangers,70,1,0,Vancouver Canucks,70,4,1,-,"18,225",2:20,0,0,1,2
+1083,14/03/2019,Anaheim Ducks,72,1,0,Arizona Coyotes,71,6,1,-,"14,202",2:28,0,0,1,2
+1084,14/03/2019,Pittsburgh Penguins,71,5,0,Buffalo Sabres,70,0,1,-,"18,680",2:24,1,2,0,0
+1085,14/03/2019,Tampa Bay Lightning,71,5,0,Detroit Red Wings,71,4,1,-,"19,515",2:29,1,2,0,0
+1086,14/03/2019,Nashville Predators,72,3,0,Los Angeles Kings,70,1,1,-,"17,730",2:20,1,2,0,0
+1087,14/03/2019,Dallas Stars,70,4,0,Minnesota Wild,71,1,1,-,"18,919",2:22,1,2,0,0
+1088,14/03/2019,Montreal Canadiens,71,1,0,New York Islanders,70,2,1,-,"13,274",2:28,0,0,1,2
+1089,14/03/2019,St. Louis Blues,70,0,0,Ottawa Senators,71,2,1,-,"13,378",2:23,0,0,1,2
+1090,14/03/2019,Washington Capitals,71,5,0,Philadelphia Flyers,70,2,1,-,"19,475",2:26,1,2,0,0
+1091,14/03/2019,Florida Panthers,70,4,0,San Jose Sharks,71,2,1,-,"17,388",2:20,1,2,0,0
+1092,14/03/2019,Boston Bruins,71,3,0,Winnipeg Jets,70,4,1,-,"15,321",2:28,0,0,1,2
+1093,15/03/2019,Carolina Hurricanes,70,0,0,Columbus Blue Jackets,71,3,1,-,"18,832",2:32,0,0,1,2
+1094,15/03/2019,New York Rangers,71,1,0,Calgary Flames,71,5,1,-,"18,956",2:24,0,0,1,2
+1095,15/03/2019,Anaheim Ducks,73,5,0,Colorado Avalanche,71,3,1,-,"18,025",2:29,1,2,0,0
+1096,15/03/2019,Vegas Golden Knights,71,2,0,Dallas Stars,71,1,1,-,"18,532",2:29,1,2,0,0
+1097,15/03/2019,Philadelphia Flyers,71,6,0,Toronto Maple Leafs,71,7,1,-,"19,290",2:43,0,0,1,2
+1098,15/03/2019,New Jersey Devils,72,3,0,Vancouver Canucks,71,2,1,SO,"17,552",2:52,1,2,0,1
+1099,16/03/2019,Edmonton Oilers,71,3,0,Arizona Coyotes,72,2,1,OT,"15,016",2:32,1,2,0,1
+1100,16/03/2019,Columbus Blue Jackets,72,1,0,Boston Bruins,72,2,1,OT,"17,565",2:33,0,1,1,2
+1101,16/03/2019,Buffalo Sabres,71,2,0,Carolina Hurricanes,71,4,1,-,"15,171",2:21,0,0,1,2
+1102,16/03/2019,New York Islanders,71,1,0,Detroit Red Wings,72,2,1,-,"19,515",2:21,0,0,1,2
+1103,16/03/2019,Florida Panthers,71,4,0,Los Angeles Kings,71,3,1,-,"18,022",2:31,1,2,0,0
+1104,16/03/2019,New York Rangers,72,2,0,Minnesota Wild,72,5,1,-,"18,844",2:36,0,0,1,2
+1105,16/03/2019,Chicago Blackhawks,71,2,0,Montreal Canadiens,72,0,1,-,"21,302",2:24,1,2,0,0
+1106,16/03/2019,Toronto Maple Leafs,72,2,0,Ottawa Senators,72,6,1,-,"18,607",2:25,0,0,1,2
+1107,16/03/2019,St. Louis Blues,71,5,0,Pittsburgh Penguins,72,1,1,-,"18,641",2:24,1,2,0,0
+1108,16/03/2019,Nashville Predators,73,4,0,San Jose Sharks,72,2,1,-,"17,562",2:26,1,2,0,0
+1109,16/03/2019,Washington Capitals,72,3,0,Tampa Bay Lightning,72,6,1,-,"19,092",2:34,0,0,1,2
+1110,16/03/2019,Calgary Flames,72,1,0,Winnipeg Jets,71,2,1,-,"15,321",2:22,0,0,1,2
+1111,17/03/2019,Florida Panthers,72,2,0,Anaheim Ducks,74,3,1,-,"16,523",2:26,0,0,1,2
+1112,17/03/2019,St. Louis Blues,72,3,0,Buffalo Sabres,72,4,1,SO,"18,486",2:34,0,1,1,2
+1113,17/03/2019,New Jersey Devils,73,0,0,Colorado Avalanche,72,3,1,-,"18,037",2:28,0,0,1,2
+1114,17/03/2019,Vancouver Canucks,72,3,0,Dallas Stars,72,2,1,SO,"18,125",2:45,1,2,0,1
+1115,17/03/2019,New York Islanders,72,3,0,Minnesota Wild,73,2,1,OT,"18,696",2:35,1,2,0,1
+1116,17/03/2019,Philadelphia Flyers,72,2,0,Pittsburgh Penguins,73,1,1,OT,"18,636",2:41,1,2,0,1
+1117,17/03/2019,Edmonton Oilers,72,3,0,Vegas Golden Knights,72,6,1,-,"18,317",2:30,0,0,1,2
+1118,18/03/2019,Vancouver Canucks,73,3,0,Chicago Blackhawks,72,2,1,OT,"21,496",2:25,1,2,0,1
+1119,18/03/2019,Winnipeg Jets,72,3,0,Los Angeles Kings,72,2,1,-,"17,842",2:24,1,2,0,0
+1120,18/03/2019,Vegas Golden Knights,73,7,0,San Jose Sharks,73,3,1,-,"17,487",2:27,1,2,0,0
+1121,18/03/2019,Arizona Coyotes,73,1,0,Tampa Bay Lightning,73,4,1,-,"19,092",2:29,0,0,1,2
+1122,19/03/2019,Pittsburgh Penguins,74,2,0,Carolina Hurricanes,72,3,1,SO,"14,677",2:48,0,1,1,2
+1123,19/03/2019,Columbus Blue Jackets,73,2,0,Calgary Flames,73,4,1,-,"18,288",2:35,0,0,1,2
+1124,19/03/2019,Florida Panthers,73,2,0,Dallas Stars,73,4,1,-,"17,654",2:36,0,0,1,2
+1125,19/03/2019,Colorado Avalanche,73,3,0,Minnesota Wild,74,1,1,-,"18,785",2:38,1,2,0,0
+1126,19/03/2019,Washington Capitals,73,4,0,New Jersey Devils,74,1,1,-,"14,815",2:20,1,2,0,0
+1127,19/03/2019,Toronto Maple Leafs,73,0,0,Nashville Predators,74,3,1,-,"17,499",2:18,0,0,1,2
+1128,19/03/2019,Boston Bruins,73,5,0,New York Islanders,73,0,1,-,"13,917",2:27,1,2,0,0
+1129,19/03/2019,Detroit Red Wings,73,3,0,New York Rangers,73,2,1,-,"17,183",2:27,1,2,0,0
+1130,19/03/2019,Montreal Canadiens,73,3,0,Philadelphia Flyers,73,1,1,-,"19,045",2:21,1,2,0,0
+1131,19/03/2019,Edmonton Oilers,73,2,0,St. Louis Blues,73,7,1,-,"17,873",2:31,0,0,1,2
+1132,20/03/2019,Winnipeg Jets,73,3,0,Anaheim Ducks,75,0,1,-,"16,846",2:20,1,2,0,0
+1133,20/03/2019,Toronto Maple Leafs,74,4,0,Buffalo Sabres,73,2,1,-,"19,070",2:33,1,2,0,0
+1134,20/03/2019,Ottawa Senators,73,4,0,Vancouver Canucks,74,7,1,-,"18,500",2:30,0,0,1,2
+1135,20/03/2019,Tampa Bay Lightning,74,5,0,Washington Capitals,74,4,1,OT,"18,506",2:49,1,2,0,1
+1136,21/03/2019,Tampa Bay Lightning,75,6,0,Carolina Hurricanes,73,3,1,-,"13,785",2:34,1,2,0,0
+1137,21/03/2019,Ottawa Senators,74,1,0,Calgary Flames,74,5,1,-,"18,793",2:20,0,0,1,2
+1138,21/03/2019,Philadelphia Flyers,74,3,0,Chicago Blackhawks,73,1,1,-,"21,484",2:25,1,2,0,0
+1139,21/03/2019,Colorado Avalanche,74,3,0,Dallas Stars,74,1,1,-,"17,543",2:26,1,2,0,0
+1140,21/03/2019,Columbus Blue Jackets,74,1,0,Edmonton Oilers,74,4,1,-,"18,347",2:25,0,0,1,2
+1141,21/03/2019,Arizona Coyotes,74,2,0,Florida Panthers,74,4,1,-,"12,576",2:32,0,0,1,2
+1142,21/03/2019,San Jose Sharks,74,2,0,Los Angeles Kings,73,4,1,-,"18,230",2:28,0,0,1,2
+1143,21/03/2019,New York Islanders,74,0,0,Montreal Canadiens,74,4,1,-,"21,302",2:22,0,0,1,2
+1144,21/03/2019,Boston Bruins,74,5,0,New Jersey Devils,75,1,1,-,"14,649",2:19,1,2,0,0
+1145,21/03/2019,Pittsburgh Penguins,75,2,0,Nashville Predators,75,1,1,SO,"17,729",2:39,1,2,0,1
+1146,21/03/2019,Detroit Red Wings,74,2,0,St. Louis Blues,74,5,1,-,"18,272",2:16,0,0,1,2
+1147,21/03/2019,Winnipeg Jets,74,0,0,Vegas Golden Knights,74,5,1,-,"18,430",2:21,0,0,1,2
+1148,22/03/2019,San Jose Sharks,75,3,0,Anaheim Ducks,76,4,1,OT,"17,174",2:22,0,1,1,2
+1149,22/03/2019,Minnesota Wild,75,2,0,Washington Capitals,75,1,1,-,"18,506",2:25,1,2,0,0
+1150,23/03/2019,Minnesota Wild,76,1,0,Carolina Hurricanes,74,5,1,-,"16,751",2:24,0,0,1,2
+1151,23/03/2019,Chicago Blackhawks,74,2,0,Colorado Avalanche,75,4,1,-,"17,099",2:26,0,0,1,2
+1152,23/03/2019,Pittsburgh Penguins,76,3,0,Dallas Stars,75,2,1,-,"18,532",2:31,1,2,0,0
+1153,23/03/2019,Ottawa Senators,75,4,0,Edmonton Oilers,75,3,1,OT,"18,347",2:28,1,2,0,1
+1154,23/03/2019,Boston Bruins,75,7,0,Florida Panthers,75,3,1,-,"17,129",2:34,1,2,0,0
+1155,23/03/2019,Anaheim Ducks,77,3,0,Los Angeles Kings,74,4,1,SO,"18,230",2:37,0,1,1,2
+1156,23/03/2019,Buffalo Sabres,74,4,0,Montreal Canadiens,75,7,1,-,"21,302",2:35,0,0,1,2
+1157,23/03/2019,Arizona Coyotes,75,1,0,New Jersey Devils,76,2,1,SO,"16,514",2:37,0,1,1,2
+1158,23/03/2019,New York Islanders,75,4,0,Philadelphia Flyers,75,2,1,-,"19,668",2:25,1,2,0,0
+1159,23/03/2019,Tampa Bay Lightning,76,3,0,St. Louis Blues,75,4,1,-,"18,127",2:30,0,0,1,2
+1160,23/03/2019,New York Rangers,74,2,0,Toronto Maple Leafs,75,1,1,OT,"19,251",2:34,1,2,0,1
+1161,23/03/2019,Calgary Flames,75,3,0,Vancouver Canucks,75,1,1,-,"18,685",2:26,1,2,0,0
+1162,23/03/2019,Detroit Red Wings,75,3,0,Vegas Golden Knights,75,2,1,OT,"18,437",2:27,1,2,0,1
+1163,23/03/2019,Nashville Predators,76,0,0,Winnipeg Jets,75,5,1,-,"15,321",2:26,0,0,1,2
+1164,24/03/2019,Montreal Canadiens,76,1,0,Carolina Hurricanes,75,2,1,OT,"14,437",2:38,0,1,1,2
+1165,24/03/2019,Colorado Avalanche,76,1,0,Chicago Blackhawks,75,2,1,OT,"21,410",2:35,0,1,1,2
+1166,24/03/2019,Arizona Coyotes,76,0,0,New York Islanders,76,2,1,-,"13,917",2:20,0,0,1,2
+1167,24/03/2019,Columbus Blue Jackets,75,5,0,Vancouver Canucks,76,0,1,-,"17,805",2:23,1,2,0,0
+1168,24/03/2019,Philadelphia Flyers,76,1,0,Washington Capitals,76,3,1,-,"18,506",2:27,0,0,1,2
+1169,25/03/2019,Los Angeles Kings,75,3,0,Calgary Flames,76,0,1,-,"18,471",2:29,1,2,0,0
+1170,25/03/2019,Nashville Predators,77,1,0,Minnesota Wild,77,0,1,-,"18,833",2:28,1,2,0,0
+1171,25/03/2019,Buffalo Sabres,75,1,0,New Jersey Devils,77,3,1,-,"12,053",2:34,0,0,1,2
+1172,25/03/2019,Pittsburgh Penguins,77,5,0,New York Rangers,75,2,1,-,"17,401",2:23,1,2,0,0
+1173,25/03/2019,Detroit Red Wings,76,3,0,San Jose Sharks,76,2,1,-,"17,393",2:26,1,2,0,0
+1174,25/03/2019,Vegas Golden Knights,76,1,0,St. Louis Blues,76,3,1,-,"18,247",2:22,0,0,1,2
+1175,25/03/2019,Boston Bruins,76,4,0,Tampa Bay Lightning,77,5,1,-,"19,092",2:29,0,0,1,2
+1176,25/03/2019,Florida Panthers,76,5,0,Toronto Maple Leafs,76,7,1,-,"19,125",2:37,0,0,1,2
+1177,25/03/2019,Dallas Stars,76,5,0,Winnipeg Jets,76,2,1,-,"15,321",2:30,1,2,0,0
+1178,26/03/2019,Chicago Blackhawks,76,0,0,Arizona Coyotes,77,1,1,-,"15,055",2:19,0,0,1,2
+1179,26/03/2019,New York Islanders,77,0,0,Columbus Blue Jackets,76,4,1,-,"17,928",2:26,0,0,1,2
+1180,26/03/2019,Los Angeles Kings,76,4,0,Edmonton Oilers,76,8,1,-,"18,347",2:34,0,0,1,2
+1181,26/03/2019,Florida Panthers,77,1,0,Montreal Canadiens,77,6,1,-,"21,029",2:37,0,0,1,2
+1182,26/03/2019,Buffalo Sabres,76,0,0,Ottawa Senators,76,4,1,-,"12,074",2:21,0,0,1,2
+1183,26/03/2019,Anaheim Ducks,78,5,0,Vancouver Canucks,77,4,1,-,"17,633",2:28,1,2,0,0
+1184,26/03/2019,Carolina Hurricanes,76,1,0,Washington Capitals,77,4,1,-,"18,506",2:26,0,0,1,2
+1185,27/03/2019,New York Rangers,76,3,0,Boston Bruins,77,6,1,-,"17,565",2:36,0,0,1,2
+1186,27/03/2019,Dallas Stars,77,2,0,Calgary Flames,77,1,1,-,"18,881",2:36,1,2,0,0
+1187,27/03/2019,Vegas Golden Knights,77,3,0,Colorado Avalanche,77,4,1,-,"16,799",2:38,0,0,1,2
+1188,27/03/2019,Toronto Maple Leafs,77,4,0,Philadelphia Flyers,77,5,1,SO,"19,205",2:39,0,1,1,2
+1189,28/03/2019,Detroit Red Wings,77,5,0,Buffalo Sabres,77,4,1,OT,"16,236",2:37,1,2,0,1
+1190,28/03/2019,Washington Capitals,78,3,0,Carolina Hurricanes,77,2,1,-,"14,680",2:18,1,2,0,0
+1191,28/03/2019,Montreal Canadiens,78,2,0,Columbus Blue Jackets,77,6,1,-,"18,641",2:32,0,0,1,2
+1192,28/03/2019,Dallas Stars,78,3,0,Edmonton Oilers,77,2,1,SO,"18,347",2:44,1,2,0,1
+1193,28/03/2019,Florida Panthers,78,5,0,Ottawa Senators,77,2,1,-,"14,230",2:26,1,2,0,0
+1194,28/03/2019,Chicago Blackhawks,77,5,0,San Jose Sharks,77,4,1,-,"17,364",2:25,1,2,0,0
+1195,28/03/2019,Los Angeles Kings,77,2,0,Vancouver Canucks,78,3,1,SO,"18,524",2:38,0,1,1,2
+1196,28/03/2019,New York Islanders,78,5,0,Winnipeg Jets,77,4,1,-,"15,321",2:30,1,2,0,0
+1197,29/03/2019,Anaheim Ducks,79,1,0,Calgary Flames,78,6,1,-,"19,030",2:19,0,0,1,2
+1198,29/03/2019,Arizona Coyotes,78,2,0,Colorado Avalanche,78,3,1,SO,"18,045",2:44,0,1,1,2
+1199,29/03/2019,New Jersey Devils,78,0,0,Detroit Red Wings,78,4,1,-,"19,515",2:21,0,0,1,2
+1200,29/03/2019,St. Louis Blues,77,2,0,New York Rangers,77,4,1,-,"17,567",2:21,0,0,1,2
+1201,29/03/2019,Nashville Predators,78,3,0,Pittsburgh Penguins,78,1,1,-,"18,632",2:26,1,2,0,0
+1202,29/03/2019,Minnesota Wild,78,3,0,Vegas Golden Knights,78,2,1,-,"18,492",2:28,1,2,0,0
+1203,30/03/2019,Florida Panthers,79,4,0,Boston Bruins,78,1,1,-,"17,565",2:25,1,2,0,0
+1204,30/03/2019,Philadelphia Flyers,78,2,0,Carolina Hurricanes,78,5,1,-,"17,833",2:29,0,0,1,2
+1205,30/03/2019,Anaheim Ducks,80,5,0,Edmonton Oilers,78,1,1,-,"18,347",2:21,1,2,0,0
+1206,30/03/2019,Chicago Blackhawks,78,2,0,Los Angeles Kings,78,3,1,OT,"18,230",2:36,0,1,1,2
+1207,30/03/2019,St. Louis Blues,78,3,0,New Jersey Devils,79,2,1,OT,"16,514",2:23,1,2,0,1
+1208,30/03/2019,Columbus Blue Jackets,78,5,0,Nashville Predators,79,2,1,-,"17,751",2:28,1,2,0,0
+1209,30/03/2019,Buffalo Sabres,78,1,0,New York Islanders,79,5,1,-,"13,917",2:25,0,0,1,2
+1210,30/03/2019,Toronto Maple Leafs,78,2,0,Ottawa Senators,78,4,1,-,"18,655",2:26,0,0,1,2
+1211,30/03/2019,Vegas Golden Knights,79,3,0,San Jose Sharks,78,4,1,OT,"17,562",2:33,0,1,1,2
+1212,30/03/2019,Washington Capitals,79,6,0,Tampa Bay Lightning,78,3,1,-,"19,092",2:34,1,2,0,0
+1213,30/03/2019,Dallas Stars,79,2,0,Vancouver Canucks,79,3,1,SO,"18,663",2:42,0,1,1,2
+1214,30/03/2019,Montreal Canadiens,79,3,0,Winnipeg Jets,78,1,1,-,"15,321",2:27,1,2,0,0
+1215,31/03/2019,Minnesota Wild,79,0,0,Arizona Coyotes,79,4,1,-,"17,431",2:30,0,0,1,2
+1216,31/03/2019,Columbus Blue Jackets,79,4,0,Buffalo Sabres,79,0,1,-,"17,990",2:23,1,2,0,0
+1217,31/03/2019,Boston Bruins,79,3,0,Detroit Red Wings,79,6,1,-,"19,515",2:29,0,0,1,2
+1218,31/03/2019,New York Rangers,78,3,0,Philadelphia Flyers,79,0,1,-,"19,437",2:21,1,2,0,0
+1219,31/03/2019,Carolina Hurricanes,79,1,0,Pittsburgh Penguins,79,3,1,-,"18,616",2:40,0,0,1,2
+1220,31/03/2019,Calgary Flames,79,5,0,San Jose Sharks,79,3,1,-,"17,313",2:22,1,2,0,0
+1221,1/04/2019,Winnipeg Jets,79,4,0,Chicago Blackhawks,79,3,1,OT,"21,314",2:33,1,2,0,1
+1222,1/04/2019,Washington Capitals,80,3,0,Florida Panthers,80,5,1,-,"14,376",2:27,0,0,1,2
+1223,1/04/2019,Calgary Flames,80,7,0,Los Angeles Kings,79,2,1,-,"18,117",2:25,1,2,0,0
+1224,1/04/2019,New York Rangers,79,2,0,New Jersey Devils,80,4,1,-,"14,776",2:33,0,0,1,2
+1225,1/04/2019,Toronto Maple Leafs,79,2,0,New York Islanders,80,1,1,-,"13,917",2:28,1,2,0,0
+1226,1/04/2019,Tampa Bay Lightning,79,5,0,Ottawa Senators,79,2,1,-,"13,628",2:23,1,2,0,0
+1227,1/04/2019,Colorado Avalanche,79,2,0,St. Louis Blues,79,3,1,SO,"17,767",2:32,0,1,1,2
+1228,1/04/2019,Edmonton Oilers,79,1,0,Vegas Golden Knights,80,3,1,-,"18,367",2:24,0,0,1,2
+1229,2/04/2019,Los Angeles Kings,80,3,0,Arizona Coyotes,80,1,1,-,"14,687",2:26,1,2,0,0
+1230,2/04/2019,Nashville Predators,80,3,0,Buffalo Sabres,80,2,1,-,"16,569",2:32,1,2,0,0
+1231,2/04/2019,Boston Bruins,80,6,0,Columbus Blue Jackets,80,2,1,-,"18,890",2:32,1,2,0,0
+1232,2/04/2019,Edmonton Oilers,80,2,0,Colorado Avalanche,80,6,1,-,"17,021",2:22,0,0,1,2
+1233,2/04/2019,Philadelphia Flyers,80,2,0,Dallas Stars,80,6,1,-,"18,532",2:37,0,0,1,2
+1234,2/04/2019,Pittsburgh Penguins,80,1,0,Detroit Red Wings,80,4,1,-,"19,515",2:27,0,0,1,2
+1235,2/04/2019,Winnipeg Jets,80,1,0,Minnesota Wild,80,5,1,-,"18,590",2:22,0,0,1,2
+1236,2/04/2019,Tampa Bay Lightning,80,2,0,Montreal Canadiens,80,4,1,-,"21,302",2:29,0,0,1,2
+1237,2/04/2019,Carolina Hurricanes,80,4,0,Toronto Maple Leafs,80,1,1,-,"19,097",2:34,1,2,0,0
+1238,2/04/2019,San Jose Sharks,80,2,0,Vancouver Canucks,80,4,1,-,"18,524",2:22,0,0,1,2
+1239,3/04/2019,Calgary Flames,81,1,0,Anaheim Ducks,81,3,1,-,"17,174",2:19,0,0,1,2
+1240,3/04/2019,St. Louis Blues,80,3,0,Chicago Blackhawks,80,4,1,SO,"21,482",2:39,0,1,1,2
+1241,3/04/2019,Ottawa Senators,80,4,0,New York Rangers,80,1,1,-,"16,562",2:23,1,2,0,0
+1242,4/04/2019,Ottawa Senators,81,2,0,Buffalo Sabres,81,5,1,-,"17,988",2:25,0,0,1,2
+1243,4/04/2019,New Jersey Devils,81,1,0,Carolina Hurricanes,81,3,1,-,"17,645",2:25,0,0,1,2
+1244,4/04/2019,Winnipeg Jets,81,2,0,Colorado Avalanche,81,3,1,OT,"18,003",2:33,0,1,1,2
+1245,4/04/2019,San Jose Sharks,81,3,0,Edmonton Oilers,81,2,1,-,"18,347",2:27,1,2,0,0
+1246,4/04/2019,New York Islanders,81,2,0,Florida Panthers,81,1,1,SO,"13,775",2:53,1,2,0,1
+1247,4/04/2019,Boston Bruins,81,3,0,Minnesota Wild,81,0,1,-,"19,074",2:20,1,2,0,0
+1248,4/04/2019,Vancouver Canucks,81,2,0,Nashville Predators,81,3,1,-,"17,669",2:24,0,0,1,2
+1249,4/04/2019,Detroit Red Wings,81,1,0,Pittsburgh Penguins,81,4,1,-,"18,574",2:26,0,0,1,2
+1250,4/04/2019,Philadelphia Flyers,81,3,0,St. Louis Blues,81,7,1,-,"18,203",2:34,0,0,1,2
+1251,4/04/2019,Tampa Bay Lightning,81,3,0,Toronto Maple Leafs,81,1,1,-,"19,400",2:17,1,2,0,0
+1252,4/04/2019,Arizona Coyotes,81,4,0,Vegas Golden Knights,81,1,1,-,"18,485",2:28,1,2,0,0
+1253,4/04/2019,Montreal Canadiens,81,1,0,Washington Capitals,81,2,1,-,"18,506",2:22,0,0,1,2
+1254,5/04/2019,Los Angeles Kings,81,2,0,Anaheim Ducks,82,5,1,-,"17,306",2:31,0,0,1,2
+1255,5/04/2019,Dallas Stars,81,1,0,Chicago Blackhawks,81,6,1,-,"21,626",2:24,0,0,1,2
+1256,5/04/2019,Columbus Blue Jackets,81,3,0,New York Rangers,81,2,1,SO,"17,341",2:43,1,2,0,1
+1257,6/04/2019,Winnipeg Jets,82,4,0,Arizona Coyotes,82,2,1,-,"17,125",2:29,1,2,0,0
+1258,6/04/2019,Tampa Bay Lightning,82,6,0,Boston Bruins,82,3,1,-,"17,565",2:23,1,2,0,0
+1259,6/04/2019,Edmonton Oilers,82,3,0,Calgary Flames,82,1,1,-,"19,289",2:25,1,2,0,0
+1260,6/04/2019,Minnesota Wild,82,0,0,Dallas Stars,82,3,1,-,"18,532",2:30,0,0,1,2
+1261,6/04/2019,Buffalo Sabres,82,7,0,Detroit Red Wings,82,1,1,-,"19,515",2:22,1,2,0,0
+1262,6/04/2019,New Jersey Devils,82,4,0,Florida Panthers,82,3,1,OT,"15,259",2:45,1,2,0,1
+1263,6/04/2019,Vegas Golden Knights,82,2,0,Los Angeles Kings,82,5,1,-,"18,230",2:30,0,0,1,2
+1264,6/04/2019,Toronto Maple Leafs,82,5,0,Montreal Canadiens,82,6,1,SO,"21,302",2:51,0,1,1,2
+1265,6/04/2019,Chicago Blackhawks,82,2,0,Nashville Predators,82,5,1,-,"17,694",2:24,0,0,1,2
+1266,6/04/2019,Columbus Blue Jackets,82,6,0,Ottawa Senators,82,2,1,-,"18,425",2:17,1,2,0,0
+1267,6/04/2019,Carolina Hurricanes,82,4,0,Philadelphia Flyers,82,3,1,-,"19,433",2:25,1,2,0,0
+1268,6/04/2019,New York Rangers,82,4,0,Pittsburgh Penguins,82,3,1,OT,"18,660",2:34,1,2,0,1
+1269,6/04/2019,Colorado Avalanche,82,2,0,San Jose Sharks,82,5,1,-,"17,562",2:21,0,0,1,2
+1270,6/04/2019,Vancouver Canucks,82,2,0,St. Louis Blues,82,3,1,SO,"17,970",2:35,0,1,1,2
+1271,6/04/2019,New York Islanders,82,3,0,Washington Capitals,82,0,1,-,"18,506",2:17,1,2,0,0

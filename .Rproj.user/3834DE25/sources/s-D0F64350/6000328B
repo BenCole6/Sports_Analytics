@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561336027523.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6000328B",
+    "lastKnownWriteTime" : 7953755111713415200,
+    "last_content_update" : 1561336027523,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "C61CF1E5",
+        "caption" : "NHL_Home_Data",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=NHL_Home_Data&cache_key=C61CF1E5",
+        "displayedObservations" : "2542",
+        "environment" : "",
+        "object" : "NHL_Home_Data",
+        "preview" : "0",
+        "totalObservations" : "2542",
+        "variables" : "10"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
