@@ -1,0 +1,120 @@
+library(pacman)
+
+p_load(c("tidyverse",
+         "readxl",
+         "janitor",
+         "RPushbullet"),
+       install = T, character.only = T)
+
+Game_Data <- clean_names(read_excel("Game Data.xlsx"),
+                         "parsed")
+
+Game_Data_Long <- Game_Data
+
+for (i in 1:nrow(Game_Data_Long)) {
+   
+   Game_Data_Long[nrow(Game_Data_Long) + 1, c("Date", "Game_Index", "Win_Type", "Att", "LOG") ] <- Game_Data_Long[ i , c("Date", "Game_Index", "Win_Type", "Att", "LOG")]
+   
+   Game_Data_Long[nrow(Game_Data_Long), c("Team_A", "Goals_A", "Game_No_A", "HIA_A") ] <- Game_Data_Long[ i , c("Team_B", "Goals_B", "Game_No_B", "HIA_B")]
+   
+   Game_Data_Long[nrow(Game_Data_Long), c("Team_B", "Goals_B", "Game_No_B", "HIA_B") ] <- Game_Data_Long[ i , c("Team_A", "Goals_A", "Game_No_A", "HIA_A")]
+   
+}
+
+
+write_csv(Game_Data_Long,
+          "Game_Data_Duplicated.csv")
+
+
+Elo_Ratings <- clean_names(read_excel("Elo Ratings.xlsx"), "parsed")
+
+Elo_Ratings <- mutate(Elo_Ratings,
+                      "Team_A" = Team,
+                      "Team_B" = Team)
+
+
+Elo_Ratings$Team <- NULL
+
+
+Game_Data <- left_join(x = Game_Data,
+                       y = select(Elo_Ratings,
+                                  -Team_B),
+                       by = c("Team_A" = "Team_A"))
+
+
+Game_Data <- rename(Game_Data, 
+                    Rating_A = Rating)
+
+Game_Data <- left_join(x = Game_Data,
+                       y = select(Elo_Ratings,
+                                  -Team_A),
+                       by = c("Team_B" = "Team_B"))
+
+Game_Data <- rename(Game_Data,
+                    Rating_B = Rating)
+
+Game_Data <- mutate(Game_Data,
+                    "Expected" = (1 / 
+                                     (1 + 10^( (Rating_B - Rating_A) / 400))))
+
+Game_Data$RNG <- NA
+Game_Data$Points <- NA
+
+Game_Monte <- Game_Data
+
+Monte_Results <- data.frame()
+
+Start_Time <- Sys.time()
+
+for (i in 1:10000) {
+   
+   for (j in 1:nrow(Game_Data)) {
+      
+      Game_Monte$RNG[j] <- runif(n = 1, min = 0, max = 1)
+      
+      Game_Monte$Points[j] <- if_else(Game_Monte$Expected[j] >= Game_Monte$RNG[j] * 0.975 &
+                                        Game_Monte$Expected[j] <= Game_Monte$RNG[j],
+                                     true = 1,
+                                     false = if_else(Game_Monte$Expected[j] > Game_Monte$RNG[j],
+                                                     true = 2,
+                                                     false = 0))
+      
+      
+   }
+   
+   Game_Monte_Long <- gather(Game_Monte,
+                             Team_A, Team_B,
+                             key = "Team_Order",
+                             value = "Team_Name")
+   
+   Game_Monte_Sum <- summarise(group_by(Game_Monte_Long,
+                                        Team_Name),
+                               "Points" = sum(Points))
+   
+   Game_Monte_Sum <- mutate(ungroup(Game_Monte_Sum),
+                            Position = rank(Points, "last"),
+                            Sim_No = i)
+   
+   Monte_Results <- rbind(Monte_Results,
+                          Game_Monte_Sum)
+   
+}
+
+View(Monte_Results)
+
+pbPost(type = c("note"),
+       api = "o.q25qgkfXsUK4hXCHQ2UedC4ItrYVX5Xq",
+       title = "Monte",
+       body = paste("Monte Carlo Completed",
+                    paste(format(as.POSIXct(as.hms(Sys.time() - Start_Time)),
+                           "%M:%OS"),
+                          "minutes"),
+                    sep = "\n")
+)
+
+ggplot(Monte_Results,
+       aes(x = Points)) +
+   geom_density( fill = "cyan2",
+                 alpha = 0.25) +
+   facet_wrap( ~ Team_Name) +
+   theme_minimal()
