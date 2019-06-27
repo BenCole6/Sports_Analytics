@@ -30,3 +30,20 @@ NHL_Data_Long <- arrange(NHL_Home_Data,
 
 write_csv(NHL_Data_Long,
           "NHL_Data_Long.csv")
+
+
+#####
+
+for (i in 1:nrow(Game_Data_Long)) {
+  
+  Game_Data_Long[nrow(Game_Data_Long) + 1, c("Date", "Game_Index", "Win_Type", "Att", "LOG") ] <- Game_Data_Long[ i , c("Date", "Game_Index", "Win_Type", "Att", "LOG")]
+  
+  Game_Data_Long[nrow(Game_Data_Long), c("Team_A", "Goals_A", "Game_No_A", "HIA_A") ] <- Game_Data_Long[ i , c("Team_B", "Goals_B", "Game_No_B", "HIA_B")]
+  
+  Game_Data_Long[nrow(Game_Data_Long), c("Team_B", "Goals_B", "Game_No_B", "HIA_B") ] <- Game_Data_Long[ i , c("Team_A", "Goals_A", "Game_No_A", "HIA_A")]
+  
+}
+
+
+write_csv(Game_Data_Long,
+          "Game_Data_Duplicated.csv")
