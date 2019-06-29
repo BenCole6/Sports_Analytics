@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561811018493.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B263E548",
+    "lastKnownWriteTime" : 3472890301709636143,
+    "last_content_update" : 1561811018493,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "90660254",
+        "caption" : "Game_Monte_51",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Game_Monte_51&cache_key=90660254",
+        "displayedObservations" : 488,
+        "environment" : "",
+        "object" : "Game_Monte_51",
+        "preview" : 0,
+        "totalObservations" : 488,
+        "variables" : 16
+    },
+    "relative_order" : 17,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

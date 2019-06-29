@@ -1,0 +1,4 @@
+summarise(group_by(Game_Monte_Long,
+                   Team_Name),
+          Total_Points = sum(Points_A[Team_Order == "Team_A"] +
+                               Points_B[Team_Order == "Team_B"]))

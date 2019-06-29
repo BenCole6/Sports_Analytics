@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561810322035.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "895D067B",
+    "lastKnownWriteTime" : 3472890301709636143,
+    "last_content_update" : 1561810322035,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "894E9802",
+        "caption" : "Elo_50",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Elo_50&cache_key=894E9802",
+        "displayedObservations" : 31,
+        "environment" : "",
+        "object" : "Elo_50",
+        "preview" : 0,
+        "totalObservations" : 31,
+        "variables" : 2
+    },
+    "relative_order" : 15,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

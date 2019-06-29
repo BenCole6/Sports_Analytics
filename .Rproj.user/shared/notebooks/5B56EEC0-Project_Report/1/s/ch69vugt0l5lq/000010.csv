@@ -1,0 +1,8 @@
+"0","season_points <- tibble(""Win Type"" = c(""Not Overtime"","
+"0","                                       ""Overtime or Shootout""),"
+"0","                        ""Winning Team Points"" = c(2,2),"
+"0","                        ""Losing Team Points"" = c(0,1))"
+"0","kable_styling(kable(season_points,"
+"0","                    caption = ""Points awarded for different win types in NHL regular season""),"
+"0","              bootstrap_options = c(""striped"", ""hover""),"
+"0","              full_width = F)"

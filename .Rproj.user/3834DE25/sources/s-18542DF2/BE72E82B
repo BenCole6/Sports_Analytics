@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561809620647.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BE72E82B",
+    "lastKnownWriteTime" : 21110816532070479,
+    "last_content_update" : 1561809620647,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7D09006C",
+        "caption" : "Monte_Results_Season",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Monte_Results_Season&cache_key=7D09006C",
+        "displayedObservations" : 0,
+        "environment" : "",
+        "object" : "Monte_Results_Season",
+        "preview" : 0,
+        "totalObservations" : 0,
+        "variables" : 0
+    },
+    "relative_order" : 14,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

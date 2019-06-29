@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561808790777.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AD851499",
+    "lastKnownWriteTime" : 3472890301709636143,
+    "last_content_update" : 1561808790777,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "1D6552A",
+        "caption" : "Wildcards",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Wildcards&cache_key=1D6552A",
+        "displayedObservations" : 19,
+        "environment" : "",
+        "object" : "Wildcards",
+        "preview" : 0,
+        "totalObservations" : 19,
+        "variables" : 11
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

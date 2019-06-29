@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561769857334.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9D5EECB1",
+    "lastKnownWriteTime" : 1561791062,
+    "last_content_update" : 1561791062158,
+    "path" : "~/RMIT/2019 RMIT SEM 1/SPORTS ANALYTICS/Course_Project/Monte_Carlo_50.R",
+    "project_path" : "Monte_Carlo_50.R",
+    "properties" : {
+        "cursorPosition" : "79,45",
+        "scrollLine" : "73",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

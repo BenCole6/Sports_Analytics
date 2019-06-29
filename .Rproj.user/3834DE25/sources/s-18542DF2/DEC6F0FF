@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561811366418.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DEC6F0FF",
+    "lastKnownWriteTime" : 21110816532070479,
+    "last_content_update" : 1561811366418,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "F84F1342",
+        "caption" : "Game_Monte_Sum",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Game_Monte_Sum&cache_key=F84F1342",
+        "displayedObservations" : "31",
+        "environment" : "",
+        "object" : "Game_Monte_Sum",
+        "preview" : "0",
+        "totalObservations" : "31",
+        "variables" : "10"
+    },
+    "relative_order" : 18,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

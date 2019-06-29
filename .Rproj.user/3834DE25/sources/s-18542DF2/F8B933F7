@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561809085237.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F8B933F7",
+    "lastKnownWriteTime" : 3472890301709636143,
+    "last_content_update" : 1561809085237,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "980EF8D1",
+        "caption" : "First_Round_6",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=First_Round_6&cache_key=980EF8D1",
+        "displayedObservations" : 5,
+        "environment" : "",
+        "object" : "First_Round_6",
+        "preview" : 0,
+        "totalObservations" : 5,
+        "variables" : 11
+    },
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

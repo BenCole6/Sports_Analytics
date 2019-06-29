@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561811002360.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A81A818B",
+    "lastKnownWriteTime" : 21110816532070479,
+    "last_content_update" : 1561811002360,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "FF3F55EC",
+        "caption" : "Game_Monte_82",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Game_Monte_82&cache_key=FF3F55EC",
+        "displayedObservations" : 1271,
+        "environment" : "",
+        "object" : "Game_Monte_82",
+        "preview" : 0,
+        "totalObservations" : 1271,
+        "variables" : 22
+    },
+    "relative_order" : 16,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
