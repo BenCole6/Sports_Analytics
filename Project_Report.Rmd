@@ -11,7 +11,7 @@ subtitle:   |
             |
             |
 author: "Ben Cole - s3412349"
-# date: "Print Date: `r format(Sys.Date(), '%d/%m/%Y')`"
+# date: "`r format(Sys.Date(), '%d/%m/%Y')`"
 mainfont: Arial Nova
 output:
   html_document:
@@ -24,6 +24,7 @@ output:
     code_folding: hide
     fig_width: 9
     fig_height: 7
+abstract: "The St. Louis Blues won the National Hockey League's Stanley Cup at the end of the 2018-19 season, crowning them champions for the first time in their NHL history. The below paper examines the change in St. Louis Blues' performance throughout the season by simulating the remainder of the season and finals playoffs from two demarcations in the data and using the results from the entire season. \nConstant Elo ratings were calculated for each partition in the data set and Monte Carlo models were built around these Elo ratings to simulate all games occurring after the partition. The simulations highlighted the extent of the turn around in the season for the St. Louis Blues, but still showed that their chances of winning the Stanley Cup at the end of the regular season were comparatively slim. This study could have been improved by changing the method used to partition the data, by changing how season standings were calculated, and providing further granularity to the simulations."
 ---
 
 ```{r include=FALSE}
@@ -37,6 +38,44 @@ start_time <- Sys.time()
         max-width: 1500px;
         margin-right: 50px;
     }
+    
+<style type="text/css">
+
+body{
+      font-size: 12px;
+  }
+
+h1.title {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h1 { /* Header 1 */
+  font-size: 30px;
+  font-weight: bold;
+}
+h2 { /* Header 2 */
+    font-size: 24px;
+    font-weight: bold;
+}
+h3 { /* Header 3 */
+  font-size: 20px;
+}
+
+h4 { /* Header 4 */
+  font-size: 18px;
+}
+
+h5 { /* Header 5 */
+  font-size: 16px;
+}
+
+h6 { /* Header 6 */
+  font-size: 14px;
+}
+
+</style>
+
 </style>
 
 ```{r include=FALSE}
@@ -59,7 +98,7 @@ suppressWarnings(p_load(c("tidyverse",
 
 ```
 
-# Abstract
+<!-- ## Abstract -->
 
 # Introduction
 
@@ -67,16 +106,16 @@ The National Hockey League (hereon NHL) is the North American ice hockey competi
 
 ## St. Louis Blues - Underdogs
 
-The St. Louis Blues were the winners of the 2018-2019 Stanley Cup playoffs, winning a 4-3 series against the Boston Bruins. The Blues winning the Stanley Cup was paticularly extraordinary not only because it was the first in their history as a club in the NHL, but also because they faced off against the Bruins have appeared so regularly in the Stanley Cup Playoffs. Since joining the NHL in 1967, the St Louis Blues have contested the Stanley Cup Playoffs only 4 times, whilst the Boston Bruins have made it to the Cup Playoffs 10 times since 1967 (and a total 20 since joining the NHL in 1924). (NHL, 2019)  
+The St. Louis Blues were the winners of the 2018-2019 Stanley Cup playoffs, winning a 4-3 series against the Boston Bruins. The Blues winning the Stanley Cup was paticularly extraordinary not only because it was the first in their history as a club in the NHL, but also because they faced off against the Bruins who have appeared so regularly in the Stanley Cup Playoffs. Since joining the NHL in 1967, the St Louis Blues have contested the Stanley Cup Playoffs only 4 times, whilst the Boston Bruins have made it to the Cup Playoffs 10 times since 1967 (and a total 20 since joining the NHL in 1924). (NHL, 2019)  
 
 What arguably made the St. Louis Blues appearance in the Stanley Cup Finals most incredible was that they ranked last in January of the same season. Sometime between January and April they managed to claw their way to clinching a playoffs appearance. (Bardown, 2019)
 
 ## NHL Season and Post-Season Structure
 
-The NHL contained a total of 31 teams in the 2019 season. These 31 teams were split across two conferences, Eastern and Western. Each conference comprised two divisions each; Metropolitan and Atlantic in the Eastern Conference and Central and Pacific in the Western Conference. (NHL, 2019)    
+The NHL contained a total of 31 teams in the 2019 season. These 31 teams were split across two conferences, Eastern and Western. The conferences comprised two divisions each; Metropolitan and Atlantic in the Eastern Conference and Central and Pacific in the Western Conference. (NHL, 2019)    
 
-Throughout the regular season each team will play 82 games, which are a mixture of home and away fixtures. As the playing season is approximately 27 weeks, these 82 games average out to be more than three games per week. Therefore, unlike many Australian sporting codes, there are no "rounds" in the NHL but simply game numbers. Further, there is no structure or restriction to which game each team is playing. For example, one team may be playing their 26th game against an opponent that is playing their 23rd. (NHL, 2019)  
-If a team wins a game in the regular season they are awarded 2 points for the win. If the game has a tied scoreline at the end of the third 20-minute period it will go into overtime. If the scoreline is still tied at the end of two overtime periods then a shootout is played until a winner is decided. The team that wins by any method, including overtime or shootout, is still awarded 2 points. The team that loses in overtime or shootout is awarded one point. If the game is decided before overtime the losing team will be awarded 0 points. (MacDonald, R, 2018)
+Throughout the regular season each team played 82 games, which were a mixture of home and away fixtures. As the playing season was approximately 27 weeks, these 82 games averaged out to be more than three games per week. Therefore, unlike many Australian sporting codes, there were no "rounds" in the NHL but simply game numbers. Further, there is no structure or restriction to which game each team is playing. For example, one team may be playing their 26th game against an opponent that is playing their 23rd. (NHL, 2019)  
+If a team won a game in the regular season they were awarded 2 points for the win. If the game had a tied scoreline at the end of the third 20-minute period it went into overtime. If the scoreline was still tied at the end of two overtime periods then a shootout was played until a winner was decided. The team that won by any method, including overtime or shootout, was awarded 2 points towards their season standings. A team that lost in overtime or shootout was awarded one point. If the game was decided before overtime the losing team was awarded 0 points. (MacDonald, R, 2018)
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
@@ -92,7 +131,7 @@ kable_styling(kable(season_points,
 
 ```
 
-Once the regular season has finished and team standings have been calculated a bracketed finals system is drawn up for the playoffs. The finals playoffs follow a repeating knockout structure that has 3 rounds before reaching the Stanley Cup playoffs. Each conference follows the same structure, so only one will be described as follows:  
+Once the regular season finished and team standings had been calculated, a bracketed finals system was drawn up for the playoffs. The finals playoffs followed a repeating knockout structure that has 3 rounds before reaching the Stanley Cup playoffs. Each conference follows the same structure, so only one will be described as follows:  
 
 ### Playoffs Selection
 
@@ -120,7 +159,7 @@ The winners of each Conference Round series play off in the Stanley Cup finals, 
 
 ## Research Question
 
-Considering the turn around in the St. Louis Blues' performance within the season and the lengthy multiple finals series, what were the chances that the St. Louis Blues could win the Stanley Cup from their standings at the end of the regular season? Further, did this chance considerably from their standings at the end of their 25th and 50th games?
+Considering the turn around in the St. Louis Blues' performance within the season and the lengthy multiple finals series, what were the chances that the St. Louis Blues could win the Stanley Cup from their standings at the end of the regular season? Further, did this chance change considerably from their standings at the end of their 25th and 50th games?
 
 ## Overview of Methods
 
@@ -132,11 +171,11 @@ To answer the above questions, Monte Carlo simulations were performed to simulat
 
 ### Predictive Model Overview
 
-Elo Models have a long history for rating teams and players in sport. The first application for Elo models was in rating chess players as applied in the text "*The rating of chessplayers, past and present*" written by Arpad Elo (Elo, 1978). A relatively simple model, it takes the "strength" of each competitor and creates an expected probability of the team winning. The probability domain ranges between 0 and 1, and so by extension the competitor's probability of winning is $ 1-E_A$. Elo models can either be adaptive to be used as a season progresses or can be constant based on game results of historical data. The constant Elo method for rating teams uses optimisation methods to minimise errors when predicting results of past matches.    
+Elo Models have a long history for rating teams and players in sport. The first application for Elo models was in rating chess players as applied in the text "*The rating of chessplayers, past and present*" written by Arpad Elo (Elo, 1978). A relatively simple model, it takes the "strength" of each competitor and creates an expected probability of the team winning. The probability domain ranges between 0 and 1, and so by extension the competitor's probability of winning is $(1 - E_A)$. Elo models can be either adaptive to be used as a season progresses or can be constant based on game results of historical data. The constant Elo method for rating teams uses optimisation methods to minimise errors when predicting results of past matches.    
 
 ### Past Applications
 
-Elo ratings have had a range of applications in sports ratings, with one example being Hvattum, L.M. and Arntzen, H. (2010) applying it association football (soccer). In their paper they applied a variable Elo rating system that incorporated a home ground advantage. They used this variable Elo rating method in logit regression models, which were then used to place hypothetical bets. After evaluation and benchmarking against other methods, they found the models based on Elo ratings to perform better than all other models. The only exceptions to this were models based on betting market information. Further,r they found the variable Elo rating methods to be significant predictors of actual game results, which further solidifies their applications outside of academia.
+Elo ratings have had a range of applications in sports ratings, with one example being Hvattum, L.M. and Arntzen, H. (2010) applying it to association football (soccer). In their paper they applied a variable Elo rating system that incorporated a home ground advantage. They used this variable Elo rating method in logit regression models, which were then used to place hypothetical bets. After evaluation and benchmarking against other methods, they found the models based on Elo ratings to perform better than all other models. The only exceptions to this were models based on betting market information. Further, they found the variable Elo rating methods to be significant predictors of actual game results, which further solidifies their applications outside of academia.
 
 Ryall, R. and Bedford, A. (2010) also applied optimised Elo ratings models to another sporting code: Australian Rules Football (AFL). Their addition to the model examined home ground advantage of each game, if present. The home ground advantage was incorporated into the Elo prediction model by way of stacking the rating of a home team higher for when they were playing to a home ground advantage. They found adding a home ground advantage did not improve the Elo rating system as compared to previous work by Stefani and Clarke (1992), but cited the low variation in team premiership points as a potentially confounding factor.
 
@@ -148,23 +187,30 @@ Monte Carlo simulations are simple in their structure, which lends them to large
 
 # Methods
 
+## Data Source
+
+Regular season game schedule and results were taken from [Hockey-Reference.com](https://www.hockey-reference.com/leagues/NHL_2019_games.html), a subsidiary of Sports Reference LLC. The data contained Date of Game, Visiting (Away) Team, Goals scored by Away Team, Home Team, Goals scored by Home Team, Win Type (Regular, OT, SO), Attendance, and Length of Game for all games by all teams in the regular season. All of the above variables were used in the following analysis, with Attendance and Length of Game not being considered.
+
 ## Optimised Elo Ratings
 
 A constant Elo rating method was used in this study. To determine the optimised Elo ratings of each team in the NHL, the below formula was used to estimate the expected results of each game.
 
 $$ E_A = \frac{1}{1+10^{\left(- \left(\frac{\left(Rating_A - Rating_B \right)}{\delta} \right) \right)}} $$
 
-For each given game, the errors were calculated between the Expected result and the actual result of the match. Different ratings for each team were optimised by minimising the sum of the squares of the errors. The only constraints on the optimisation were that the team ratings averaged 1500 so as to allow for $ \delta=400$.
+For each given game, the errors were calculated between the Expected result and the actual result of the match. Different ratings for each team were optimised by minimising the sum of the squares of the errors. The only constraints on the optimisation were that the team ratings averaged 1500 so as to allow for $( \delta = 400 )$.
 
 ## Data Partitions
 
 Data was partitioned at three points:
+
 1. Matches where both teams played no more than 25 games
+
 2. Matches where both teams played no more than 50 games
-3. No partition, so where teams had played no more than the full 82 games of the season
+
+3. No partition, where teams had played the full 82 games of the season
 
 The first partition was based on the ladder position of the St. Louis Blues after that game number; their lowest point in the season and ranked 30 out of total 31 teams in the League.  
-The second partition was chosen arbitrarily. The rationale was for the partition to be twice as many games as the first partition and approximately 2/3^{rds} of the regular season.  
+The second partition was chosen arbitrarily. The rationale was for the partition to be twice as many games as the first partition and approximately 2/3$^{rds}$ of the regular season.  
 The last partition, or no partition at all, was chosen to examine the St. Louis Blues' chances of winning the Stanley Cup after their final standing in the season.
 
 ## Monte Carlo Simulation
@@ -182,7 +228,7 @@ $$ Points_{A\ |\ \left(\left(E_A < RNG \right)\ \&\ E_A > \left(RNG \times 0.95 
 
 ### Finals Playoffs
 
-The above points system using overtime losses was not used in each stage of the finals playoffs. The model was simplified to only compare the expected results to the random number, and any expected result greater than the random number was recorded as a win to Team A.
+The above points system using overtime losses was not used in each stage of the finals playoffs as point scoring in each playoffs series is binary; win or loss. The model was simplified to only compare the expected results to the random number, and any expected result greater than the random number was recorded as a win to Team A.
 
 $$ Points_{A\ |\ E_A<RNG}=1 $$
 $$ Points_B = 1- Points_A $$
@@ -332,34 +378,34 @@ Game_Data_26 <- rename(Game_Data_26,
                        Division_B = Division,
                        Conference_B = Conference)
 
-Game_Monte <- Game_Data_26
+Game_Monte_26 <- Game_Data_26
 
-Monte_Results_Season <- data.frame()
-Monte_Results_First_Round <- data.frame()
-Monte_Results_Second_Round <- data.frame()
-Monte_Results_Conf_Round <- data.frame()
-Monte_Results_Stanley_Round <- data.frame()
-Monte_Results_Stanley_Round_Winner <- data.frame()
+Monte_Results_26 <- data.frame()
+Monte_Results_First_Round_26 <- data.frame()
+Monte_Results_Second_Round_26 <- data.frame()
+Monte_Results_Conf_Round_26 <- data.frame()
+Monte_Results_Stanley_Round_26 <- data.frame()
+Monte_Results_Stanley_Round_Winner_26 <- data.frame()
 
 Start_Time <- Sys.time()
 
-for (sim_no in 1:2500) {
+for (sim_no in 1:5000) {
   
-  for (j in 1:nrow(Game_Monte)) {
+  for (j in 1:nrow(Game_Monte_26)) {
     
-    Game_Monte$RNG[j] <- runif(n = 1, min = 0, max = 1)
+    Game_Monte_26$RNG[j] <- runif(n = 1, min = 0, max = 1)
     
-    Game_Monte$Points_A[j] <- if_else(Game_Monte$Expected[j] >= Game_Monte$RNG[j] * 0.95 &
-                                        Game_Monte$Expected[j] <= Game_Monte$RNG[j],
+    Game_Monte_26$Points_A[j] <- if_else(Game_Monte_26$Expected[j] >= Game_Monte_26$RNG[j] * 0.95 &
+                                        Game_Monte_26$Expected[j] <= Game_Monte_26$RNG[j],
                                       true = 1,
-                                      false = if_else(Game_Monte$Expected[j] > Game_Monte$RNG[j],
+                                      false = if_else(Game_Monte_26$Expected[j] > Game_Monte_26$RNG[j],
                                                       true = 2,
                                                       false = 0))
     
-    Game_Monte$Points_B[j] <- if_else(Game_Monte$Expected[j] <= Game_Monte$RNG[j] * 0.95 &
-                                        Game_Monte$Expected[j] >= Game_Monte$RNG[j],
+    Game_Monte_26$Points_B[j] <- if_else(Game_Monte_26$Expected[j] <= Game_Monte_26$RNG[j] * 0.95 &
+                                        Game_Monte_26$Expected[j] >= Game_Monte_26$RNG[j],
                                       true = 1,
-                                      false = if_else(Game_Monte$Expected[j] < Game_Monte$RNG[j],
+                                      false = if_else(Game_Monte_26$Expected[j] < Game_Monte_26$RNG[j],
                                                       true = 2,
                                                       false = 0))
     
@@ -367,7 +413,7 @@ for (sim_no in 1:2500) {
     
   }
   
-  Game_Monte_Long <- gather(Game_Monte,
+  Game_Monte_Long <- gather(Game_Monte_26,
                             Team_A, Team_B,
                             key = "Team_Order",
                             value = "Team_Name")
@@ -414,17 +460,17 @@ for (sim_no in 1:2500) {
                          Wildcard_Rank <= 2))
   
   ## First Round 1
-  First_Round_1 <- filter(ungroup(Finals),
+  First_Round_26_1 <- filter(ungroup(Finals),
                           Conference == "Eastern",
                           Division == "Atlantic",
                           Position_in_Div == 1)
   
-  First_Round_1 <- bind_rows(First_Round_1,
+  First_Round_26_1 <- bind_rows(First_Round_26_1,
                              filter(Finals,
                                     Conference == "Eastern",
                                     Wildcard_Rank == 1))
   
-  First_Round_1 <- transmute(First_Round_1,
+  First_Round_26_1 <- transmute(First_Round_26_1,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -432,7 +478,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_1 <- mutate(First_Round_1,
+  First_Round_26_1 <- mutate(First_Round_26_1,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -443,30 +489,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_1[nrow(First_Round_1) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_1[nrow(First_Round_26_1) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_1[nrow(First_Round_1) , "Won_A"] <- if_else(First_Round_1[nrow(First_Round_1) , "Rand"] <= 
-                                                                First_Round_1[nrow(First_Round_1) , "Expected"],
+      First_Round_26_1[nrow(First_Round_26_1) , "Won_A"] <- if_else(First_Round_26_1[nrow(First_Round_26_1) , "Rand"] <= 
+                                                                First_Round_26_1[nrow(First_Round_26_1) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_1[nrow(First_Round_1) , "Won_B"] <- 1 - First_Round_1[ , "Won_A"]
+      First_Round_26_1[nrow(First_Round_26_1) , "Won_B"] <- 1 - First_Round_26_1[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_1[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_1[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_1[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_1[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_1[nrow(First_Round_1)+1 , c("Team_A",
+      First_Round_26_1[nrow(First_Round_26_1)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_1[nrow(First_Round_1) , c("Team_A",
+                                              "Expected")] <- First_Round_26_1[nrow(First_Round_26_1) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -474,49 +520,49 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_1[nrow(First_Round_1) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_1[nrow(First_Round_26_1) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_1[nrow(First_Round_1) , "Won_A"] <- if_else(First_Round_1[nrow(First_Round_1) , "Rand"] <= 
-                                                                First_Round_1[nrow(First_Round_1) , "Expected"],
+      First_Round_26_1[nrow(First_Round_26_1) , "Won_A"] <- if_else(First_Round_26_1[nrow(First_Round_26_1) , "Rand"] <= 
+                                                                First_Round_26_1[nrow(First_Round_26_1) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_1[nrow(First_Round_1) , "Won_B"] <- 1 - First_Round_1[ nrow(First_Round_1) , "Won_A"]
+      First_Round_26_1[nrow(First_Round_26_1) , "Won_B"] <- 1 - First_Round_26_1[ nrow(First_Round_26_1) , "Won_A"]
       
     }
     
-    First_Round_1_Winner <- summarise(First_Round_1,
+    First_Round_26_1_Winner <- summarise(First_Round_26_1,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_1_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_1_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_1_Winner <- select(First_Round_1,
+    First_Round_26_1_Winner <- select(First_Round_26_1,
                                    contains(Winner_Suffix))
     
-    First_Round_1_Winner <- First_Round_1_Winner[nrow(First_Round_1_Winner), ]
+    First_Round_26_1_Winner <- First_Round_26_1_Winner[nrow(First_Round_26_1_Winner), ]
     
-    colnames(First_Round_1_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_1_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   ## First Round 2
-  First_Round_2 <- filter(ungroup(Finals),
+  First_Round_26_2 <- filter(ungroup(Finals),
                           Conference == "Eastern",
                           Division == "Atlantic",
                           Position_in_Div == 2)
   
-  First_Round_2 <- bind_rows(First_Round_2,
+  First_Round_26_2 <- bind_rows(First_Round_26_2,
                              filter(ungroup(Finals),
                                     Conference == "Eastern",
                                     Division == "Atlantic",
                                     Position_in_Div == 3))
   
-  First_Round_2 <- transmute(First_Round_2,
+  First_Round_26_2 <- transmute(First_Round_26_2,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -524,7 +570,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_2 <- mutate(First_Round_2,
+  First_Round_26_2 <- mutate(First_Round_26_2,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -535,30 +581,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_2[nrow(First_Round_2) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_2[nrow(First_Round_26_2) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_2[nrow(First_Round_2) , "Won_A"] <- if_else(First_Round_2[nrow(First_Round_2) , "Rand"] <= 
-                                                                First_Round_2[nrow(First_Round_2) , "Expected"],
+      First_Round_26_2[nrow(First_Round_26_2) , "Won_A"] <- if_else(First_Round_26_2[nrow(First_Round_26_2) , "Rand"] <= 
+                                                                First_Round_26_2[nrow(First_Round_26_2) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_2[nrow(First_Round_2) , "Won_B"] <- 1 - First_Round_2[ , "Won_A"]
+      First_Round_26_2[nrow(First_Round_26_2) , "Won_B"] <- 1 - First_Round_26_2[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_2[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_2[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_2[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_2[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_2[nrow(First_Round_2)+1 , c("Team_A",
+      First_Round_26_2[nrow(First_Round_26_2)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_2[nrow(First_Round_2) , c("Team_A",
+                                              "Expected")] <- First_Round_26_2[nrow(First_Round_26_2) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -566,48 +612,48 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_2[nrow(First_Round_2) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_2[nrow(First_Round_26_2) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_2[nrow(First_Round_2) , "Won_A"] <- if_else(First_Round_2[nrow(First_Round_2) , "Rand"] <= 
-                                                                First_Round_2[nrow(First_Round_2) , "Expected"],
+      First_Round_26_2[nrow(First_Round_26_2) , "Won_A"] <- if_else(First_Round_26_2[nrow(First_Round_26_2) , "Rand"] <= 
+                                                                First_Round_26_2[nrow(First_Round_26_2) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_2[nrow(First_Round_2) , "Won_B"] <- 1 - First_Round_2[ nrow(First_Round_2) , "Won_A"]
+      First_Round_26_2[nrow(First_Round_26_2) , "Won_B"] <- 1 - First_Round_26_2[ nrow(First_Round_26_2) , "Won_A"]
       
     }
     
-    First_Round_2_Winner <- summarise(First_Round_2,
+    First_Round_26_2_Winner <- summarise(First_Round_26_2,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_2_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_2_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_2_Winner <- select(First_Round_2,
+    First_Round_26_2_Winner <- select(First_Round_26_2,
                                    contains(Winner_Suffix))
     
-    First_Round_2_Winner <- First_Round_2_Winner[nrow(First_Round_2_Winner), ]
+    First_Round_26_2_Winner <- First_Round_26_2_Winner[nrow(First_Round_26_2_Winner), ]
     
-    colnames(First_Round_2_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_2_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   ## First Round 3
-  First_Round_3 <- filter(ungroup(Finals),
+  First_Round_26_3 <- filter(ungroup(Finals),
                           Conference == "Eastern",
                           Division == "Metropolitan",
                           Position_in_Div == 1)
   
-  First_Round_3 <- bind_rows(First_Round_3,
+  First_Round_26_3 <- bind_rows(First_Round_26_3,
                              filter(ungroup(Finals),
                                     Conference == "Eastern",
                                     Wildcard_Rank == 2))
   
-  First_Round_3 <- transmute(First_Round_3,
+  First_Round_26_3 <- transmute(First_Round_26_3,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -615,7 +661,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_3 <- mutate(First_Round_3,
+  First_Round_26_3 <- mutate(First_Round_26_3,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -626,30 +672,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_3[nrow(First_Round_3) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_3[nrow(First_Round_26_3) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_3[nrow(First_Round_3) , "Won_A"] <- if_else(First_Round_3[nrow(First_Round_3) , "Rand"] <= 
-                                                                First_Round_3[nrow(First_Round_3) , "Expected"],
+      First_Round_26_3[nrow(First_Round_26_3) , "Won_A"] <- if_else(First_Round_26_3[nrow(First_Round_26_3) , "Rand"] <= 
+                                                                First_Round_26_3[nrow(First_Round_26_3) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_3[nrow(First_Round_3) , "Won_B"] <- 1 - First_Round_3[ , "Won_A"]
+      First_Round_26_3[nrow(First_Round_26_3) , "Won_B"] <- 1 - First_Round_26_3[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_3[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_3[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_3[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_3[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_3[nrow(First_Round_3)+1 , c("Team_A",
+      First_Round_26_3[nrow(First_Round_26_3)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_3[nrow(First_Round_3) , c("Team_A",
+                                              "Expected")] <- First_Round_26_3[nrow(First_Round_26_3) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -657,49 +703,49 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_3[nrow(First_Round_3) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_3[nrow(First_Round_26_3) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_3[nrow(First_Round_3) , "Won_A"] <- if_else(First_Round_3[nrow(First_Round_3) , "Rand"] <= 
-                                                                First_Round_3[nrow(First_Round_3) , "Expected"],
+      First_Round_26_3[nrow(First_Round_26_3) , "Won_A"] <- if_else(First_Round_26_3[nrow(First_Round_26_3) , "Rand"] <= 
+                                                                First_Round_26_3[nrow(First_Round_26_3) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_3[nrow(First_Round_3) , "Won_B"] <- 1 - First_Round_3[ nrow(First_Round_3) , "Won_A"]
+      First_Round_26_3[nrow(First_Round_26_3) , "Won_B"] <- 1 - First_Round_26_3[ nrow(First_Round_26_3) , "Won_A"]
       
     }
     
-    First_Round_3_Winner <- summarise(First_Round_3,
+    First_Round_26_3_Winner <- summarise(First_Round_26_3,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_3_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_3_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_3_Winner <- select(First_Round_3,
+    First_Round_26_3_Winner <- select(First_Round_26_3,
                                    contains(Winner_Suffix))
     
-    First_Round_3_Winner <- First_Round_3_Winner[nrow(First_Round_3_Winner), ]
+    First_Round_26_3_Winner <- First_Round_26_3_Winner[nrow(First_Round_26_3_Winner), ]
     
-    colnames(First_Round_3_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_3_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   ## First Round 4
-  First_Round_4 <- filter(ungroup(Finals),
+  First_Round_26_4 <- filter(ungroup(Finals),
                           Conference == "Eastern",
                           Division == "Metropolitan",
                           Position_in_Div == 2)
   
-  First_Round_4 <- bind_rows(First_Round_4,
+  First_Round_26_4 <- bind_rows(First_Round_26_4,
                              filter(ungroup(Finals),
                                     Conference == "Eastern",
                                     Division == "Metropolitan",
                                     Position_in_Div == 3))
   
-  First_Round_4 <- transmute(First_Round_4,
+  First_Round_26_4 <- transmute(First_Round_26_4,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -707,7 +753,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_4 <- mutate(First_Round_4,
+  First_Round_26_4 <- mutate(First_Round_26_4,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -718,30 +764,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_4[nrow(First_Round_4) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_4[nrow(First_Round_26_4) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_4[nrow(First_Round_4) , "Won_A"] <- if_else(First_Round_4[nrow(First_Round_4) , "Rand"] <= 
-                                                                First_Round_4[nrow(First_Round_4) , "Expected"],
+      First_Round_26_4[nrow(First_Round_26_4) , "Won_A"] <- if_else(First_Round_26_4[nrow(First_Round_26_4) , "Rand"] <= 
+                                                                First_Round_26_4[nrow(First_Round_26_4) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_4[nrow(First_Round_4) , "Won_B"] <- 1 - First_Round_4[ , "Won_A"]
+      First_Round_26_4[nrow(First_Round_26_4) , "Won_B"] <- 1 - First_Round_26_4[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_4[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_4[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_4[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_4[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_4[nrow(First_Round_4)+1 , c("Team_A",
+      First_Round_26_4[nrow(First_Round_26_4)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_4[nrow(First_Round_4) , c("Team_A",
+                                              "Expected")] <- First_Round_26_4[nrow(First_Round_26_4) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -749,48 +795,48 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_4[nrow(First_Round_4) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_4[nrow(First_Round_26_4) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_4[nrow(First_Round_4) , "Won_A"] <- if_else(First_Round_4[nrow(First_Round_4) , "Rand"] <= 
-                                                                First_Round_4[nrow(First_Round_4) , "Expected"],
+      First_Round_26_4[nrow(First_Round_26_4) , "Won_A"] <- if_else(First_Round_26_4[nrow(First_Round_26_4) , "Rand"] <= 
+                                                                First_Round_26_4[nrow(First_Round_26_4) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_4[nrow(First_Round_4) , "Won_B"] <- 1 - First_Round_4[ nrow(First_Round_4) , "Won_A"]
+      First_Round_26_4[nrow(First_Round_26_4) , "Won_B"] <- 1 - First_Round_26_4[ nrow(First_Round_26_4) , "Won_A"]
       
     }
     
-    First_Round_4_Winner <- summarise(First_Round_4,
+    First_Round_26_4_Winner <- summarise(First_Round_26_4,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_4_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_4_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_4_Winner <- select(First_Round_4,
+    First_Round_26_4_Winner <- select(First_Round_26_4,
                                    contains(Winner_Suffix))
     
-    First_Round_4_Winner <- First_Round_4_Winner[nrow(First_Round_4_Winner), ]
+    First_Round_26_4_Winner <- First_Round_26_4_Winner[nrow(First_Round_26_4_Winner), ]
     
-    colnames(First_Round_4_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_4_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   ## First Round 5
-  First_Round_5 <- filter(ungroup(Finals),
+  First_Round_26_5 <- filter(ungroup(Finals),
                           Conference == "Western",
                           Division == "Central",
                           Position_in_Div == 1)
   
-  First_Round_5 <- bind_rows(First_Round_5,
+  First_Round_26_5 <- bind_rows(First_Round_26_5,
                              filter(ungroup(Finals),
                                     Conference == "Western",
                                     Wildcard_Rank == 1))
   
-  First_Round_5 <- transmute(First_Round_5,
+  First_Round_26_5 <- transmute(First_Round_26_5,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -798,7 +844,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_5 <- mutate(First_Round_5,
+  First_Round_26_5 <- mutate(First_Round_26_5,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -809,30 +855,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_5[nrow(First_Round_5) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_5[nrow(First_Round_26_5) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_5[nrow(First_Round_5) , "Won_A"] <- if_else(First_Round_5[nrow(First_Round_5) , "Rand"] <= 
-                                                                First_Round_5[nrow(First_Round_5) , "Expected"],
+      First_Round_26_5[nrow(First_Round_26_5) , "Won_A"] <- if_else(First_Round_26_5[nrow(First_Round_26_5) , "Rand"] <= 
+                                                                First_Round_26_5[nrow(First_Round_26_5) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_5[nrow(First_Round_5) , "Won_B"] <- 1 - First_Round_5[ , "Won_A"]
+      First_Round_26_5[nrow(First_Round_26_5) , "Won_B"] <- 1 - First_Round_26_5[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_5[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_5[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_5[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_5[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_5[nrow(First_Round_5)+1 , c("Team_A",
+      First_Round_26_5[nrow(First_Round_26_5)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_5[nrow(First_Round_5) , c("Team_A",
+                                              "Expected")] <- First_Round_26_5[nrow(First_Round_26_5) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -840,49 +886,49 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_5[nrow(First_Round_5) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_5[nrow(First_Round_26_5) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_5[nrow(First_Round_5) , "Won_A"] <- if_else(First_Round_5[nrow(First_Round_5) , "Rand"] <= 
-                                                                First_Round_5[nrow(First_Round_5) , "Expected"],
+      First_Round_26_5[nrow(First_Round_26_5) , "Won_A"] <- if_else(First_Round_26_5[nrow(First_Round_26_5) , "Rand"] <= 
+                                                                First_Round_26_5[nrow(First_Round_26_5) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_5[nrow(First_Round_5) , "Won_B"] <- 1 - First_Round_5[ nrow(First_Round_5) , "Won_A"]
+      First_Round_26_5[nrow(First_Round_26_5) , "Won_B"] <- 1 - First_Round_26_5[ nrow(First_Round_26_5) , "Won_A"]
       
     }
     
-    First_Round_5_Winner <- summarise(First_Round_5,
+    First_Round_26_5_Winner <- summarise(First_Round_26_5,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_5_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_5_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_5_Winner <- select(First_Round_5,
+    First_Round_26_5_Winner <- select(First_Round_26_5,
                                    contains(Winner_Suffix))
     
-    First_Round_5_Winner <- First_Round_5_Winner[nrow(First_Round_5_Winner), ]
+    First_Round_26_5_Winner <- First_Round_26_5_Winner[nrow(First_Round_26_5_Winner), ]
     
-    colnames(First_Round_5_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_5_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   ## First Round 6
-  First_Round_6 <- filter(ungroup(Finals),
+  First_Round_26_6 <- filter(ungroup(Finals),
                           Conference == "Western",
                           Division == "Central",
                           Position_in_Div == 2)
   
-  First_Round_6 <- bind_rows(First_Round_6,
+  First_Round_26_6 <- bind_rows(First_Round_26_6,
                              filter(ungroup(Finals),
                                     Conference == "Western",
                                     Division == "Central",
                                     Position_in_Div == 3))
   
-  First_Round_6 <- transmute(First_Round_6,
+  First_Round_26_6 <- transmute(First_Round_26_6,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -890,7 +936,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_6 <- mutate(First_Round_6,
+  First_Round_26_6 <- mutate(First_Round_26_6,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -901,30 +947,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_6[nrow(First_Round_6) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_6[nrow(First_Round_26_6) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_6[nrow(First_Round_6) , "Won_A"] <- if_else(First_Round_6[nrow(First_Round_6) , "Rand"] <= 
-                                                                First_Round_6[nrow(First_Round_6) , "Expected"],
+      First_Round_26_6[nrow(First_Round_26_6) , "Won_A"] <- if_else(First_Round_26_6[nrow(First_Round_26_6) , "Rand"] <= 
+                                                                First_Round_26_6[nrow(First_Round_26_6) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_6[nrow(First_Round_6) , "Won_B"] <- 1 - First_Round_6[ , "Won_A"]
+      First_Round_26_6[nrow(First_Round_26_6) , "Won_B"] <- 1 - First_Round_26_6[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_6[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_6[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_6[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_6[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_6[nrow(First_Round_6)+1 , c("Team_A",
+      First_Round_26_6[nrow(First_Round_26_6)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_6[nrow(First_Round_6) , c("Team_A",
+                                              "Expected")] <- First_Round_26_6[nrow(First_Round_26_6) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -932,48 +978,48 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_6[nrow(First_Round_6) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_6[nrow(First_Round_26_6) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_6[nrow(First_Round_6) , "Won_A"] <- if_else(First_Round_6[nrow(First_Round_6) , "Rand"] <= 
-                                                                First_Round_6[nrow(First_Round_6) , "Expected"],
+      First_Round_26_6[nrow(First_Round_26_6) , "Won_A"] <- if_else(First_Round_26_6[nrow(First_Round_26_6) , "Rand"] <= 
+                                                                First_Round_26_6[nrow(First_Round_26_6) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_6[nrow(First_Round_6) , "Won_B"] <- 1 - First_Round_6[ nrow(First_Round_6) , "Won_A"]
+      First_Round_26_6[nrow(First_Round_26_6) , "Won_B"] <- 1 - First_Round_26_6[ nrow(First_Round_26_6) , "Won_A"]
       
     }
     
-    First_Round_6_Winner <- summarise(First_Round_6,
+    First_Round_26_6_Winner <- summarise(First_Round_26_6,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_6_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_6_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_6_Winner <- select(First_Round_6,
+    First_Round_26_6_Winner <- select(First_Round_26_6,
                                    contains(Winner_Suffix))
     
-    First_Round_6_Winner <- First_Round_6_Winner[nrow(First_Round_6_Winner), ]
+    First_Round_26_6_Winner <- First_Round_26_6_Winner[nrow(First_Round_26_6_Winner), ]
     
-    colnames(First_Round_6_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_6_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   ## First Round 7
-  First_Round_7 <- filter(ungroup(Finals),
+  First_Round_26_7 <- filter(ungroup(Finals),
                           Conference == "Western",
                           Division == "Pacific",
                           Position_in_Div == 1)
   
-  First_Round_7 <- bind_rows(First_Round_7,
+  First_Round_26_7 <- bind_rows(First_Round_26_7,
                              filter(ungroup(Finals),
                                     Conference == "Western",
                                     Wildcard_Rank == 2))
   
-  First_Round_7 <- transmute(First_Round_7,
+  First_Round_26_7 <- transmute(First_Round_26_7,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -981,7 +1027,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_7 <- mutate(First_Round_7,
+  First_Round_26_7 <- mutate(First_Round_26_7,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -992,30 +1038,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_7[nrow(First_Round_7) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_7[nrow(First_Round_26_7) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_7[nrow(First_Round_7) , "Won_A"] <- if_else(First_Round_7[nrow(First_Round_7) , "Rand"] <= 
-                                                                First_Round_7[nrow(First_Round_7) , "Expected"],
+      First_Round_26_7[nrow(First_Round_26_7) , "Won_A"] <- if_else(First_Round_26_7[nrow(First_Round_26_7) , "Rand"] <= 
+                                                                First_Round_26_7[nrow(First_Round_26_7) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_7[nrow(First_Round_7) , "Won_B"] <- 1 - First_Round_7[ , "Won_A"]
+      First_Round_26_7[nrow(First_Round_26_7) , "Won_B"] <- 1 - First_Round_26_7[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_7[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_7[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_7[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_7[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_7[nrow(First_Round_7)+1 , c("Team_A",
+      First_Round_26_7[nrow(First_Round_26_7)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_7[nrow(First_Round_7) , c("Team_A",
+                                              "Expected")] <- First_Round_26_7[nrow(First_Round_26_7) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -1023,49 +1069,49 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_7[nrow(First_Round_7) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_7[nrow(First_Round_26_7) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_7[nrow(First_Round_7) , "Won_A"] <- if_else(First_Round_7[nrow(First_Round_7) , "Rand"] <= 
-                                                                First_Round_7[nrow(First_Round_7) , "Expected"],
+      First_Round_26_7[nrow(First_Round_26_7) , "Won_A"] <- if_else(First_Round_26_7[nrow(First_Round_26_7) , "Rand"] <= 
+                                                                First_Round_26_7[nrow(First_Round_26_7) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_7[nrow(First_Round_7) , "Won_B"] <- 1 - First_Round_7[ nrow(First_Round_7) , "Won_A"]
+      First_Round_26_7[nrow(First_Round_26_7) , "Won_B"] <- 1 - First_Round_26_7[ nrow(First_Round_26_7) , "Won_A"]
       
     }
     
-    First_Round_7_Winner <- summarise(First_Round_7,
+    First_Round_26_7_Winner <- summarise(First_Round_26_7,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_7_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_7_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_7_Winner <- select(First_Round_7,
+    First_Round_26_7_Winner <- select(First_Round_26_7,
                                    contains(Winner_Suffix))
     
-    First_Round_7_Winner <- First_Round_7_Winner[nrow(First_Round_7_Winner), ]
+    First_Round_26_7_Winner <- First_Round_26_7_Winner[nrow(First_Round_26_7_Winner), ]
     
-    colnames(First_Round_7_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_7_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   ## First Round 8
-  First_Round_8 <- filter(ungroup(Finals),
+  First_Round_26_8 <- filter(ungroup(Finals),
                           Conference == "Western",
                           Division == "Pacific",
                           Position_in_Div == 2)
   
-  First_Round_8 <- bind_rows(First_Round_8,
+  First_Round_26_8 <- bind_rows(First_Round_26_8,
                              filter(ungroup(Finals),
                                     Conference == "Western",
                                     Division == "Pacific",
                                     Position_in_Div == 3))
   
-  First_Round_8 <- transmute(First_Round_8,
+  First_Round_26_8 <- transmute(First_Round_26_8,
                              Team_A = Team_Name[1],
                              Team_B = Team_Name[2],
                              Rating_A = Rating[1],
@@ -1073,7 +1119,7 @@ for (sim_no in 1:2500) {
                              Conference_A = Conference[1],
                              Conference_B = Conference[2])[1 , ]
   
-  First_Round_8 <- mutate(First_Round_8,
+  First_Round_26_8 <- mutate(First_Round_26_8,
                           Expected = (1 / 
                                         (1 + 10^(-(Rating_A - Rating_B) / 400))),
                           "Rand" = NA,
@@ -1084,30 +1130,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      First_Round_8[nrow(First_Round_8) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_8[nrow(First_Round_26_8) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_8[nrow(First_Round_8) , "Won_A"] <- if_else(First_Round_8[nrow(First_Round_8) , "Rand"] <= 
-                                                                First_Round_8[nrow(First_Round_8) , "Expected"],
+      First_Round_26_8[nrow(First_Round_26_8) , "Won_A"] <- if_else(First_Round_26_8[nrow(First_Round_26_8) , "Rand"] <= 
+                                                                First_Round_26_8[nrow(First_Round_26_8) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_8[nrow(First_Round_8) , "Won_B"] <- 1 - First_Round_8[ , "Won_A"]
+      First_Round_26_8[nrow(First_Round_26_8) , "Won_B"] <- 1 - First_Round_26_8[ , "Won_A"]
       
     }
     
-    if (sum(First_Round_8[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_8[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(First_Round_26_8[ , "Won_A"], na.rm = T) == 4 || sum(First_Round_26_8[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      First_Round_8[nrow(First_Round_8)+1 , c("Team_A",
+      First_Round_26_8[nrow(First_Round_26_8)+1 , c("Team_A",
                                               "Team_B",
                                               "Rating_A",
                                               "Rating_B",
                                               "Conference_A",
                                               "Conference_B",
-                                              "Expected")] <- First_Round_8[nrow(First_Round_8) , c("Team_A",
+                                              "Expected")] <- First_Round_26_8[nrow(First_Round_26_8) , c("Team_A",
                                                                                                     "Team_B",
                                                                                                     "Rating_A",
                                                                                                     "Rating_B",
@@ -1115,33 +1161,33 @@ for (sim_no in 1:2500) {
                                                                                                     "Conference_B",
                                                                                                     "Expected")]
       
-      First_Round_8[nrow(First_Round_8) , "Rand"] <- runif(1, 0, 1)
+      First_Round_26_8[nrow(First_Round_26_8) , "Rand"] <- runif(1, 0, 1)
       
-      First_Round_8[nrow(First_Round_8) , "Won_A"] <- if_else(First_Round_8[nrow(First_Round_8) , "Rand"] <= 
-                                                                First_Round_8[nrow(First_Round_8) , "Expected"],
+      First_Round_26_8[nrow(First_Round_26_8) , "Won_A"] <- if_else(First_Round_26_8[nrow(First_Round_26_8) , "Rand"] <= 
+                                                                First_Round_26_8[nrow(First_Round_26_8) , "Expected"],
                                                               true = 1,
                                                               false = 0)
       
-      First_Round_8[nrow(First_Round_8) , "Won_B"] <- 1 - First_Round_8[ nrow(First_Round_8) , "Won_A"]
+      First_Round_26_8[nrow(First_Round_26_8) , "Won_B"] <- 1 - First_Round_26_8[ nrow(First_Round_26_8) , "Won_A"]
       
     }
     
-    First_Round_8_Winner <- summarise(First_Round_8,
+    First_Round_26_8_Winner <- summarise(First_Round_26_8,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_8_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(First_Round_26_8_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    First_Round_8_Winner <- select(First_Round_8,
+    First_Round_26_8_Winner <- select(First_Round_26_8,
                                    contains(Winner_Suffix))
     
-    First_Round_8_Winner <- First_Round_8_Winner[nrow(First_Round_8_Winner), ]
+    First_Round_26_8_Winner <- First_Round_26_8_Winner[nrow(First_Round_26_8_Winner), ]
     
-    colnames(First_Round_8_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(First_Round_26_8_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
@@ -1149,12 +1195,12 @@ for (sim_no in 1:2500) {
   
   ## Second_Round_1
   
-  Second_Round_1 <- rbind(First_Round_1_Winner,
-                          First_Round_2_Winner)
+  Second_Round_26_1 <- rbind(First_Round_26_1_Winner,
+                          First_Round_26_2_Winner)
   
-  Second_Round_1[ , "Won"] <- NA
+  Second_Round_26_1[ , "Won"] <- NA
   
-  Second_Round_1 <- transmute(Second_Round_1,
+  Second_Round_26_1 <- transmute(Second_Round_26_1,
                               Team_A = Team[1],
                               Team_B = Team[2],
                               Rating_A = Rating[1],
@@ -1162,7 +1208,7 @@ for (sim_no in 1:2500) {
                               Conference_A = Conference[1],
                               Conference_B = Conference[2])[1 , ]
   
-  Second_Round_1 <- mutate(Second_Round_1,
+  Second_Round_26_1 <- mutate(Second_Round_26_1,
                            Expected = (1 / 
                                          (1 + 10^(-(Rating_A - Rating_B) / 400))),
                            "Rand" = NA,
@@ -1173,30 +1219,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      Second_Round_1[nrow(Second_Round_1) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_1[nrow(Second_Round_26_1) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_1[nrow(Second_Round_1) , "Won_A"] <- if_else(Second_Round_1[nrow(Second_Round_1) , "Rand"] <= 
-                                                                  Second_Round_1[nrow(Second_Round_1) , "Expected"],
+      Second_Round_26_1[nrow(Second_Round_26_1) , "Won_A"] <- if_else(Second_Round_26_1[nrow(Second_Round_26_1) , "Rand"] <= 
+                                                                  Second_Round_26_1[nrow(Second_Round_26_1) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_1[nrow(Second_Round_1) , "Won_B"] <- 1 - Second_Round_1[ , "Won_A"]
+      Second_Round_26_1[nrow(Second_Round_26_1) , "Won_B"] <- 1 - Second_Round_26_1[ , "Won_A"]
       
     }
     
-    if (sum(Second_Round_1[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_1[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(Second_Round_26_1[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_26_1[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      Second_Round_1[nrow(Second_Round_1)+1 , c("Team_A",
+      Second_Round_26_1[nrow(Second_Round_26_1)+1 , c("Team_A",
                                                 "Team_B",
                                                 "Rating_A",
                                                 "Rating_B",
                                                 "Conference_A",
                                                 "Conference_B",
-                                                "Expected")] <- Second_Round_1[nrow(Second_Round_1) , c("Team_A",
+                                                "Expected")] <- Second_Round_26_1[nrow(Second_Round_26_1) , c("Team_A",
                                                                                                         "Team_B",
                                                                                                         "Rating_A",
                                                                                                         "Rating_B",
@@ -1204,45 +1250,45 @@ for (sim_no in 1:2500) {
                                                                                                         "Conference_B",
                                                                                                         "Expected")]
       
-      Second_Round_1[nrow(Second_Round_1) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_1[nrow(Second_Round_26_1) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_1[nrow(Second_Round_1) , "Won_A"] <- if_else(Second_Round_1[nrow(Second_Round_1) , "Rand"] <= 
-                                                                  Second_Round_1[nrow(Second_Round_1) , "Expected"],
+      Second_Round_26_1[nrow(Second_Round_26_1) , "Won_A"] <- if_else(Second_Round_26_1[nrow(Second_Round_26_1) , "Rand"] <= 
+                                                                  Second_Round_26_1[nrow(Second_Round_26_1) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_1[nrow(Second_Round_1) , "Won_B"] <- 1 - Second_Round_1[ nrow(Second_Round_1) , "Won_A"]
+      Second_Round_26_1[nrow(Second_Round_26_1) , "Won_B"] <- 1 - Second_Round_26_1[ nrow(Second_Round_26_1) , "Won_A"]
       
     }
     
-    Second_Round_1_Winner <- summarise(Second_Round_1,
+    Second_Round_26_1_Winner <- summarise(Second_Round_26_1,
                                        "Wins_A" = sum(Won_A),
                                        "Wins_B" = sum(Won_B),
                                        "Winner" = if_else(Wins_A == 4,
                                                           "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(Second_Round_1_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(Second_Round_26_1_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    Second_Round_1_Winner <- select(Second_Round_1,
+    Second_Round_26_1_Winner <- select(Second_Round_26_1,
                                     contains(Winner_Suffix))
     
-    Second_Round_1_Winner <- Second_Round_1_Winner[nrow(Second_Round_1_Winner), ]
+    Second_Round_26_1_Winner <- Second_Round_26_1_Winner[nrow(Second_Round_26_1_Winner), ]
     
-    colnames(Second_Round_1_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Second_Round_26_1_Winner) <- c("Team", "Rating", "Conference", "Won")
     
   }
   
   
-  ## Second_Round_2
+  ## Second_Round_26_2
   
-  Second_Round_2 <- rbind(First_Round_3_Winner,
-                          First_Round_4_Winner)
+  Second_Round_26_2 <- rbind(First_Round_26_3_Winner,
+                          First_Round_26_4_Winner)
   
-  Second_Round_2[ , "Won"] <- NA
+  Second_Round_26_2[ , "Won"] <- NA
   
-  Second_Round_2 <- transmute(Second_Round_2,
+  Second_Round_26_2 <- transmute(Second_Round_26_2,
                               Team_A = Team[1],
                               Team_B = Team[2],
                               Rating_A = Rating[1],
@@ -1250,7 +1296,7 @@ for (sim_no in 1:2500) {
                               Conference_A = Conference[1],
                               Conference_B = Conference[2])[1 , ]
   
-  Second_Round_2 <- mutate(Second_Round_2,
+  Second_Round_26_2 <- mutate(Second_Round_26_2,
                            Expected = (1 / 
                                          (1 + 10^(-(Rating_A - Rating_B) / 400))),
                            "Rand" = NA,
@@ -1261,30 +1307,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      Second_Round_2[nrow(Second_Round_2) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_2[nrow(Second_Round_26_2) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_2[nrow(Second_Round_2) , "Won_A"] <- if_else(Second_Round_2[nrow(Second_Round_2) , "Rand"] <= 
-                                                                  Second_Round_2[nrow(Second_Round_2) , "Expected"],
+      Second_Round_26_2[nrow(Second_Round_26_2) , "Won_A"] <- if_else(Second_Round_26_2[nrow(Second_Round_26_2) , "Rand"] <= 
+                                                                  Second_Round_26_2[nrow(Second_Round_26_2) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_2[nrow(Second_Round_2) , "Won_B"] <- 1 - Second_Round_2[ , "Won_A"]
+      Second_Round_26_2[nrow(Second_Round_26_2) , "Won_B"] <- 1 - Second_Round_26_2[ , "Won_A"]
       
     }
     
-    if (sum(Second_Round_2[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_2[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(Second_Round_26_2[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_26_2[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      Second_Round_2[nrow(Second_Round_2)+1 , c("Team_A",
+      Second_Round_26_2[nrow(Second_Round_26_2)+1 , c("Team_A",
                                                 "Team_B",
                                                 "Rating_A",
                                                 "Rating_B",
                                                 "Conference_A",
                                                 "Conference_B",
-                                                "Expected")] <- Second_Round_2[nrow(Second_Round_2) , c("Team_A",
+                                                "Expected")] <- Second_Round_26_2[nrow(Second_Round_26_2) , c("Team_A",
                                                                                                         "Team_B",
                                                                                                         "Rating_A",
                                                                                                         "Rating_B",
@@ -1292,43 +1338,43 @@ for (sim_no in 1:2500) {
                                                                                                         "Conference_B",
                                                                                                         "Expected")]
       
-      Second_Round_2[nrow(Second_Round_2) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_2[nrow(Second_Round_26_2) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_2[nrow(Second_Round_2) , "Won_A"] <- if_else(Second_Round_2[nrow(Second_Round_2) , "Rand"] <= 
-                                                                  Second_Round_2[nrow(Second_Round_2) , "Expected"],
+      Second_Round_26_2[nrow(Second_Round_26_2) , "Won_A"] <- if_else(Second_Round_26_2[nrow(Second_Round_26_2) , "Rand"] <= 
+                                                                  Second_Round_26_2[nrow(Second_Round_26_2) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_2[nrow(Second_Round_2) , "Won_B"] <- 1 - Second_Round_2[ nrow(Second_Round_2) , "Won_A"]
+      Second_Round_26_2[nrow(Second_Round_26_2) , "Won_B"] <- 1 - Second_Round_26_2[ nrow(Second_Round_26_2) , "Won_A"]
       
     }
     
-    Second_Round_2_Winner <- summarise(Second_Round_2,
+    Second_Round_26_2_Winner <- summarise(Second_Round_26_2,
                                        "Wins_A" = sum(Won_A),
                                        "Wins_B" = sum(Won_B),
                                        "Winner" = if_else(Wins_A == 4,
                                                           "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(Second_Round_2_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(Second_Round_26_2_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    Second_Round_2_Winner <- select(Second_Round_2,
+    Second_Round_26_2_Winner <- select(Second_Round_26_2,
                                     contains(Winner_Suffix))
     
-    Second_Round_2_Winner <- Second_Round_2_Winner[nrow(Second_Round_2_Winner), ]
+    Second_Round_26_2_Winner <- Second_Round_26_2_Winner[nrow(Second_Round_26_2_Winner), ]
     
-    colnames(Second_Round_2_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Second_Round_26_2_Winner) <- c("Team", "Rating", "Conference", "Won")
   }
   
-  ## Second_Round_3
+  ## Second_Round_26_3
   
-  Second_Round_3 <- rbind(First_Round_5_Winner,
-                          First_Round_6_Winner)
+  Second_Round_26_3 <- rbind(First_Round_26_5_Winner,
+                          First_Round_26_6_Winner)
   
-  Second_Round_3[ , "Won"] <- NA
+  Second_Round_26_3[ , "Won"] <- NA
   
-  Second_Round_3 <- transmute(Second_Round_3,
+  Second_Round_26_3 <- transmute(Second_Round_26_3,
                               Team_A = Team[1],
                               Team_B = Team[2],
                               Rating_A = Rating[1],
@@ -1336,7 +1382,7 @@ for (sim_no in 1:2500) {
                               Conference_A = Conference[1],
                               Conference_B = Conference[2])[1 , ]
   
-  Second_Round_3 <- mutate(Second_Round_3,
+  Second_Round_26_3 <- mutate(Second_Round_26_3,
                            Expected = (1 / 
                                          (1 + 10^(-(Rating_A - Rating_B) / 400))),
                            "Rand" = NA,
@@ -1347,30 +1393,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      Second_Round_3[nrow(Second_Round_3) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_3[nrow(Second_Round_26_3) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_3[nrow(Second_Round_3) , "Won_A"] <- if_else(Second_Round_3[nrow(Second_Round_3) , "Rand"] <= 
-                                                                  Second_Round_3[nrow(Second_Round_3) , "Expected"],
+      Second_Round_26_3[nrow(Second_Round_26_3) , "Won_A"] <- if_else(Second_Round_26_3[nrow(Second_Round_26_3) , "Rand"] <= 
+                                                                  Second_Round_26_3[nrow(Second_Round_26_3) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_3[nrow(Second_Round_3) , "Won_B"] <- 1 - Second_Round_3[ , "Won_A"]
+      Second_Round_26_3[nrow(Second_Round_26_3) , "Won_B"] <- 1 - Second_Round_26_3[ , "Won_A"]
       
     }
     
-    if (sum(Second_Round_3[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_3[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(Second_Round_26_3[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_26_3[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      Second_Round_3[nrow(Second_Round_3)+1 , c("Team_A",
+      Second_Round_26_3[nrow(Second_Round_26_3)+1 , c("Team_A",
                                                 "Team_B",
                                                 "Rating_A",
                                                 "Rating_B",
                                                 "Conference_A",
                                                 "Conference_B",
-                                                "Expected")] <- Second_Round_3[nrow(Second_Round_3) , c("Team_A",
+                                                "Expected")] <- Second_Round_26_3[nrow(Second_Round_26_3) , c("Team_A",
                                                                                                         "Team_B",
                                                                                                         "Rating_A",
                                                                                                         "Rating_B",
@@ -1378,43 +1424,43 @@ for (sim_no in 1:2500) {
                                                                                                         "Conference_B",
                                                                                                         "Expected")]
       
-      Second_Round_3[nrow(Second_Round_3) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_3[nrow(Second_Round_26_3) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_3[nrow(Second_Round_3) , "Won_A"] <- if_else(Second_Round_3[nrow(Second_Round_3) , "Rand"] <= 
-                                                                  Second_Round_3[nrow(Second_Round_3) , "Expected"],
+      Second_Round_26_3[nrow(Second_Round_26_3) , "Won_A"] <- if_else(Second_Round_26_3[nrow(Second_Round_26_3) , "Rand"] <= 
+                                                                  Second_Round_26_3[nrow(Second_Round_26_3) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_3[nrow(Second_Round_3) , "Won_B"] <- 1 - Second_Round_3[ nrow(Second_Round_3) , "Won_A"]
+      Second_Round_26_3[nrow(Second_Round_26_3) , "Won_B"] <- 1 - Second_Round_26_3[ nrow(Second_Round_26_3) , "Won_A"]
       
     }
     
-    Second_Round_3_Winner <- summarise(Second_Round_3,
+    Second_Round_26_3_Winner <- summarise(Second_Round_26_3,
                                        "Wins_A" = sum(Won_A),
                                        "Wins_B" = sum(Won_B),
                                        "Winner" = if_else(Wins_A == 4,
                                                           "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(Second_Round_3_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(Second_Round_26_3_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    Second_Round_3_Winner <- select(Second_Round_3,
+    Second_Round_26_3_Winner <- select(Second_Round_26_3,
                                     contains(Winner_Suffix))
     
-    Second_Round_3_Winner <- Second_Round_3_Winner[nrow(Second_Round_3_Winner), ]
+    Second_Round_26_3_Winner <- Second_Round_26_3_Winner[nrow(Second_Round_26_3_Winner), ]
     
-    colnames(Second_Round_3_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Second_Round_26_3_Winner) <- c("Team", "Rating", "Conference", "Won")
   }
   
-  ## Second_Round_4
+  ## Second_Round_26_4
   
-  Second_Round_4 <- rbind(First_Round_7_Winner,
-                          First_Round_8_Winner)
+  Second_Round_26_4 <- rbind(First_Round_26_7_Winner,
+                          First_Round_26_8_Winner)
   
-  Second_Round_4[ , "Won"] <- NA
+  Second_Round_26_4[ , "Won"] <- NA
   
-  Second_Round_4 <- transmute(Second_Round_4,
+  Second_Round_26_4 <- transmute(Second_Round_26_4,
                               Team_A = Team[1],
                               Team_B = Team[2],
                               Rating_A = Rating[1],
@@ -1422,7 +1468,7 @@ for (sim_no in 1:2500) {
                               Conference_A = Conference[1],
                               Conference_B = Conference[2])[1 , ]
   
-  Second_Round_4 <- mutate(Second_Round_4,
+  Second_Round_26_4 <- mutate(Second_Round_26_4,
                            Expected = (1 / 
                                          (1 + 10^(-(Rating_A - Rating_B) / 400))),
                            "Rand" = NA,
@@ -1433,30 +1479,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      Second_Round_4[nrow(Second_Round_4) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_4[nrow(Second_Round_26_4) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_4[nrow(Second_Round_4) , "Won_A"] <- if_else(Second_Round_4[nrow(Second_Round_4) , "Rand"] <= 
-                                                                  Second_Round_4[nrow(Second_Round_4) , "Expected"],
+      Second_Round_26_4[nrow(Second_Round_26_4) , "Won_A"] <- if_else(Second_Round_26_4[nrow(Second_Round_26_4) , "Rand"] <= 
+                                                                  Second_Round_26_4[nrow(Second_Round_26_4) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_4[nrow(Second_Round_4) , "Won_B"] <- 1 - Second_Round_4[ , "Won_A"]
+      Second_Round_26_4[nrow(Second_Round_26_4) , "Won_B"] <- 1 - Second_Round_26_4[ , "Won_A"]
       
     }
     
-    if (sum(Second_Round_4[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_4[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(Second_Round_26_4[ , "Won_A"], na.rm = T) == 4 || sum(Second_Round_26_4[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      Second_Round_4[nrow(Second_Round_4)+1 , c("Team_A",
+      Second_Round_26_4[nrow(Second_Round_26_4)+1 , c("Team_A",
                                                 "Team_B",
                                                 "Rating_A",
                                                 "Rating_B",
                                                 "Conference_A",
                                                 "Conference_B",
-                                                "Expected")] <- Second_Round_4[nrow(Second_Round_4) , c("Team_A",
+                                                "Expected")] <- Second_Round_26_4[nrow(Second_Round_26_4) , c("Team_A",
                                                                                                         "Team_B",
                                                                                                         "Rating_A",
                                                                                                         "Rating_B",
@@ -1464,45 +1510,45 @@ for (sim_no in 1:2500) {
                                                                                                         "Conference_B",
                                                                                                         "Expected")]
       
-      Second_Round_4[nrow(Second_Round_4) , "Rand"] <- runif(1, 0, 1)
+      Second_Round_26_4[nrow(Second_Round_26_4) , "Rand"] <- runif(1, 0, 1)
       
-      Second_Round_4[nrow(Second_Round_4) , "Won_A"] <- if_else(Second_Round_4[nrow(Second_Round_4) , "Rand"] <= 
-                                                                  Second_Round_4[nrow(Second_Round_4) , "Expected"],
+      Second_Round_26_4[nrow(Second_Round_26_4) , "Won_A"] <- if_else(Second_Round_26_4[nrow(Second_Round_26_4) , "Rand"] <= 
+                                                                  Second_Round_26_4[nrow(Second_Round_26_4) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Second_Round_4[nrow(Second_Round_4) , "Won_B"] <- 1 - Second_Round_4[ nrow(Second_Round_4) , "Won_A"]
+      Second_Round_26_4[nrow(Second_Round_26_4) , "Won_B"] <- 1 - Second_Round_26_4[ nrow(Second_Round_26_4) , "Won_A"]
       
     }
     
-    Second_Round_4_Winner <- summarise(Second_Round_4,
+    Second_Round_26_4_Winner <- summarise(Second_Round_26_4,
                                        "Wins_A" = sum(Won_A),
                                        "Wins_B" = sum(Won_B),
                                        "Winner" = if_else(Wins_A == 4,
                                                           "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(Second_Round_4_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(Second_Round_26_4_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    Second_Round_4_Winner <- select(Second_Round_4,
+    Second_Round_26_4_Winner <- select(Second_Round_26_4,
                                     contains(Winner_Suffix))
     
-    Second_Round_4_Winner <- Second_Round_4_Winner[nrow(Second_Round_4_Winner), ]
+    Second_Round_26_4_Winner <- Second_Round_26_4_Winner[nrow(Second_Round_26_4_Winner), ]
     
-    colnames(Second_Round_4_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Second_Round_26_4_Winner) <- c("Team", "Rating", "Conference", "Won")
   }
   
   ### Conference Round
   
   ## Conference_Round_1
   
-  Conf_Round_1 <- rbind(Second_Round_1_Winner,
-                        Second_Round_2_Winner)
+  Conf_Round_26_1 <- rbind(Second_Round_26_1_Winner,
+                        Second_Round_26_2_Winner)
   
-  Conf_Round_1[ , "Won"] <- NA
+  Conf_Round_26_1[ , "Won"] <- NA
   
-  Conf_Round_1 <- transmute(Conf_Round_1,
+  Conf_Round_26_1 <- transmute(Conf_Round_26_1,
                               Team_A = Team[1],
                               Team_B = Team[2],
                               Rating_A = Rating[1],
@@ -1510,7 +1556,7 @@ for (sim_no in 1:2500) {
                               Conference_A = Conference[1],
                               Conference_B = Conference[2])[1 , ]
   
-  Conf_Round_1 <- mutate(Conf_Round_1,
+  Conf_Round_26_1 <- mutate(Conf_Round_26_1,
                            Expected = (1 / 
                                          (1 + 10^(-(Rating_A - Rating_B) / 400))),
                            "Rand" = NA,
@@ -1521,30 +1567,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      Conf_Round_1[nrow(Conf_Round_1) , "Rand"] <- runif(1, 0, 1)
+      Conf_Round_26_1[nrow(Conf_Round_26_1) , "Rand"] <- runif(1, 0, 1)
       
-      Conf_Round_1[nrow(Conf_Round_1) , "Won_A"] <- if_else(Conf_Round_1[nrow(Conf_Round_1) , "Rand"] <= 
-                                                                  Conf_Round_1[nrow(Conf_Round_1) , "Expected"],
+      Conf_Round_26_1[nrow(Conf_Round_26_1) , "Won_A"] <- if_else(Conf_Round_26_1[nrow(Conf_Round_26_1) , "Rand"] <= 
+                                                                  Conf_Round_26_1[nrow(Conf_Round_26_1) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Conf_Round_1[nrow(Conf_Round_1) , "Won_B"] <- 1 - Conf_Round_1[ , "Won_A"]
+      Conf_Round_26_1[nrow(Conf_Round_26_1) , "Won_B"] <- 1 - Conf_Round_26_1[ , "Won_A"]
       
     }
     
-    if (sum(Conf_Round_1[ , "Won_A"], na.rm = T) == 4 || sum(Conf_Round_1[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(Conf_Round_26_1[ , "Won_A"], na.rm = T) == 4 || sum(Conf_Round_26_1[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      Conf_Round_1[nrow(Conf_Round_1)+1 , c("Team_A",
+      Conf_Round_26_1[nrow(Conf_Round_26_1)+1 , c("Team_A",
                                                 "Team_B",
                                                 "Rating_A",
                                                 "Rating_B",
                                                 "Conference_A",
                                                 "Conference_B",
-                                                "Expected")] <- Conf_Round_1[nrow(Conf_Round_1) , c("Team_A",
+                                                "Expected")] <- Conf_Round_26_1[nrow(Conf_Round_26_1) , c("Team_A",
                                                                                                         "Team_B",
                                                                                                         "Rating_A",
                                                                                                         "Rating_B",
@@ -1552,43 +1598,43 @@ for (sim_no in 1:2500) {
                                                                                                         "Conference_B",
                                                                                                         "Expected")]
       
-      Conf_Round_1[nrow(Conf_Round_1) , "Rand"] <- runif(1, 0, 1)
+      Conf_Round_26_1[nrow(Conf_Round_26_1) , "Rand"] <- runif(1, 0, 1)
       
-      Conf_Round_1[nrow(Conf_Round_1) , "Won_A"] <- if_else(Conf_Round_1[nrow(Conf_Round_1) , "Rand"] <= 
-                                                                  Conf_Round_1[nrow(Conf_Round_1) , "Expected"],
+      Conf_Round_26_1[nrow(Conf_Round_26_1) , "Won_A"] <- if_else(Conf_Round_26_1[nrow(Conf_Round_26_1) , "Rand"] <= 
+                                                                  Conf_Round_26_1[nrow(Conf_Round_26_1) , "Expected"],
                                                                 true = 1,
                                                                 false = 0)
       
-      Conf_Round_1[nrow(Conf_Round_1) , "Won_B"] <- 1 - Conf_Round_1[ nrow(Conf_Round_1) , "Won_A"]
+      Conf_Round_26_1[nrow(Conf_Round_26_1) , "Won_B"] <- 1 - Conf_Round_26_1[ nrow(Conf_Round_26_1) , "Won_A"]
       
     }
     
-    Conf_Round_1_Winner <- summarise(Conf_Round_1,
+    Conf_Round_26_1_Winner <- summarise(Conf_Round_26_1,
                                        "Wins_A" = sum(Won_A),
                                        "Wins_B" = sum(Won_B),
                                        "Winner" = if_else(Wins_A == 4,
                                                           "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(Conf_Round_1_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(Conf_Round_26_1_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    Conf_Round_1_Winner <- select(Conf_Round_1,
+    Conf_Round_26_1_Winner <- select(Conf_Round_26_1,
                                     contains(Winner_Suffix))
     
-    Conf_Round_1_Winner <- Conf_Round_1_Winner[nrow(Conf_Round_1_Winner), ]
+    Conf_Round_26_1_Winner <- Conf_Round_26_1_Winner[nrow(Conf_Round_26_1_Winner), ]
     
-    colnames(Conf_Round_1_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Conf_Round_26_1_Winner) <- c("Team", "Rating", "Conference", "Won")
   }
   
   ## Conference_Round_2
   
-  Conf_Round_2 <- rbind(Second_Round_3_Winner,
-                        Second_Round_4_Winner)
+  Conf_Round_26_2 <- rbind(Second_Round_26_3_Winner,
+                        Second_Round_26_4_Winner)
   
-  Conf_Round_2[ , "Won"] <- NA
+  Conf_Round_26_2[ , "Won"] <- NA
   
-  Conf_Round_2 <- transmute(Conf_Round_2,
+  Conf_Round_26_2 <- transmute(Conf_Round_26_2,
                             Team_A = Team[1],
                             Team_B = Team[2],
                             Rating_A = Rating[1],
@@ -1596,7 +1642,7 @@ for (sim_no in 1:2500) {
                             Conference_A = Conference[1],
                             Conference_B = Conference[2])[1 , ]
   
-  Conf_Round_2 <- mutate(Conf_Round_2,
+  Conf_Round_26_2 <- mutate(Conf_Round_26_2,
                          Expected = (1 / 
                                        (1 + 10^(-(Rating_A - Rating_B) / 400))),
                          "Rand" = NA,
@@ -1607,30 +1653,30 @@ for (sim_no in 1:2500) {
     
     if (i == 1) {
       
-      Conf_Round_2[nrow(Conf_Round_2) , "Rand"] <- runif(1, 0, 1)
+      Conf_Round_26_2[nrow(Conf_Round_26_2) , "Rand"] <- runif(1, 0, 1)
       
-      Conf_Round_2[nrow(Conf_Round_2) , "Won_A"] <- if_else(Conf_Round_2[nrow(Conf_Round_2) , "Rand"] <= 
-                                                              Conf_Round_2[nrow(Conf_Round_2) , "Expected"],
+      Conf_Round_26_2[nrow(Conf_Round_26_2) , "Won_A"] <- if_else(Conf_Round_26_2[nrow(Conf_Round_26_2) , "Rand"] <= 
+                                                              Conf_Round_26_2[nrow(Conf_Round_26_2) , "Expected"],
                                                             true = 1,
                                                             false = 0)
       
-      Conf_Round_2[nrow(Conf_Round_2) , "Won_B"] <- 1 - Conf_Round_2[ , "Won_A"]
+      Conf_Round_26_2[nrow(Conf_Round_26_2) , "Won_B"] <- 1 - Conf_Round_26_2[ , "Won_A"]
       
     }
     
-    if (sum(Conf_Round_2[ , "Won_A"], na.rm = T) == 4 || sum(Conf_Round_2[ , "Won_B"], na.rm = T) == 4) {
+    if (sum(Conf_Round_26_2[ , "Won_A"], na.rm = T) == 4 || sum(Conf_Round_26_2[ , "Won_B"], na.rm = T) == 4) {
       
       break
       
     } else {
       
-      Conf_Round_2[nrow(Conf_Round_2)+1 , c("Team_A",
+      Conf_Round_26_2[nrow(Conf_Round_26_2)+1 , c("Team_A",
                                             "Team_B",
                                             "Rating_A",
                                             "Rating_B",
                                             "Conference_A",
                                             "Conference_B",
-                                            "Expected")] <- Conf_Round_2[nrow(Conf_Round_2) , c("Team_A",
+                                            "Expected")] <- Conf_Round_26_2[nrow(Conf_Round_26_2) , c("Team_A",
                                                                                                 "Team_B",
                                                                                                 "Rating_A",
                                                                                                 "Rating_B",
@@ -1638,39 +1684,39 @@ for (sim_no in 1:2500) {
                                                                                                 "Conference_B",
                                                                                                 "Expected")]
       
-      Conf_Round_2[nrow(Conf_Round_2) , "Rand"] <- runif(1, 0, 1)
+      Conf_Round_26_2[nrow(Conf_Round_26_2) , "Rand"] <- runif(1, 0, 1)
       
-      Conf_Round_2[nrow(Conf_Round_2) , "Won_A"] <- if_else(Conf_Round_2[nrow(Conf_Round_2) , "Rand"] <= 
-                                                              Conf_Round_2[nrow(Conf_Round_2) , "Expected"],
+      Conf_Round_26_2[nrow(Conf_Round_26_2) , "Won_A"] <- if_else(Conf_Round_26_2[nrow(Conf_Round_26_2) , "Rand"] <= 
+                                                              Conf_Round_26_2[nrow(Conf_Round_26_2) , "Expected"],
                                                             true = 1,
                                                             false = 0)
       
-      Conf_Round_2[nrow(Conf_Round_2) , "Won_B"] <- 1 - Conf_Round_2[ nrow(Conf_Round_2) , "Won_A"]
+      Conf_Round_26_2[nrow(Conf_Round_26_2) , "Won_B"] <- 1 - Conf_Round_26_2[ nrow(Conf_Round_26_2) , "Won_A"]
       
     }
     
-    Conf_Round_2_Winner <- summarise(Conf_Round_2,
+    Conf_Round_26_2_Winner <- summarise(Conf_Round_26_2,
                                      "Wins_A" = sum(Won_A),
                                      "Wins_B" = sum(Won_B),
                                      "Winner" = if_else(Wins_A == 4,
                                                         "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(Conf_Round_2_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(Conf_Round_26_2_Winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
-    Conf_Round_2_Winner <- select(Conf_Round_2,
+    Conf_Round_26_2_Winner <- select(Conf_Round_26_2,
                                   contains(Winner_Suffix))
     
-    Conf_Round_2_Winner <- Conf_Round_2_Winner[nrow(Conf_Round_2_Winner), ]
+    Conf_Round_26_2_Winner <- Conf_Round_26_2_Winner[nrow(Conf_Round_26_2_Winner), ]
     
-    colnames(Conf_Round_2_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Conf_Round_26_2_Winner) <- c("Team", "Rating", "Conference", "Won")
   }
   
   ## Conference_Round_1
   
-  Stanley_Cup_Round <- rbind(Conf_Round_1_Winner,
-                             Conf_Round_2_Winner)
+  Stanley_Cup_Round <- rbind(Conf_Round_26_1_Winner,
+                             Conf_Round_26_2_Winner)
   
   Stanley_Cup_Round[ , "Won"] <- NA
   
@@ -1739,10 +1785,10 @@ for (sim_no in 1:2500) {
                                 Sim_No = sim_no)
     
     Stanley_Cup_Round_Winner <- summarise(Stanley_Cup_Round,
-                                     "Wins_A" = sum(Won_A),
-                                     "Wins_B" = sum(Won_B),
-                                     "Winner" = if_else(Wins_A == 4,
-                                                        "Team_A", "Team_B"))
+                                          "Wins_A" = sum(Won_A),
+                                          "Wins_B" = sum(Won_B),
+                                          "Winner" = if_else(Wins_A == 4,
+                                                             "Team_A", "Team_B"))
     
     Winner_Suffix <- if_else(str_detect(Stanley_Cup_Round_Winner$Winner,
                                         "Team_A"),
@@ -1756,14 +1802,14 @@ for (sim_no in 1:2500) {
     Stanley_Cup_Round_Winner <- mutate(Stanley_Cup_Round_Winner,
                                        Sim_No = sim_no)
     
-    colnames(Stanley_Cup_Round_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Stanley_Cup_Round_Winner) <- c("Team", "Rating", "Conference", "Won", "Sim_No")
     
   }
   
-  Monte_Results_Season <- rbind(Monte_Results_Season,
-                                ungroup(Game_Monte_Sum))
+  Monte_Results_26 <- rbind(Monte_Results_26,
+                            ungroup(Game_Monte_Sum))
   
-  for (round_ind in ls()[which(str_detect(ls(), "First_Round_\\d$"))] ) {
+  for (round_ind in ls()[which(str_detect(ls(), "First_Round_26\\d$"))] ) {
     
     temp <- get(round_ind)
     
@@ -1774,17 +1820,17 @@ for (sim_no in 1:2500) {
     
   }
   
-  Monte_Results_First_Round <- rbind(Monte_Results_First_Round,
-                                     First_Round_1,
-                                     First_Round_2,
-                                     First_Round_3,
-                                     First_Round_4,
-                                     First_Round_5,
-                                     First_Round_6,
-                                     First_Round_7,
-                                     First_Round_8)
+  Monte_Results_First_Round_26 <- rbind(Monte_Results_First_Round_26,
+                                        First_Round_26_1,
+                                        First_Round_26_2,
+                                        First_Round_26_3,
+                                        First_Round_26_4,
+                                        First_Round_26_5,
+                                        First_Round_26_6,
+                                        First_Round_26_7,
+                                        First_Round_26_8)
   
-  for (round_ind in ls()[which(str_detect(ls(), "Second_Round_\\d$"))] ) {
+  for (round_ind in ls()[which(str_detect(ls(), "Second_Round_26_\\d$"))] ) {
     
     temp <- get(round_ind)
     
@@ -1795,13 +1841,13 @@ for (sim_no in 1:2500) {
     
   }
   
-  Monte_Results_Second_Round <- rbind(Monte_Results_Second_Round,
-                                      Second_Round_1,
-                                      Second_Round_2,
-                                      Second_Round_3,
-                                      Second_Round_4)
+  Monte_Results_Second_Round_26 <- rbind(Monte_Results_Second_Round_26,
+                                         Second_Round_26_1,
+                                         Second_Round_26_2,
+                                         Second_Round_26_3,
+                                         Second_Round_26_4)
   
-  for (round_ind in ls()[which(str_detect(ls(), "Conf_Round_\\d$"))] ) {
+  for (round_ind in ls()[which(str_detect(ls(), "Conf_Round_26_\\d$"))] ) {
     
     temp <- get(round_ind)
     
@@ -1812,49 +1858,56 @@ for (sim_no in 1:2500) {
     
   }
   
-  Monte_Results_Conf_Round <- rbind(Monte_Results_Conf_Round,
-                                    Conf_Round_1,
-                                    Conf_Round_2)
+  Monte_Results_Conf_Round_26 <- rbind(Monte_Results_Conf_Round_26,
+                                       Conf_Round_26_1,
+                                       Conf_Round_26_2)
   
-  Monte_Results_Stanley_Round <- rbind(Monte_Results_Stanley_Round,
-                                       Stanley_Cup_Round)
+  Monte_Results_Stanley_Round_26 <- rbind(Monte_Results_Stanley_Round_26,
+                                          Stanley_Cup_Round)
   
-  Monte_Results_Stanley_Round_Winner <- rbind(Monte_Results_Stanley_Round_Winner,
-                                              Stanley_Cup_Round_Winner)
+  Monte_Results_Stanley_Round_Winner_26 <- rbind(Monte_Results_Stanley_Round_Winner_26,
+                                                 Stanley_Cup_Round_Winner)
   
 }
 
 ```
 
-```{r, fig.height=9}
+```{r fig.height=9, message=FALSE, warning=FALSE}
 
-ggplot(Monte_Results_Season,
+ggplot(filter(Monte_Results_26,
+              !str_detect(Team_Name,
+                          "Louis")),
        aes(x = Position)) +
-  geom_density(fill = "cyan2",
-                alpha = 0.25) +
+  geom_histogram(fill = "cyan2",
+                 alpha = 0.25,
+                 col = "grey80") +
   facet_rep_wrap( ~ Team_Name,
                   repeat.tick.labels = T,
-                  nrow = 4) +
+                  ncol = 6,
+                  scales = "free_y",
+                  labeller = label_wrap_gen(15)) +
+  scale_y_continuous("Count") +
   ggtitle(label = paste("Probability Density of Each Team's Finishing Standing in the NHL",
                         "Across", comma(sim_no), "Trials"),
           subtitle = "Using the Elo 25 Partition") +
+  labs(caption = "Note changes in y-axes") +
   theme_minimal()
 
 ```
 
 ```{r}
 
-St_Louis_Results <- filter(summarise(group_by(Monte_Results_Season,
+St_Louis_Results_26 <- filter(summarise(group_by(Monte_Results_26,
                                               Team_Name, Position),
                                      "Count" = n()),
                            Team_Name == "St. Louis Blues")
 
-ggplot(St_Louis_Results,
+ggplot(St_Louis_Results_26,
        aes(x = Position, y = Count)) +
   geom_bar(stat = "identity",
            col = "yellow",
            fill = "blue3") +
-  ggtitle(label = paste("Frequencies of Finishing Position for St. Louis Blues Across",
+  ggtitle(label = paste("Frequencies of Season Finishing Position for St. Louis Blues Across",
                         comma(sim_no), "Trials"),
           subtitle = "Using the Elo 25 Partition") +
   scale_x_continuous(breaks = seq(1,31,2)) +
@@ -1863,7 +1916,7 @@ ggplot(St_Louis_Results,
   theme(panel.grid.minor = element_blank(),
         panel.grid.major.x = element_blank())
 
-ggplot(Monte_Results_Stanley_Round_Winner) +
+ggplot(Monte_Results_Stanley_Round_Winner_26) +
   geom_bar(aes(x = Team),
            fill = "cyan",
            alpha = 0.5) +
@@ -1873,7 +1926,7 @@ ggplot(Monte_Results_Stanley_Round_Winner) +
                 hjust = -0.25),
             stat = "count") +
   scale_x_discrete("Team",
-                   limits = rev(levels(as.factor(Monte_Results_Stanley_Round_Winner$Team)))) +
+                   limits = rev(levels(as.factor(Monte_Results_Stanley_Round_Winner_26$Team)))) +
   scale_y_continuous("Number of Stanley Cup Wins",
                      labels = comma) +
   theme_minimal() +
@@ -1886,6 +1939,8 @@ ggplot(Monte_Results_Stanley_Round_Winner) +
   coord_flip()
 
 ```
+
+
 
 ```{r, message=FALSE, warning=FALSE}
 
@@ -1927,7 +1982,7 @@ Monte_Results_Stanley_Round_Winner_51 <- data.frame()
 
 Start_Time <- Sys.time()
 
-for (sim_no in 1:2500) {
+for (sim_no in 1:5000) {
   
   for (j in 1:nrow(Game_Monte_51)) {
     
@@ -2069,13 +2124,13 @@ for (sim_no in 1:2500) {
       
     }
     
-    First_Round_1_Winner <- summarise(First_Round_1,
+    first_round_26_1_winner <- summarise(First_Round_1,
                                       "Wins_A" = sum(Won_A),
                                       "Wins_B" = sum(Won_B),
                                       "Winner" = if_else(Wins_A == 4,
                                                          "Team_A", "Team_B"))
     
-    Winner_Suffix <- if_else(str_detect(First_Round_1_Winner$Winner,
+    Winner_Suffix <- if_else(str_detect(first_round_26_1_winner$Winner,
                                         "Team_A"),
                              true = "_A", false = "_B")
     
@@ -3340,7 +3395,7 @@ for (sim_no in 1:2500) {
     Stanley_Cup_Round_Winner <- mutate(Stanley_Cup_Round_Winner,
                                        Sim_No = sim_no)
     
-    colnames(Stanley_Cup_Round_Winner) <- c("Team", "Rating", "Conference", "Won")
+    colnames(Stanley_Cup_Round_Winner) <- c("Team", "Rating", "Conference", "Won", "Sim_No")
     
   }
   
@@ -3406,28 +3461,39 @@ for (sim_no in 1:2500) {
   Monte_Results_Stanley_Round_Winner_51 <- rbind(Monte_Results_Stanley_Round_Winner_51,
                                                  Stanley_Cup_Round_Winner)
   
+  colnames(Monte_Results_Stanley_Round_Winner_51) <- c("Team", "Rating", "Conference", "Won", "Sim_No")
+  
 
 }
 
 ```
 
-```{r, fig.height=9}
+*****
 
-ggplot(Monte_Results_Season,
+```{r fig.height=9, message=FALSE, warning=FALSE}
+
+ggplot(filter(Monte_Results_Season_51,
+              !str_detect(Team_Name,
+                          "Louis")),
        aes(x = Position)) +
-  geom_density(fill = "cyan2",
-                alpha = 0.25) +
+  geom_histogram(fill = "cyan2",
+                 alpha = 0.25,
+                 col = "grey80") +
   facet_rep_wrap( ~ Team_Name,
                   repeat.tick.labels = T,
-                  nrow = 4) +
+                  ncol = 6,
+                  scales = "free_y",
+                  labeller = label_wrap_gen(15)) +
+  scale_y_continuous("Count") +
   ggtitle(label = paste("Probability Density of Each Team's Finishing Standing in the NHL",
                         "Across", comma(sim_no), "Trials"),
           subtitle = "Using the Elo 25 Partition") +
+  labs(caption = "Note changes in y-axes") +
   theme_minimal()
 
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 
 St_Louis_Results_51 <- filter(summarise(group_by(Monte_Results_Season_51,
                                                  Team_Name, Position),
@@ -3439,7 +3505,7 @@ ggplot(St_Louis_Results_51,
   geom_bar(stat = "identity",
            col = "yellow",
            fill = "blue3") +
-  ggtitle(label = paste("Frequencies of Finishing Position for St. Louis Blues Across",
+  ggtitle(label = paste("Frequencies of Season Finishing Position for St. Louis Blues Across",
                         comma(sim_no), "Trials"),
           subtitle = "Using the Elo 50 Partition") +
   scale_x_continuous(breaks = seq(1,31,2))+
@@ -3457,7 +3523,7 @@ ggplot(Monte_Results_Stanley_Round_Winner_51) +
                 hjust = -0.25),
             stat = "count") +
   scale_x_discrete("Team",
-                   limits = rev(levels(as.factor(Monte_Results_Stanley_Round_Winner$Team)))) +
+                   limits = rev(levels(as.factor(Monte_Results_Stanley_Round_Winner_51$Team)))) +
   scale_y_continuous("Number of Stanley Cup Wins",
                      labels = comma) +
   theme_minimal() +
@@ -3511,7 +3577,7 @@ Game_Monte_82 <- rename(Game_Monte_82,
                         Points_A = Pts_A,
                         Points_B = Pts_B)
 
-for (sim_no in 1:2500) {
+for (sim_no in 1:5000) {
   
   Game_Monte_Long <- gather(Game_Monte_82,
                             Team_A, Team_B,
@@ -4968,8 +5034,16 @@ for (sim_no in 1:2500) {
   Monte_Results_Stanley_Round_Winner_82 <- rbind(Monte_Results_Stanley_Round_Winner_82,
                                                  Stanley_Cup_Round_Winner)
   
+  colnames(Monte_Results_Stanley_Round_Winner_82) <- c("Team", "Rating", "Conference", "Won", "Sim_No")
+  
 
 }
+
+```
+
+*****
+
+```{r, message=FALSE, warning=FALSE}
 
 ggplot(Monte_Results_Stanley_Round_Winner_82) +
   geom_bar(aes(x = Team),
@@ -4996,12 +5070,128 @@ ggplot(Monte_Results_Stanley_Round_Winner_82) +
 
 ```
 
+```{r include=FALSE, message=FALSE, warning=FALSE}
+
+St_Louis_Season_26 <- filter(Monte_Results_26,
+                             str_detect(Team_Name, "Louis"))
+
+St_Louis_26_Median <- median(St_Louis_Season_26$Position)
+
+St_Louis_26_Mean <- mean(St_Louis_Season_26$Position)
+
+
+St_Louis_Season_51 <- filter(Monte_Results_Season_51,
+                             str_detect(Team_Name, "Louis"))
+
+St_Louis_51_Median <- median(St_Louis_Season_51$Position)
+
+St_Louis_51_Mean <- mean(St_Louis_Season_51$Position)
+
+
+```
+
+As can be seen, the St. Louis Blues' distribution of simulated finishing posisitions changed substantially between the two data partitions at game 25 and game 50. The distribution of finishing positions using partition 25 was left-skewed and with a median of `r St_Louis_26_Median` and a mean of `r St_Louis_26_Mean`. The distribution of simulated season finishing positions shifted with the game 50 partition to be centred around a median of `r St_Louis_51_Median` and a mean of `r St_Louis_51_Mean`. Unlike the game 25 partition, the game 50 partition yielded a more symmetrical distribution of finishing positions.
 
 # Discussion
 
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+St_Louis_Cup_Wins_26 <- nrow(filter(Monte_Results_Stanley_Round_Winner_26,
+                                    str_detect(Team, "Louis")))
+
+St_Louis_Cup_Wins_51 <- nrow(filter(Monte_Results_Stanley_Round_Winner_51,
+                                    str_detect(Team, "Louis")))
+
+St_Louis_Cup_Wins_82 <- nrow(filter(Monte_Results_Stanley_Round_Winner_82,
+                                    str_detect(Team, "Louis")))
+
+```
+
+## St. Louis Blues
+
+The simulations of the three partitions reflected the marked improvement in the St. Louis Blues' performance throughout the season. Using the game 25 partition data, the St. Louis Blues won the Stanley Cup a total of `r comma(St_Louis_Cup_Wins_26)` times out of `r comma(sim_no)` simulations, which was a likelihood of `r percent(St_Louis_Cup_Wins_26 / sim_no, accuracy = 0.01)`.  This improved somewhat when comparing to the game 50 partition data, which saw the St Louis Blues win a total of `r comma(St_Louis_Cup_Wins_51)` out of `r comma(sim_no)` simulations (likelihood of `r percent(St_Louis_Cup_Wins_51 / sim_no, accuracy = 0.01)`). The biggest improvement was seen when simulating the playoffs series based on their standings and performance at the end of the 82-game regular season. Using the 82-game non-partitioned data, the St Louis Blues won the Stanley Cup a total of `r comma(St_Louis_Cup_Wins_82)` out of a total `r comma(sim_no)` trials, which was a likelihood of   `r percent(St_Louis_Cup_Wins_82 / sim_no, accuracy = 0.01)`.
+
+This improvement throughout the season was as anticipated, otherwise the Blues would not have been able to win the Stanley Cup. What was most interesting, however, was that the St. Louis Blues still managed to win the Stanley Cup despite the simulations using the non-partitioned season data showing their likelihood of winning to be a mere `r percent(St_Louis_Cup_Wins_82 / sim_no, accuracy = 0.01)`
+
+## Other Teams - Noteworthy Results
+
+```{r include=FALSE, message=FALSE, warning=FALSE}
+
+## Tampa Bay
+
+Boston_Cup_Wins_26 <- nrow(filter(Monte_Results_Stanley_Round_Winner_26,
+                                    str_detect(Team, "Boston")))
+
+Boston_Cup_Wins_51 <- nrow(filter(Monte_Results_Stanley_Round_Winner_51,
+                                    str_detect(Team, "Boston")))
+
+Boston_Cup_Wins_82 <- nrow(filter(Monte_Results_Stanley_Round_Winner_82,
+                                    str_detect(Team, "Boston")))
+
+## Tampa Bay
+
+Tampa_Cup_Wins_26 <- nrow(filter(Monte_Results_Stanley_Round_Winner_26,
+                                    str_detect(Team, "Tampa")))
+
+Tampa_Cup_Wins_51 <- nrow(filter(Monte_Results_Stanley_Round_Winner_51,
+                                    str_detect(Team, "Tampa")))
+
+Tampa_Cup_Wins_82 <- nrow(filter(Monte_Results_Stanley_Round_Winner_82,
+                                    str_detect(Team, "Tampa")))
+
+
+## Nashville
+
+Nashville_Cup_Wins_26 <- nrow(filter(Monte_Results_Stanley_Round_Winner_26,
+                                     str_detect(Team, "Nashville")))
+
+Nashville_Cup_Wins_51 <- nrow(filter(Monte_Results_Stanley_Round_Winner_51,
+                                    str_detect(Team, "Nashville")))
+
+Nashville_Cup_Wins_82 <- nrow(filter(Monte_Results_Stanley_Round_Winner_82,
+                                    str_detect(Team, "Nashville")))
+
+```
+
+### Boston
+
+Despite their long and repeated history of Stanley Cup playoffs appearances, the Boston Bruins were no more a certainty of making the finals than most other teams. After their 25th game, the simulations showed Boston won the Cup `r comma(Boston_Cup_Wins_26)` out of `r comma(sim_no)` simulations, which was a likelihood of `r percent(Boston_Cup_Wins_26 / sim_no, accuracy = 0.01)`. This changed a little, but not much in the general context of the competition, when using the 50 game partition. In these simulations Boston took home the Stanley Cup a total of `r comma(Boston_Cup_Wins_51)` times from `r comma(sim_no)`, which was a likelihood of `r percent(Boston_Cup_Wins_51 / sim_no, accuracy = 0.01)`. Of the simulations of non-partitioned data, where the Bruins' place in the playoffs was clinched, they won the Stanley Cup `r comma(Boston_Cup_Wins_82)` out of `r comma(sim_no)` simulations, a likelihood of `r percent(Boston_Cup_Wins_82 / sim_no, accuracy = 0.01)`. Note that this is a slightly greater likelihood of winning the Cup than the St. Louis Blues (`r percent(St_Louis_Cup_Wins_82 / sim_no, accuracy = 0.01)`).
+
+### Tampa Bay
+
+It could be argued that the Tampa Bay Lightning were robbed of the Stanley Cup this season. In the real data for the season, Tampa Bay performed consistently throughout all fixtures and finished with the most season points, earning them the Presidents' Trophy. In the simulations for the game 25 and game 50 partitions, Tampa Bay won the Cup a total of `r comma(Tampa_Cup_Wins_26)` and `r comma(Tampa_Cup_Wins_51)` times, respectively. This equated to a likelihood of `r percent(Tampa_Cup_Wins_26 / sim_no, accuracy = 0.01)` and `r percent(Tampa_Cup_Wins_51 / sim_no, accuracy = 0.01)`. This did not change by the end of the season, and the playoffs using the non-partitioned 82 game data saw Tampa Bay winning a total of `r comma(Tampa_Cup_Wins_82)` Stanley Cups, which was a likelihood of `r percent(Tampa_Cup_Wins_82 / sim_no, accuracy = 0.01)`.
+
+### Nashville
+
+Nashville had a very strong start to the season, as shown in the results from the simulations using the 25 game partition. Nashville won a total of `r comma(Nashville_Cup_Wins_26)` times out of `r comma(sim_no)` simulations, giving a likelihood of `r percent(Nashville_Cup_Wins_26 / sim_no, accuracy = 0.01)`. This likelihood of winning the Stanley Cup at game 25 was greater than even Tampa Bay. This high performance for Nashville waned as the season progressed. The 50 game partition saw the Nashville Predators win the Stanley Cup a total of `r comma(Nashville_Cup_Wins_51)` times out of `r comma(sim_no)` simulations, which was a likelihood of just `r percent(Nashville_Cup_Wins_51 / sim_no, accuracy = 0.01)`. The Predator's chances of winning the Stanley Cup increased slightly when using their performance across the whole season in the 82-game non-partition. Here Nashville took home the Cup a total of `r comma(Nashville_Cup_Wins_82)` times from `r comma(sim_no)`, which was a likelihood of `r percent(Nashville_Cup_Wins_82 / sim_no, accuracy = 0.01)`.
+
 ## Limitations
 
+### Partitioning
+
+Due to the staggered nature of number of games played across teams, some data was lost when partitioning on game number. For example, if all fixtures from game 25 onwards were filtered out of a data partition, games where Team A were playing their 23rd game and Team B were playing their 26th game were lost; neither considered in the constant Elo rating optimisation nor the partitioned data used to simulate the remaining season. A more effective method for partitioning the data would be based on date coupled with a refining of the season standings scoring method.
+
+### Season Standings
+
+The method used for calculating the season standings was too simple for the intended purpose. Points were calculated simply based on whether the team won, lost, or had an overtime loss. This greatly contrasts the season standings scoring method used by the NHL, which is more complex and comprises goals scored differential, games results between tied teams, and season points in the context of number of games played.
+
+### Simulated Game Structure
+
+The simulations could have also been improved by incorporating a simulation of points scored, which would have assisted with determining season standings (as outlined above) as well as provided a more realistic simulation of the regular season. Overtime losses were based on the difference between a random number and Elo expected results, which reduced the results of the game to a ternary data structure (0, 1, 2). Using a multiple regression model to simulate goals scored by teams would facilitate adding this level of granularity to the simulations.
+
+### Replicating the Stanley Cup Playoffs
+
+Whilst the St. Louis Blues and Boston Bruins were guaranteed spots in the playoffs based on their standings after the regular season ended, the simulations did not deliberately cover this scenario. Granted, the St. Louis Blues and Boston Bruins did meet in the Stanley Cup in the simulations, but they did so purely by the chance of the random number generator. It would be of interest to create further simulations specifically for the Stanley Cup Finals that replicated the team most likely to win between the St. Louis Blues and the Boston Bruins.
+
+### Elo Ratings - Recency
+
+Part of the reason why the St. Louis Blues winning the Stanley Cup was so sensational was that they stormed home at the end of the season from rocky beginnings. The Elo ratings used for the simulations based on the non-partitioned 82-game season would have failed to adequately measure the strength of the St. Louis Blues in the finals 30 or so games of the regular season. As such, the Blues may have been underrepresented in these simulations. Creating optimised Elo ratings based on a more recent and similarly sized partition of the data, for example between games 50 and 82, would allow for simulations to be run that reflect the strong performance of the St. Louis Blues in the end of the regular season.
+
 # Conclusions
+
+This study made some interesting findings, even if they were slightly as anticipated. The change in the St. Louis Blues' performance was well reflected in the simulations. The simulations also revealed that, even after the St. Louis Blues' chances of making the finals from their standings at the end of their 25th game were approaching nil, the large turn around in their season that was required to make the playoffs still meant that their likelihood of winning the Stanley Cup was low compared to their competitors.
+
+The Boston Bruins were shown to have similar, but slightly greater, likelihood of winning the Stanley Cup than the St. Louis Blues when using Elo ratings from the entire season. At the two other partitions considered, at games 25 and 50, the Boston Bruins had a substantially greater likelihood of winning the Stanley Cup. Further simulations were justified that specifically simulated the playoffs between the Boston Bruins and the St. Louis Blues.
 
 # References
 
@@ -5023,7 +5213,9 @@ Elo, A.E., 1978, *The rating of chessplayers, past and present*, Arco Pub
 
 Theodore, L.,  Prochaska, C., 2018, *Introduction to Mathematical Methods for Environmental Engineers and Scientists*, John Wiley & Sons, Incorporated, Newark.
 
-```{r echo=FALSE}
+Sports Reference LLC., 2019, *2018-19 NHL Schedule and Results*, Hockey-Reference.com - Hockey Statistics and History, viewed 22 May 2019,  <https://www.hockey-reference.com/leagues/NHL_2019_games.html>
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
 
 Sys.time() - start_time
 
